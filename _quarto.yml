@@ -23,7 +23,7 @@ website:
       - text: "Home"
         file: index.qmd
       - text: "My Resume"
-        file: resume.qmd
+        file: resume.docx
       - text: "Data Cleaning"
         file: cleaning.qmd
       - text: "Machine Learning"
@@ -107,7 +107,7 @@ website:
       style: "docked"
       background: light
       contents:
-        - text: "Full Stack"
+        - text: "Statistics"
           file: statistics.qmd
         - text: "---"
         - text: "Project 1"
