@@ -159,169 +159,40 @@
     "text": "Volunteer and Leadership\nVolunteer\nDistinguished Young Women, Madison County, ID and Idaho State\nJanuary 2023 to February 2025\n\nMentored participants through coaching and structured feedback following success in local and state-level presentations and interviews"
   },
   {
-    "objectID": "Machine_Learning/project3.html",
-    "href": "Machine_Learning/project3.html",
-    "title": "Comparing Models",
+    "objectID": "ml.html",
+    "href": "ml.html",
+    "title": "Machine Learning",
     "section": "",
-    "text": "Which of three classification algorithms best predicts whether a home was built before 1980, and which should I recommend to a client?\nDoes adding neighborhood data improve that model?\nCan a regression model predict the exact year a home was built?",
+    "text": "Models that predict the age of a home from public housing data. Each project builds on the one before it.\n\nClassifying Home Age: A decision tree that predicts whether a home was built before 1980.\nMachine Learning Pt. 2: The second unit in the sequence, linked from Google Drive.\nComparing Models: Three classifiers compared, then a regression model that predicts the exact year a home was built.\n\n\n\n\n Back to top",
     "crumbs": [
       "Machine Learning",
-      "Comparing Models"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project3.html#questions",
-    "href": "Machine_Learning/project3.html#questions",
-    "title": "Comparing Models",
-    "section": "",
-    "text": "Which of three classification algorithms best predicts whether a home was built before 1980, and which should I recommend to a client?\nDoes adding neighborhood data improve that model?\nCan a regression model predict the exact year a home was built?",
-    "crumbs": [
-      "Machine Learning",
-      "Comparing Models"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project3.html#q1-three-classifiers",
-    "href": "Machine_Learning/project3.html#q1-three-classifiers",
-    "title": "Comparing Models",
-    "section": "Q1: Three classifiers",
-    "text": "Q1: Three classifiers\nI fit a decision tree, a random forest, and a gradient boosting classifier on the same training data and compared their classification reports and feature importances.\n\n\n\nModel\nAccuracy\n\n\n\n\nDecision tree\n0.89\n\n\nRandom forest\n0.92\n\n\nGradient boosting\n0.89\n\n\n\nAll three models agreed on the strongest predictors: one-story architecture, an attached garage, and home quality. Gradient boosting ranked the number of bathrooms above living area. I recommended the random forest because it had the best accuracy, precision, and recall.",
-    "crumbs": [
-      "Machine Learning",
-      "Comparing Models"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project3.html#q2-adding-neighborhood-data",
-    "href": "Machine_Learning/project3.html#q2-adding-neighborhood-data",
-    "title": "Comparing Models",
-    "section": "Q2: Adding neighborhood data",
-    "text": "Q2: Adding neighborhood data\nI joined the neighborhood dataset to the housing data on the parcel number and re-ran the random forest. The top features did not change, and neighborhood itself was not an important feature. Even so, accuracy rose to 0.97, so I recommended this version of the model.",
-    "crumbs": [
-      "Machine Learning",
-      "Comparing Models"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project3.html#q3-predicting-the-year-built",
-    "href": "Machine_Learning/project3.html#q3-predicting-the-year-built",
-    "title": "Comparing Models",
-    "section": "Q3: Predicting the year built",
-    "text": "Q3: Predicting the year built\nThis is a regression problem, so I evaluated it with error measures instead of accuracy.\n\n\n\nModel\nR²\nRMSE\nMAE\n\n\n\n\nGradient boosting regressor\n0.759\n18.2 years\n12.8 years\n\n\nRandom forest regressor\n0.887\n12.5 years\n6.2 years\n\n\n\nThe residual plot for the first model showed it consistently underestimated the year for older homes and overestimated it for newer ones, so I called it a weak model. The random forest regressor cut the typical error roughly in half. It takes longer to run, but both finish in under a minute, so I recommended the random forest regressor.\nFull report on Google Drive",
-    "crumbs": [
-      "Machine Learning",
-      "Comparing Models"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project1.html",
-    "href": "Machine_Learning/project1.html",
-    "title": "Classifying Home Age",
-    "section": "",
-    "text": "Can a model tell whether a home was built before 1980, using only features of the home such as architectural style, garage type, quality, and living area?",
-    "crumbs": [
-      "Machine Learning",
-      "Classifying Home Age"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project1.html#question",
-    "href": "Machine_Learning/project1.html#question",
-    "title": "Classifying Home Age",
-    "section": "",
-    "text": "Can a model tell whether a home was built before 1980, using only features of the home such as architectural style, garage type, quality, and living area?",
-    "crumbs": [
-      "Machine Learning",
-      "Classifying Home Age"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project1.html#approach",
-    "href": "Machine_Learning/project1.html#approach",
-    "title": "Classifying Home Age",
-    "section": "Approach",
-    "text": "Approach\nI used a public housing dataset from the BYU-Idaho data science program (dwellings_ml). I dropped the identifier and year columns so the model could not see the answer directly, split the data 80/20 into training and test sets, and fit a decision tree classifier in scikit-learn.\nx_features = df.drop(columns=[\"parcel\", \"abstrprd\", \"yrbuilt\", \"before1980\"])\ny_targets = df.before1980\n\ntrain_data, test_data, train_targets, test_targets = train_test_split(\n    x_features, y_targets, test_size=0.2\n)\n\nclassifier = DecisionTreeClassifier()\nclassifier.fit(train_data, train_targets)",
-    "crumbs": [
-      "Machine Learning",
-      "Classifying Home Age"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project1.html#results",
-    "href": "Machine_Learning/project1.html#results",
-    "title": "Classifying Home Age",
-    "section": "Results",
-    "text": "Results\nThe model correctly classified about 90% of the homes in the test set. I reported accuracy, precision, and recall, and explained each one in plain language:\n\nAccuracy: of all test homes, the share the model labeled correctly.\nPrecision: of the homes the model labeled as built before (or after) 1980, the share that really were.\nRecall: of the homes that really were built before (or after) 1980, the share the model found.",
-    "crumbs": [
-      "Machine Learning",
-      "Classifying Home Age"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project1.html#what-drives-the-predictions",
-    "href": "Machine_Learning/project1.html#what-drives-the-predictions",
-    "title": "Classifying Home Age",
-    "section": "What drives the predictions",
-    "text": "What drives the predictions\nA one-story architectural style was the most important feature (importance 0.249), followed by an attached garage (0.126). Home quality and living area came next. Every other feature had an importance below 0.05.\nI charted the importances with lets-plot to show the client which characteristics matter most.\n\nFull report on Google Drive",
-    "crumbs": [
-      "Machine Learning",
-      "Classifying Home Age"
-    ]
-  },
-  {
-    "objectID": "coursework.html",
-    "href": "coursework.html",
-    "title": "Past Coursework",
-    "section": "",
-    "text": "Programming and database projects from earlier classes.\n\nPython: Confidence vs. Retail Sales: A command-line program that measures how consumer confidence moves with retail sales.\nSQL: Music Library Database: A relational database with constraints, transactions, queries, and views.\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Past Coursework",
       "Overview"
     ]
   },
   {
-    "objectID": "Coursework/project1.html",
-    "href": "Coursework/project1.html",
-    "title": "Python: Confidence vs. Retail Sales",
+    "objectID": "Machine_Learning/project2.html",
+    "href": "Machine_Learning/project2.html",
+    "title": "Machine Learning Pt. 2",
     "section": "",
-    "text": "A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.\nData: a monthly consumer confidence index and monthly retail sales, with sources from FRED.",
+    "text": "This is the middle project in my machine learning sequence. It sits between the single decision tree in Classifying Home Age and the model comparison in Comparing Models.\nRead the full report on Google Drive\n\n\n\n\n Back to top",
     "crumbs": [
-      "Past Coursework",
-      "Python: Confidence vs. Retail Sales"
+      "Machine Learning",
+      "Machine Learning Pt. 2"
     ]
   },
   {
-    "objectID": "Coursework/project1.html#overview",
-    "href": "Coursework/project1.html#overview",
-    "title": "Python: Confidence vs. Retail Sales",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mary Palmer",
     "section": "",
-    "text": "A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.\nData: a monthly consumer confidence index and monthly retail sales, with sources from FRED.",
-    "crumbs": [
-      "Past Coursework",
-      "Python: Confidence vs. Retail Sales"
-    ]
+    "text": "I am an Economics major with a Data Science minor at Brigham Young University-Idaho (expected April 2028), with a 4.00 GPA and a full-ride merit scholarship. I also serve as president of the Economics Society and work as an Associate Research Fellow, where I help design randomized experiments that estimate causal effects on student performance.\nMy work centers on turning messy data into a clear answer: cleaning and joining datasets, choosing a defensible statistical model, and presenting the result so a non-technical reader can act on it.\nTools: Python, R, SQL, Power BI, Excel\nMethods: statistical modeling, hypothesis testing, machine learning, data visualization and storytelling"
   },
   {
-    "objectID": "Coursework/project1.html#what-the-program-does",
-    "href": "Coursework/project1.html#what-the-program-does",
-    "title": "Python: Confidence vs. Retail Sales",
-    "section": "What the program does",
-    "text": "What the program does\n\nReads the two CSV files into dictionaries keyed by date and merges them into one compound dictionary.\nValidates the user’s input: the dates must parse as “Month, Year”, differ from each other, fall in order, and exist in the data.\nBuilds the date range and calculates each series’ percent change between the two dates.\nCalculates the mean, standard deviation, and the Pearson correlation coefficient with NumPy.\nTranslates the correlation into a plain-English conclusion, from “almost no correlation” to “very strong correlation.”\nPrints a formatted summary table with tabulate.\n\ndef write_conclusion(correl_coef):\n    abs_correl_coef = abs(correl_coef)\n    if abs_correl_coef &lt;= 0.16:\n        conclusion = \"There is almost no correlation between retail sales and CCI in the given time period.\"\n    elif abs_correl_coef &lt;= 0.29:\n        conclusion = \"There is a very weak correlation between retail sales and CCI in the given time period.\"\n    # ... thresholds continue up to \"very strong\" above 0.89",
-    "crumbs": [
-      "Past Coursework",
-      "Python: Confidence vs. Retail Sales"
-    ]
-  },
-  {
-    "objectID": "Coursework/project1.html#skills-practiced",
-    "href": "Coursework/project1.html#skills-practiced",
-    "title": "Python: Confidence vs. Retail Sales",
-    "section": "Skills practiced",
-    "text": "Skills practiced\nWriting small, single-purpose functions with docstrings, reading files with the csv module, working with datetime, handling bad input, and testing the program with a companion test_ script.\nOpen the full analysis report on Google Drive",
-    "crumbs": [
-      "Past Coursework",
-      "Python: Confidence vs. Retail Sales"
-    ]
+    "objectID": "index.html#what-is-on-this-site",
+    "href": "index.html#what-is-on-this-site",
+    "title": "Mary Palmer",
+    "section": "What is on this site",
+    "text": "What is on this site\n\n\n\nSection\nWhat you will find\n\n\n\n\nMachine Learning\nClassification and regression models that predict home age from housing data\n\n\nStatistics\nAn ANOVA consulting report, a multiple linear regression, and a group econometrics paper\n\n\nData Storytelling\nPower BI dashboards and a mutual fund recommendation for a retirement-focused client\n\n\nSpreadsheet Analytics\nA mortgage amortization model built in Excel\n\n\nPast Coursework\nA Python analysis program and a SQL database project\n\n\n\nYou can read my full resume or connect with me on LinkedIn."
   },
   {
     "objectID": "Coursework/project2.html",
@@ -390,40 +261,218 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mary Palmer",
+    "objectID": "Coursework/project1.html",
+    "href": "Coursework/project1.html",
+    "title": "Python: Confidence vs. Retail Sales",
     "section": "",
-    "text": "I am an Economics major with a Data Science minor at Brigham Young University-Idaho (expected April 2028), with a 4.00 GPA and a full-ride merit scholarship. I also serve as president of the Economics Society and work as an Associate Research Fellow, where I help design randomized experiments that estimate causal effects on student performance.\nMy work centers on turning messy data into a clear answer: cleaning and joining datasets, choosing a defensible statistical model, and presenting the result so a non-technical reader can act on it.\nTools: Python, R, SQL, Power BI, Excel\nMethods: statistical modeling, hypothesis testing, machine learning, data visualization and storytelling"
-  },
-  {
-    "objectID": "index.html#what-is-on-this-site",
-    "href": "index.html#what-is-on-this-site",
-    "title": "Mary Palmer",
-    "section": "What is on this site",
-    "text": "What is on this site\n\n\n\nSection\nWhat you will find\n\n\n\n\nMachine Learning\nClassification and regression models that predict home age from housing data\n\n\nStatistics\nAn ANOVA consulting report, a multiple linear regression, and a group econometrics paper\n\n\nData Storytelling\nPower BI dashboards and a mutual fund recommendation for a retirement-focused client\n\n\nSpreadsheet Analytics\nA mortgage amortization model built in Excel\n\n\nPast Coursework\nA Python analysis program and a SQL database project\n\n\n\nYou can read my full resume or connect with me on LinkedIn."
-  },
-  {
-    "objectID": "Machine_Learning/project2.html",
-    "href": "Machine_Learning/project2.html",
-    "title": "Machine Learning Pt. 2",
-    "section": "",
-    "text": "This is the middle project in my machine learning sequence. It sits between the single decision tree in Classifying Home Age and the model comparison in Comparing Models.\nRead the full report on Google Drive\n\n\n\n\n Back to top",
+    "text": "A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.\nData: a monthly consumer confidence index and monthly retail sales, with sources from FRED.",
     "crumbs": [
-      "Machine Learning",
-      "Machine Learning Pt. 2"
+      "Past Coursework",
+      "Python: Confidence vs. Retail Sales"
     ]
   },
   {
-    "objectID": "ml.html",
-    "href": "ml.html",
-    "title": "Machine Learning",
+    "objectID": "Coursework/project1.html#overview",
+    "href": "Coursework/project1.html#overview",
+    "title": "Python: Confidence vs. Retail Sales",
     "section": "",
-    "text": "Models that predict the age of a home from public housing data. Each project builds on the one before it.\n\nClassifying Home Age: A decision tree that predicts whether a home was built before 1980.\nMachine Learning Pt. 2: The second unit in the sequence, linked from Google Drive.\nComparing Models: Three classifiers compared, then a regression model that predicts the exact year a home was built.\n\n\n\n\n Back to top",
+    "text": "A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.\nData: a monthly consumer confidence index and monthly retail sales, with sources from FRED.",
     "crumbs": [
-      "Machine Learning",
+      "Past Coursework",
+      "Python: Confidence vs. Retail Sales"
+    ]
+  },
+  {
+    "objectID": "Coursework/project1.html#what-the-program-does",
+    "href": "Coursework/project1.html#what-the-program-does",
+    "title": "Python: Confidence vs. Retail Sales",
+    "section": "What the program does",
+    "text": "What the program does\n\nReads the two CSV files into dictionaries keyed by date and merges them into one compound dictionary.\nValidates the user’s input: the dates must parse as “Month, Year”, differ from each other, fall in order, and exist in the data.\nBuilds the date range and calculates each series’ percent change between the two dates.\nCalculates the mean, standard deviation, and the Pearson correlation coefficient with NumPy.\nTranslates the correlation into a plain-English conclusion, from “almost no correlation” to “very strong correlation.”\nPrints a formatted summary table with tabulate.\n\ndef write_conclusion(correl_coef):\n    abs_correl_coef = abs(correl_coef)\n    if abs_correl_coef &lt;= 0.16:\n        conclusion = \"There is almost no correlation between retail sales and CCI in the given time period.\"\n    elif abs_correl_coef &lt;= 0.29:\n        conclusion = \"There is a very weak correlation between retail sales and CCI in the given time period.\"\n    # ... thresholds continue up to \"very strong\" above 0.89",
+    "crumbs": [
+      "Past Coursework",
+      "Python: Confidence vs. Retail Sales"
+    ]
+  },
+  {
+    "objectID": "Coursework/project1.html#skills-practiced",
+    "href": "Coursework/project1.html#skills-practiced",
+    "title": "Python: Confidence vs. Retail Sales",
+    "section": "Skills practiced",
+    "text": "Skills practiced\nWriting small, single-purpose functions with docstrings, reading files with the csv module, working with datetime, handling bad input, and testing the program with a companion test_ script.\nOpen the full analysis report on Google Drive",
+    "crumbs": [
+      "Past Coursework",
+      "Python: Confidence vs. Retail Sales"
+    ]
+  },
+  {
+    "objectID": "coursework.html",
+    "href": "coursework.html",
+    "title": "Past Coursework",
+    "section": "",
+    "text": "Programming and database projects from earlier classes.\n\nPython: Confidence vs. Retail Sales: A command-line program that measures how consumer confidence moves with retail sales.\nSQL: Music Library Database: A relational database with constraints, transactions, queries, and views.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Past Coursework",
       "Overview"
     ]
+  },
+  {
+    "objectID": "Machine_Learning/project1.html",
+    "href": "Machine_Learning/project1.html",
+    "title": "Classifying Home Age",
+    "section": "",
+    "text": "Can a model tell whether a home was built before 1980, using only features of the home such as architectural style, garage type, quality, and living area?",
+    "crumbs": [
+      "Machine Learning",
+      "Classifying Home Age"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project1.html#question",
+    "href": "Machine_Learning/project1.html#question",
+    "title": "Classifying Home Age",
+    "section": "",
+    "text": "Can a model tell whether a home was built before 1980, using only features of the home such as architectural style, garage type, quality, and living area?",
+    "crumbs": [
+      "Machine Learning",
+      "Classifying Home Age"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project1.html#approach",
+    "href": "Machine_Learning/project1.html#approach",
+    "title": "Classifying Home Age",
+    "section": "Approach",
+    "text": "Approach\nI used a public housing dataset from the BYU-Idaho data science program (dwellings_ml). I dropped the identifier and year columns so the model could not see the answer directly, split the data 80/20 into training and test sets, and fit a decision tree classifier in scikit-learn.\nx_features = df.drop(columns=[\"parcel\", \"abstrprd\", \"yrbuilt\", \"before1980\"])\ny_targets = df.before1980\n\ntrain_data, test_data, train_targets, test_targets = train_test_split(\n    x_features, y_targets, test_size=0.2\n)\n\nclassifier = DecisionTreeClassifier()\nclassifier.fit(train_data, train_targets)",
+    "crumbs": [
+      "Machine Learning",
+      "Classifying Home Age"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project1.html#results",
+    "href": "Machine_Learning/project1.html#results",
+    "title": "Classifying Home Age",
+    "section": "Results",
+    "text": "Results\nThe model correctly classified about 90% of the homes in the test set. I reported accuracy, precision, and recall, and explained each one in plain language:\n\nAccuracy: of all test homes, the share the model labeled correctly.\nPrecision: of the homes the model labeled as built before (or after) 1980, the share that really were.\nRecall: of the homes that really were built before (or after) 1980, the share the model found.",
+    "crumbs": [
+      "Machine Learning",
+      "Classifying Home Age"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project1.html#what-drives-the-predictions",
+    "href": "Machine_Learning/project1.html#what-drives-the-predictions",
+    "title": "Classifying Home Age",
+    "section": "What drives the predictions",
+    "text": "What drives the predictions\nA one-story architectural style was the most important feature (importance 0.249), followed by an attached garage (0.126). Home quality and living area came next. Every other feature had an importance below 0.05.\nI charted the importances with lets-plot to show the client which characteristics matter most.\n\nFull report on Google Drive",
+    "crumbs": [
+      "Machine Learning",
+      "Classifying Home Age"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html",
+    "href": "Machine_Learning/project3.html",
+    "title": "Comparing Models",
+    "section": "",
+    "text": "Which of three classification algorithms best predicts whether a home was built before 1980, and which should I recommend to a client?\nDoes adding neighborhood data improve that model?\nCan a regression model predict the exact year a home was built?",
+    "crumbs": [
+      "Machine Learning",
+      "Comparing Models"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html#questions",
+    "href": "Machine_Learning/project3.html#questions",
+    "title": "Comparing Models",
+    "section": "",
+    "text": "Which of three classification algorithms best predicts whether a home was built before 1980, and which should I recommend to a client?\nDoes adding neighborhood data improve that model?\nCan a regression model predict the exact year a home was built?",
+    "crumbs": [
+      "Machine Learning",
+      "Comparing Models"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html#q1-three-classifiers",
+    "href": "Machine_Learning/project3.html#q1-three-classifiers",
+    "title": "Comparing Models",
+    "section": "Q1: Three classifiers",
+    "text": "Q1: Three classifiers\nI fit a decision tree, a random forest, and a gradient boosting classifier on the same training data and compared their classification reports and feature importances.\n\n\n\nModel\nAccuracy\n\n\n\n\nDecision tree\n0.89\n\n\nRandom forest\n0.92\n\n\nGradient boosting\n0.89\n\n\n\nAll three models agreed on the strongest predictors: one-story architecture, an attached garage, and home quality. Gradient boosting ranked the number of bathrooms above living area. I recommended the random forest because it had the best accuracy, precision, and recall.",
+    "crumbs": [
+      "Machine Learning",
+      "Comparing Models"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html#q2-adding-neighborhood-data",
+    "href": "Machine_Learning/project3.html#q2-adding-neighborhood-data",
+    "title": "Comparing Models",
+    "section": "Q2: Adding neighborhood data",
+    "text": "Q2: Adding neighborhood data\nI joined the neighborhood dataset to the housing data on the parcel number and re-ran the random forest. The top features did not change, and neighborhood itself was not an important feature. Even so, accuracy rose to 0.97, so I recommended this version of the model.",
+    "crumbs": [
+      "Machine Learning",
+      "Comparing Models"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html#q3-predicting-the-year-built",
+    "href": "Machine_Learning/project3.html#q3-predicting-the-year-built",
+    "title": "Comparing Models",
+    "section": "Q3: Predicting the year built",
+    "text": "Q3: Predicting the year built\nThis is a regression problem, so I evaluated it with error measures instead of accuracy.\n\n\n\nModel\nR²\nRMSE\nMAE\n\n\n\n\nGradient boosting regressor\n0.759\n18.2 years\n12.8 years\n\n\nRandom forest regressor\n0.887\n12.5 years\n6.2 years\n\n\n\nThe residual plot for the first model showed it consistently underestimated the year for older homes and overestimated it for newer ones, so I called it a weak model. The random forest regressor cut the typical error roughly in half. It takes longer to run, but both finish in under a minute, so I recommended the random forest regressor.\nFull report on Google Drive",
+    "crumbs": [
+      "Machine Learning",
+      "Comparing Models"
+    ]
+  },
+  {
+    "objectID": "notebooks/Exploration_01_Polars.html",
+    "href": "notebooks/Exploration_01_Polars.html",
+    "title": "Data Exploration 01",
+    "section": "",
+    "text": "A consumer watchdog group wants to see if Netflix has more movies for adults or children.\nUsing a dataset containing metadata for all of the movies Netflix had available on their platform in 2019, we’ll use the MPAA movie rating system to determine if they are correct."
+  },
+  {
+    "objectID": "notebooks/Exploration_01_Polars.html#mpaa-movie-ratings",
+    "href": "notebooks/Exploration_01_Polars.html#mpaa-movie-ratings",
+    "title": "Data Exploration 01",
+    "section": "MPAA Movie Ratings:",
+    "text": "MPAA Movie Ratings:\n\nG: All ages admitted.\nPG: Some material may not be suitable for children.\nPG-13: Some material may be inappropriate for children under 13.\nR: Under 17 requires accompanying parent or adult guardian\nNC-17: No One 17 and Under Admitted\n\nMost people would consider G and PG as ratings suitable for children. However, not everyone would agree that a PG-13 movie is necssarily a children’s movie. It is up to you to decide how to handle this."
+  },
+  {
+    "objectID": "notebooks/Exploration_01_Polars.html#part-1-import-polars",
+    "href": "notebooks/Exploration_01_Polars.html#part-1-import-polars",
+    "title": "Data Exploration 01",
+    "section": "Part 1: Import Polars",
+    "text": "Part 1: Import Polars\nThe polars library is a python library used for data analysis and manipulation. It will provide the core functionality for most of what you do in the data exploration and preprocessing stages of most machine learning projects.\nPlease see this Getting Started Guide for information on the conventional way to import Polars into your project, as well as other helpful tips for common Polars tasks.\n\n# Part 1: Enter the code below to import Polars according to the\n# conventional method.\nimport polars as pl"
+  },
+  {
+    "objectID": "notebooks/Exploration_01_Polars.html#part-2-load-the-data",
+    "href": "notebooks/Exploration_01_Polars.html#part-2-load-the-data",
+    "title": "Data Exploration 01",
+    "section": "Part 2: Load the data",
+    "text": "Part 2: Load the data\nThe dataset for this exploration is stored at the following url:\nhttps://raw.githubusercontent.com/byui-cse/cse450-course/master/data/netflix_titles.csv\nThere are lots of ways to load data into your workspace. The easiest way in this case is to ask Polars to do it for you.\n\nInitial Data Analysis\nOnce you’ve loaded the data, it’s a good idea to poke around a little bit to find out what you’re dealing with.\nSome questions you might ask include:\n\nWhat does the data look like?\nWhat kind of data is in each column?\nDo any of the columns have missing values?\n\n\n# Part 2: Load the dataset into a Polars dataframe.\ndf = pl.read_csv(\"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/netflix_titles.csv\")\n\n\n# Then, explore the data by seeing what the first few rows look like.\ndf.head()\n\n\nshape: (5, 12)\n\n\n\nshow_id\ntype\ntitle\ndirector\ncast\ncountry\ndate_added\nrelease_year\nrating\nduration\nlisted_in\ndescription\n\n\ni64\nstr\nstr\nstr\nstr\nstr\nstr\ni64\nstr\nstr\nstr\nstr\n\n\n\n\n81145628\n\"Movie\"\n\"Norm of the North: King Sized …\n\"Richard Finn, Tim Maltby\"\n\"Alan Marriott, Andrew Toth, Br…\n\"United States, India, South Ko…\n\"September 9, 2019\"\n2019\n\"TV-PG\"\n\"90 min\"\n\"Children & Family Movies, Come…\n\"Before planning an awesome wed…\n\n\n80117401\n\"Movie\"\n\"Jandino: Whatever it Takes\"\nnull\n\"Jandino Asporaat\"\n\"United Kingdom\"\n\"September 9, 2016\"\n2016\n\"TV-MA\"\n\"94 min\"\n\"Stand-Up Comedy\"\n\"Jandino Asporaat riffs on the …\n\n\n70234439\n\"TV Show\"\n\"Transformers Prime\"\nnull\n\"Peter Cullen, Sumalee Montano,…\n\"United States\"\n\"September 8, 2018\"\n2013\n\"TV-Y7-FV\"\n\"1 Season\"\n\"Kids' TV\"\n\"With the help of three human a…\n\n\n80058654\n\"TV Show\"\n\"Transformers: Robots in Disgui…\nnull\n\"Will Friedle, Darren Criss, Co…\n\"United States\"\n\"September 8, 2018\"\n2016\n\"TV-Y7\"\n\"1 Season\"\n\"Kids' TV\"\n\"When a prison ship crash unlea…\n\n\n80125979\n\"Movie\"\n\"#realityhigh\"\n\"Fernando Lebrija\"\n\"Nesta Cooper, Kate Walsh, John…\n\"United States\"\n\"September 8, 2017\"\n2017\n\"TV-14\"\n\"99 min\"\n\"Comedies\"\n\"When nerdy high schooler Dani …\n\n\n\n\n\n\n\n# Next, display a technical summary of the data to determine the data types of each column, and which columns have missing data.\ndf.describe()\n\n\nshape: (9, 13)\n\n\n\nstatistic\nshow_id\ntype\ntitle\ndirector\ncast\ncountry\ndate_added\nrelease_year\nrating\nduration\nlisted_in\ndescription\n\n\nstr\nf64\nstr\nstr\nstr\nstr\nstr\nstr\nf64\nstr\nstr\nstr\nstr\n\n\n\n\n\"count\"\n6234.0\n\"6234\"\n\"6234\"\n\"4265\"\n\"5664\"\n\"5758\"\n\"6223\"\n6234.0\n\"6224\"\n\"6234\"\n\"6234\"\n\"6234\"\n\n\n\"null_count\"\n0.0\n\"0\"\n\"0\"\n\"1969\"\n\"570\"\n\"476\"\n\"11\"\n0.0\n\"10\"\n\"0\"\n\"0\"\n\"0\"\n\n\n\"mean\"\n7.6704e7\nnull\nnull\nnull\nnull\nnull\nnull\n2013.35932\nnull\nnull\nnull\nnull\n\n\n\"std\"\n1.0943e7\nnull\nnull\nnull\nnull\nnull\nnull\n8.81162\nnull\nnull\nnull\nnull\n\n\n\"min\"\n247747.0\n\"Movie\"\n\"#Roxy\"\n\"A. L. Vijay\"\n\"4Minute, B1A4, BtoB, ELSIE, EX…\n\"Argentina\"\n\" April 1, 2014\"\n1925.0\n\"G\"\n\"1 Season\"\n\"Action & Adventure\"\n\"\"Brooklyn Nine-Nine\" star Chel…\n\n\n\"25%\"\n8.0035689e7\nnull\nnull\nnull\nnull\nnull\nnull\n2013.0\nnull\nnull\nnull\nnull\n\n\n\"50%\"\n8.0163368e7\nnull\nnull\nnull\nnull\nnull\nnull\n2016.0\nnull\nnull\nnull\nnull\n\n\n\"75%\"\n8.02449e7\nnull\nnull\nnull\nnull\nnull\nnull\n2018.0\nnull\nnull\nnull\nnull\n\n\n\"max\"\n8.1235729e7\n\"TV Show\"\n\"최강전사 미니특공대 : 영웅의 탄생\"\n\"Şenol Sönmez\"\n\"Şükrü Özyıldız, Aslı Enver, Şe…\n\"West Germany\"\n\"September 9, 2019\"\n2020.0\n\"UR\"\n\"99 min\"\n\"Thrillers\"\n\"Zixin is about to marry Qihong…"
+  },
+  {
+    "objectID": "notebooks/Exploration_01_Polars.html#part-3-filter-the-data",
+    "href": "notebooks/Exploration_01_Polars.html#part-3-filter-the-data",
+    "title": "Data Exploration 01",
+    "section": "Part 3: Filter the Data",
+    "text": "Part 3: Filter the Data\nSince we’re just interested in movies, we’ll need to filter out anything that isn’t a movie for our analysis. The type feature contains this information.\nOnce we have the subset, we should see how many rows it contains. There are a variety of ways to get the length of a data frame.\n\n# Use polars's filtering abilitites to select the subset of data\n# that represents movies, then calculate how many rows are in the filtered data.\nmovies = df.filter(\n    pl.col(\"type\")==\"Movie\"\n)\nmovies\n\n\nshape: (4_265, 12)\n\n\n\nshow_id\ntype\ntitle\ndirector\ncast\ncountry\ndate_added\nrelease_year\nrating\nduration\nlisted_in\ndescription\n\n\ni64\nstr\nstr\nstr\nstr\nstr\nstr\ni64\nstr\nstr\nstr\nstr\n\n\n\n\n81145628\n\"Movie\"\n\"Norm of the North: King Sized …\n\"Richard Finn, Tim Maltby\"\n\"Alan Marriott, Andrew Toth, Br…\n\"United States, India, South Ko…\n\"September 9, 2019\"\n2019\n\"TV-PG\"\n\"90 min\"\n\"Children & Family Movies, Come…\n\"Before planning an awesome wed…\n\n\n80117401\n\"Movie\"\n\"Jandino: Whatever it Takes\"\nnull\n\"Jandino Asporaat\"\n\"United Kingdom\"\n\"September 9, 2016\"\n2016\n\"TV-MA\"\n\"94 min\"\n\"Stand-Up Comedy\"\n\"Jandino Asporaat riffs on the …\n\n\n80125979\n\"Movie\"\n\"#realityhigh\"\n\"Fernando Lebrija\"\n\"Nesta Cooper, Kate Walsh, John…\n\"United States\"\n\"September 8, 2017\"\n2017\n\"TV-14\"\n\"99 min\"\n\"Comedies\"\n\"When nerdy high schooler Dani …\n\n\n70304989\n\"Movie\"\n\"Automata\"\n\"Gabe Ibáñez\"\n\"Antonio Banderas, Dylan McDerm…\n\"Bulgaria, United States, Spain…\n\"September 8, 2017\"\n2014\n\"R\"\n\"110 min\"\n\"International Movies, Sci-Fi &…\n\"In a dystopian future, an insu…\n\n\n80164077\n\"Movie\"\n\"Fabrizio Copano: Solo pienso e…\n\"Rodrigo Toro, Francisco Schult…\n\"Fabrizio Copano\"\n\"Chile\"\n\"September 8, 2017\"\n2017\n\"TV-MA\"\n\"60 min\"\n\"Stand-Up Comedy\"\n\"Fabrizio Copano takes audience…\n\n\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n\n\n80085438\n\"Movie\"\n\"Frank and Cindy\"\n\"G.J. Echternkamp\"\nnull\n\"United States\"\n\"April 1, 2016\"\n2007\n\"TV-MA\"\n\"70 min\"\n\"Documentaries\"\n\"Frank was a rising pop star wh…\n\n\n80085439\n\"Movie\"\n\"Frank and Cindy\"\n\"G.J. Echternkamp\"\n\"Rene Russo, Oliver Platt, John…\n\"United States\"\n\"April 1, 2016\"\n2015\n\"R\"\n\"102 min\"\n\"Comedies, Dramas, Independent …\n\"A student filmmaker vengefully…\n\n\n80011846\n\"Movie\"\n\"Iverson\"\n\"Zatella Beatty\"\n\"Allen Iverson\"\n\"United States\"\n\"April 1, 2016\"\n2014\n\"NR\"\n\"88 min\"\n\"Documentaries, Sports Movies\"\n\"This unfiltered documentary fo…\n\n\n80064521\n\"Movie\"\n\"Jeremy Scott: The People's Des…\n\"Vlad Yudin\"\n\"Jeremy Scott\"\n\"United States\"\n\"April 1, 2016\"\n2015\n\"PG-13\"\n\"109 min\"\n\"Documentaries\"\n\"The journey of fashion designe…\n\n\n80116008\n\"Movie\"\n\"Little Baby Bum: Nursery Rhyme…\nnull\nnull\nnull\nnull\n2016\nnull\n\"60 min\"\n\"Movies\"\n\"Nursery rhymes and original mu…\n\n\n\n\n\n\n\nMPAA Ratings\nNow that we have only movies, let’s get a quick count of the values being used in the rating feature.\n\n# Determine the number of records for each value of the \"rating\" feature.\n# Remember to count the values in your subset only, not in the original dataframe.\nnpaa_movies_count = movies.group_by(\n    pl.col(\"rating\")\n).agg(\n    pl.len().alias(\"rating_count\")\n)\nnpaa_movies_count\n\n# alternative way:\n# npaa_movies_count = movies[\"rating\"].value_counts()\n\n\n\nshape: (15, 2)\n\n\n\nrating\nrating_count\n\n\nstr\nu32\n\n\n\n\n\"TV-14\"\n1038\n\n\n\"R\"\n506\n\n\n\"TV-Y7\"\n69\n\n\n\"TV-Y\"\n41\n\n\n\"NR\"\n202\n\n\n…\n…\n\n\n\"TV-PG\"\n432\n\n\n\"TV-MA\"\n1348\n\n\n\"PG-13\"\n286\n\n\n\"G\"\n36\n\n\n\"TV-Y7-FV\"\n27\n\n\n\n\n\n\n\n\nMore Filtering\nThere are apparently some “made for TV” movies in the list that don’t fit the MPAA rating scheme.\nLet’s filter some more to just see movies rated with the standard MPAA ratings of G, PG, PG-13, R, and NC-17.\n\n# Filter the list of movies to select a new subset containing only movies with\n# a standard MPAA rating. Calculate how many rows are in this new set, and\n# then see which ratings appear most often.\nmovie_ratings = [\"G\", \"PG\", \"PG-13\", \"R\", \"NC-17\"]\nnpaa_movies = movies.filter(pl.col(\"rating\").is_in(movie_ratings))"
+  },
+  {
+    "objectID": "notebooks/Exploration_01_Polars.html#part-4-visualization",
+    "href": "notebooks/Exploration_01_Polars.html#part-4-visualization",
+    "title": "Data Exploration 01",
+    "section": "Part 4: Visualization",
+    "text": "Part 4: Visualization\nNow that we have explored and preprocessed our data, let’s create a visualization to summarize our findings.\n\nExploration vs Presentation\nBroadly speaking, there are two types of visualizations: * Barebones visualizations you might use to get a quick, visual understanding of the data while you’re trying to decide how it all fits together. * Presentation-quality visualizations that you would include in a report or presentation for management or other stakeholders.\n\n\nVisualization Tools\nThere are many different visualization tools availble. In the sections below, we’ll explore the three most common. Each of these libraries has strengths and weaknesses.\nIt is probably a good idea for you to become familiar with each one, and then become proficient at whichever one you like the best.\n\n\nLet’s Plot\nThe Let’s Plot visualization library uses a grammer of graphics to build up a chart piece by piece.\nAssume we have a polars dataframe called employees, with three columns: name, job, salary.\n# Make a box plot style categorical plot showing the distribution of salaries for each job:\nggplot(data=employees, aes(x='job', y='salary')) + geom_box()\n\n# Make a box plot style categorical plot, and customize the results\n(\n    ggplot(data=employees, aes(x='job', y='salary'))\n    + geom_boxplot()\n    + labs(\n        title='Salaries by Job Title'\n    )\n)\nDependencies need to be installed in colab to use Let’s Plot. Use %pip to install it. %pip install lets-plot will install the library, and skip it if it’s already installed.\n\n# Install the lets-plot module into this server\n%pip install lets-plot\n\nRequirement already satisfied: lets-plot in /usr/local/lib/python3.13/dist-packages (4.11.0)\nRequirement already satisfied: pypng in /usr/local/lib/python3.13/dist-packages (from lets-plot) (0.20220715.0)\nRequirement already satisfied: palettable in /usr/local/lib/python3.13/dist-packages (from lets-plot) (3.3.3)\nRequirement already satisfied: pillow in /usr/local/lib/python3.13/dist-packages (from lets-plot) (11.3.0)\n\n\nLike with Polars, there is a conventional way to import Let’s Plot into your projects.\n\n# Import the Let's Plot library the conventional way.\nfrom lets_plot import *\n\nLet’s create a barchart showing the count of each movie rating by using Let’s Plot’s capabilities.\nIn this example, we see the x axis being set to a feature called species, and the y axis is a count of the number of rows for that species.\nIn our case, we want the x-axis to be set to rating.\n\nggplot(npaa_movies, aes(x = \"rating\")) + geom_bar()\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nAltair\nThe Altair visualization library provides a large variety of very easy to use statistical charting tools.\nAltair uses a declarative language to build up charts piece by piece.\nAssume we have a pandas dataframe called employees, with three columns: name, job, salary.\n# Make a box plot style categorical plot showing the distribution of salaries for each job:\nalt.Chart(employees).mark_boxplot().encode(\n    x='job',\n    y='salary'\n)\n\n# Make a box plot style categorical plot, and customize the results\nalt.Chart(employees).mark_boxplot().encode(\n    alt.X('job', title='Job title'),\n    alt.Y('salary', title='Annual salary in thousands of $USD')\n).properties(\n  title='Salaries by Job Title'\n)\nLike with Polars, there is a conventional way to import Altair into your projects.\n\n# Import the Altair library the conventional way.\nimport altair as alt\n\nLet’s create a barchart showing the count of each movie rating by using Altair’s aggregation capabilities.\nIn this example, we see the x axis being set to a feature called a, and the y axis set to the average() of a feature called b.\nIn our case, we want the x axis to be set to rating and the y axis to be the count() of rating.\n\n# Use Altair to create a bar chart comparing the count of each movie rating\nalt.Chart(npaa_movies).mark_bar().encode(\n    x = \"rating\",\n    y = \"count(rating)\")\n\n\n\n\n\n\n\n\n\nSeaborn\nWhile Altair uses a “declarative” syntax for building charts piece by piece, the Seaborn library provides a large variety of pre-made charts for common statistical needs.\nThese charts are divided into different categories. Each category has a high-level interface you can use for simplicity, and then a specific function for each chart that you can use if you need more control over how the chart looks.\nSeaborn uses matplotlib for its drawing, and the chart-specific functions each return a matplitlib axes object if you need additional customization.\nFor example, there are several different types of categorical plots in seaborn: bar plots, box plots, point plots, count plots, swarm plots, etc…\nEach of these plots can be accessed using the catplot function.\nAssume we have a pandas dataframe called employees, with three columns: name, job, salary.\n# Make a box plot style categorical plot showing the distribution of salaries for each job:\nsns.catplot(data=employees, x='job', y='salary', kind='box')\n\n# Make a swarm plot style categorical plot\nsns.catplot(data=employees, x='job', y='salary', kind='swarm')\nAlternatively, you can use the plot specific functions to give yourself more control over the output by using matplotlib functions:\n# Make a box plot style categorical plot, and customize the results\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(12, 9))\nax = sns.boxplot(data=employees, x='job', y='salary')\nax.set_title(\"Salaries by Job Title\")\nax.set_ylabel(\"Annual salary in thousands of $USD\")\nax.set_xlabel(\"Job title\")\nLike with Polars, there is a conventional way to import Seaborn into your projects.\nOptionally, you may wish to set some default chart aesthetics by setting the chart style.\n\n# Import the seaborn library the conventional way. Then optionally configure\n# the default chart style.\nimport seaborn as sns\nsns.set_theme(style=\"white\", palette=None)\n\nSince the rating column uses categorical data, we need to use Seaborn’s categorical visualizations.\nIn particular, we want a “count plot” that will display a count of movie ratings.\n\n# Use seaborn to create a count plot comparing the count of each movie rating\nsns.catplot(data = npaa_movies, x = \"rating\", kind = \"count\")"
+  },
+  {
+    "objectID": "notebooks/Exploration_01_Polars.html#above-and-beyond",
+    "href": "notebooks/Exploration_01_Polars.html#above-and-beyond",
+    "title": "Data Exploration 01",
+    "section": "🌟 Above and Beyond 🌟",
+    "text": "🌟 Above and Beyond 🌟\nAfter reviewing your findings, the watchdog group would like some additional questions answered:\n\nHow are things affected if you include the “made for TV movies” that have been assigned TV ratings in your analysis, but still exclude unrated movies?\nThey would also like to see a separate report that includes only TV shows.\nFor an upcoming community meeting, the group would like to present a simple chart showing “For Kids” and “For Adults” categories. The easiest way to accomplish this would be to create a new column in your data frame that maps each rating to the appropriate “For Kids” or “For Adults” label, then create a new visualization based on that column.\n\n\nadult_ratings = [\"PG-13\", \"R\", \"NC-17\"]\nnpaa_movies = npaa_movies.with_columns(pl.col(\"rating\").is_in(adult_ratings).alias(\"is_adult\"))\n\nggplot(npaa_movies, aes(x = \"is_adult\")) + geom_bar() + labs(x = \"Adult movie?\")"
   },
   {
     "objectID": "Spreadsheet/project1.html",
