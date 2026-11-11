@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Comparing Models – Mary Palmer - Portfolio</title>
+<title>Bike Rental Demand – Mary Palmer - Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -283,10 +283,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../spreadsheet.html"> 
 <span class="menu-text">Spreadsheet Analytics</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../coursework.html"> 
-<span class="menu-text">Past Coursework</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -299,7 +295,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Machine_Learning/project3.html">Comparing Models</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Machine_Learning/project3.html">Bike Rental Demand</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -324,19 +320,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Machine_Learning/project1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Classifying Home Age</span></a>
+ <span class="menu-text">Bank Telemarketing Targeting</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Machine_Learning/project2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Machine Learning Pt. 2</span></a>
+ <span class="menu-text">King County Housing Prices</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Machine_Learning/project3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Comparing Models</span></a>
+ <span class="menu-text">Bike Rental Demand</span></a>
   </div>
 </li>
     </ul>
@@ -349,10 +345,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions">Questions</a></li>
-  <li><a href="#q1-three-classifiers" id="toc-q1-three-classifiers" class="nav-link" data-scroll-target="#q1-three-classifiers">Q1: Three classifiers</a></li>
-  <li><a href="#q2-adding-neighborhood-data" id="toc-q2-adding-neighborhood-data" class="nav-link" data-scroll-target="#q2-adding-neighborhood-data">Q2: Adding neighborhood data</a></li>
-  <li><a href="#q3-predicting-the-year-built" id="toc-q3-predicting-the-year-built" class="nav-link" data-scroll-target="#q3-predicting-the-year-built">Q3: Predicting the year built</a></li>
+  <li><a href="#problem" id="toc-problem" class="nav-link active" data-scroll-target="#problem">Problem</a></li>
+  <li><a href="#cleaning-and-features" id="toc-cleaning-and-features" class="nav-link" data-scroll-target="#cleaning-and-features">Cleaning and features</a></li>
+  <li><a href="#model" id="toc-model" class="nav-link" data-scroll-target="#model">Model</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations">Recommendations</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://pal24032.github.io/mary-palmer-mp/issues/new" class="toc-action"><i class="bi bi-git"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -362,8 +359,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Comparing Models</h1>
-<p class="subtitle lead">Python | Random forest, gradient boosting, and regression</p>
+<h1 class="title">Bike Rental Demand</h1>
+<p class="subtitle lead">Python | Neural network regression | CSE 450 Module 4 group project</p>
 </div>
 
 
@@ -380,75 +377,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="questions" class="level2">
-<h2 class="anchored" data-anchor-id="questions">Questions</h2>
-<ol type="1">
-<li>Which of three classification algorithms best predicts whether a home was built before 1980, and which should I recommend to a client?</li>
-<li>Does adding neighborhood data improve that model?</li>
-<li>Can a regression model predict the exact year a home was built?</li>
-</ol>
+<p><strong>Team:</strong> Isaac Bean, Seth Ricks, Nathan McDowell, Mary Palmer</p>
+<section id="problem" class="level2">
+<h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<p>WelcomeBike, a bike rental company in Washington, D.C., wanted to forecast how many riders to expect per hour and per day over the November and December holidays. We used hourly rental data from January 2011 to September 2023, including the date, hour, weather, and rider type.</p>
 </section>
-<section id="q1-three-classifiers" class="level2">
-<h2 class="anchored" data-anchor-id="q1-three-classifiers">Q1: Three classifiers</h2>
-<p>I fit a decision tree, a random forest, and a gradient boosting classifier on the same training data and compared their classification reports and feature importances.</p>
+<section id="cleaning-and-features" class="level2">
+<h2 class="anchored" data-anchor-id="cleaning-and-features">Cleaning and features</h2>
+<ul>
+<li>Split the date into day, month, and year, and combined casual and registered riders into one total.</li>
+<li>Added <strong>days from Thanksgiving</strong> and <strong>days from Christmas</strong>, which raised R² on a small holdout by about 0.10.</li>
+<li>Added a <strong>COVID flag</strong> for March 2020 through December 2021.</li>
+<li>Scaled features with min-max scaling so variables like windspeed (0 to 70) and rider counts (0 to 1,000+) start on equal footing. Z-score scaling gave almost the same result.</li>
+</ul>
+<p>A mistake that taught us something: our first model scored nearly 100% because we forgot to remove the casual and registered columns after adding them together, so the model had simply learned to add. We caught it because the result was too good, removed the columns, and rebuilt.</p>
+</section>
+<section id="model" class="level2">
+<h2 class="anchored" data-anchor-id="model">Model</h2>
+<p>A neural network with two hidden layers using ReLU activations: 150 nodes with 40% dropout, then 32 nodes with 20% dropout. Dropout guards against overfitting. We trained on mean squared error with a batch size of 80, a learning rate of 0.0008, and early stopping with patience of 7. Training stopped at 48 of a possible 100 epochs once the validation error stopped improving, and we kept the weights from the best epoch.</p>
+<p><img src="../Images/ml/bike_training_curve.png" class="img-fluid" alt="Training and validation error falling steadily and leveling off by about epoch 48."></p>
+<p>We also tried training on November and December alone, on the theory that holidays behave differently, but there was not enough data to make an accurate model.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Model</th>
-<th>Accuracy</th>
+<th>Metric</th>
+<th>Score</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Decision tree</td>
-<td>0.89</td>
+<td>R²</td>
+<td>0.951</td>
 </tr>
 <tr class="even">
-<td>Random forest</td>
-<td>0.92</td>
+<td>RMSE</td>
+<td>75.2 riders</td>
 </tr>
 <tr class="odd">
-<td>Gradient boosting</td>
-<td>0.89</td>
+<td>MAE</td>
+<td>46.7 riders</td>
 </tr>
 </tbody>
 </table>
-<p>All three models agreed on the strongest predictors: one-story architecture, an attached garage, and home quality. Gradient boosting ranked the number of bathrooms above living area. I recommended the <strong>random forest</strong> because it had the best accuracy, precision, and recall.</p>
+<p>The model explains about 95% of the variation in riders at a given hour, with a typical miss of about 47 riders.</p>
+<p><img src="../Images/ml/bike_weekday_vs_weekend.png" class="img-fluid" alt="Average riders by hour: weekdays peak at 8 am and 5 pm, while weekends form a single midday hump."></p>
+<p><img src="../Images/ml/bike_monthly_riders.png" class="img-fluid" alt="Mean riders per hour by month from 2011 to 2023, showing a yearly cycle, a dip in 2020, and a rising trend."></p>
+<p><img src="../Images/ml/bike_holiday_weeks.png" class="img-fluid" alt="Predicted riders per day for an average November and December week, Thanksgiving week, and Christmas week."></p>
 </section>
-<section id="q2-adding-neighborhood-data" class="level2">
-<h2 class="anchored" data-anchor-id="q2-adding-neighborhood-data">Q2: Adding neighborhood data</h2>
-<p>I joined the neighborhood dataset to the housing data on the parcel number and re-ran the random forest. The top features did not change, and neighborhood itself was not an important feature. Even so, accuracy rose to <strong>0.97</strong>, so I recommended this version of the model.</p>
-</section>
-<section id="q3-predicting-the-year-built" class="level2">
-<h2 class="anchored" data-anchor-id="q3-predicting-the-year-built">Q3: Predicting the year built</h2>
-<p>This is a regression problem, so I evaluated it with error measures instead of accuracy.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Model</th>
-<th>R²</th>
-<th>RMSE</th>
-<th>MAE</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Gradient boosting regressor</td>
-<td>0.759</td>
-<td>18.2 years</td>
-<td>12.8 years</td>
-</tr>
-<tr class="even">
-<td>Random forest regressor</td>
-<td>0.887</td>
-<td>12.5 years</td>
-<td>6.2 years</td>
-</tr>
-</tbody>
-</table>
-<p>The residual plot for the first model showed it consistently underestimated the year for older homes and overestimated it for newer ones, so I called it a weak model. The random forest regressor cut the typical error roughly in half. It takes longer to run, but both finish in under a minute, so I recommended the random forest regressor.</p>
-<p><a href="https://drive.google.com/file/d/1aqpbJtfufYTRk5rksRIatcHye569H7cK/view?usp=drivesdk" target="_blank">Full report on Google Drive</a></p>
-<!-- PASTE (optional): feature importance chart images from the report. -->
+<section id="recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="recommendations">Recommendations</h2>
+<ul>
+<li><strong>Plan for rush hours.</strong> Weekday demand peaks at 8 am and 5 pm, while weekends are a smooth midday curve, so renting the same number of bikes at the same hours on weekends would lose revenue.</li>
+<li><strong>Expect growth over years, not months.</strong> Demand dips every year in November and December, but the long-run trend in D.C. is rising.</li>
+<li><strong>Supply fewer bikes around holidays.</strong> Thanksgiving week should run slightly below other November weeks, and Christmas week should look like a series of weekends with far fewer riders.</li>
+</ul>
+<p><a href="../Machine_Learning/mod4_bikes_GROUP_v02.html">View the full notebook</a></p>
 
 
 </section>

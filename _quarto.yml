@@ -34,8 +34,6 @@ website:
         file: storytelling.qmd
       - text: "Spreadsheet Analytics"
         file: spreadsheet.qmd
-      - text: "Past Coursework"
-        file: coursework.qmd
 
   sidebar: 
     - title: "Machine Learning"
@@ -44,11 +42,11 @@ website:
       contents:
         - text: "Overview"
           file: ml.qmd
-        - text: "Classifying Home Age"
+        - text: "Bank Telemarketing Targeting"
           file: Machine_Learning/project1.qmd
-        - text: "Machine Learning Pt. 2"
+        - text: "King County Housing Prices"
           file: Machine_Learning/project2.qmd
-        - text: "Comparing Models"
+        - text: "Bike Rental Demand"
           file: Machine_Learning/project3.qmd
     - title: "Statistics"
       style: "docked"
@@ -62,6 +60,8 @@ website:
           file: Statistics/project2.qmd
         - text: "Price of Promotion (Econometrics)"
           file: Statistics/project3.qmd
+        - text: "Python: Confidence vs. Retail Sales"
+          file: Statistics/project4.qmd
     - title: "Data Storytelling"
       style: "docked"
       background: light
@@ -74,6 +74,8 @@ website:
           file: Storytelling/project2.qmd
         - text: "Mutual Fund Risk Portfolio"
           file: Storytelling/project3.qmd
+        - text: "SQL: Music Library Database"
+          file: Storytelling/project4.qmd
     - title: "Spreadsheet Analytics"
       style: "docked"
       background: light
@@ -82,16 +84,6 @@ website:
           file: spreadsheet.qmd
         - text: "Mortgage Amortization"
           file: Spreadsheet/project1.qmd
-    - title: "Past Coursework"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Overview"
-          file: coursework.qmd
-        - text: "Python: Confidence vs. Retail Sales"
-          file: Coursework/project1.qmd
-        - text: "SQL: Music Library Database"
-          file: Coursework/project2.qmd
 
   
 format:  

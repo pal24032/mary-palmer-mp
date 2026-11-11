@@ -283,10 +283,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../spreadsheet.html"> 
 <span class="menu-text">Spreadsheet Analytics</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../coursework.html"> 
-<span class="menu-text">Past Coursework</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -339,6 +335,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Price of Promotion (Econometrics)</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Statistics/project4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python: Confidence vs.&nbsp;Retail Sales</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -350,8 +352,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question">Question</a></li>
+  <li><a href="#about-this-project" id="toc-about-this-project" class="nav-link" data-scroll-target="#about-this-project">About this project</a></li>
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#recommendation" id="toc-recommendation" class="nav-link" data-scroll-target="#recommendation">Recommendation</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://pal24032.github.io/mary-palmer-mp/issues/new" class="toc-action"><i class="bi bi-git"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -381,22 +386,98 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="question" class="level2">
 <h2 class="anchored" data-anchor-id="question">Question</h2>
-<p>Teton Pantry Co.&nbsp;runs promotions on its 12 oz. Holiday Cocoa. Should the promotion depth be set differently for each sales region?</p>
+<p>Teton Pantry Co.&nbsp;sells a 12 oz. Holiday Cocoa through five retailers in four regions. Regional managers disagreed about whether promotions should be deeper in some regions than others. Do promotion depth and region change weekly revenue, and does the effect of a promotion depend on the region?</p>
+</section>
+<section id="about-this-project" class="level2">
+<h2 class="anchored" data-anchor-id="about-this-project">About this project</h2>
+<p>This was a role-play consulting exercise for MATH 325. The client emails, the sales data (2022 to 2024), and the cover image were generated with ChatGPT 5.1. My replies to the client and the full analysis are my own. ChatGPT was also used to help debug code, customize the graphs, and choose the statistical test.</p>
 </section>
 <section id="approach" class="level2">
 <h2 class="anchored" data-anchor-id="approach">Approach</h2>
-<p>I built a consulting report in R (<code>car</code>, <code>tidyverse</code>, <code>pander</code>) from the company’s sales data.</p>
+<p>I built the report in R (<code>car</code>, <code>tidyverse</code>, <code>pander</code>).</p>
 <ul>
-<li>Calculated <strong>revenue</strong> as units sold times actual price.</li>
-<li>Grouped each week’s <strong>promotion depth</strong> into three levels: none, small (depth under 0.25), and medium (depth from 0.25 to 0.36).</li>
-<li>Used ANOVA to compare revenue across promotion levels and regions.</li>
+<li>Calculated <strong>revenue</strong> per retailer-week as units sold times actual price.</li>
+<li>Grouped promotion depth into three levels: none (0%), small (10 to 25%), and medium (25 to 35%).</li>
+<li>Fit a two-way ANOVA with interaction on log revenue: <code>log(revenue) ~ promo + region + promo:region</code>. The log transform stabilizes the variance of the revenue data.</li>
 </ul>
 </section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The report’s headline recommendation is that <strong>holiday cocoa promotions do not need to differ by region</strong>.</p>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Df</th>
+<th>F value</th>
+<th>p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Promotion depth</td>
+<td>2</td>
+<td>55.73</td>
+<td>1.4e-24</td>
+</tr>
+<tr class="even">
+<td>Region</td>
+<td>3</td>
+<td>0.19</td>
+<td>0.905</td>
+</tr>
+<tr class="odd">
+<td>Promotion x Region</td>
+<td>6</td>
+<td>0.92</td>
+<td>0.480</td>
+</tr>
+<tr class="even">
+<td>Residuals</td>
+<td>3,732</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Promotion depth is significant. Region and the promotion-by-region interaction are not, at α = 0.05.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Promotion level</th>
+<th>Mean weekly revenue per retailer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>None</td>
+<td>$799.80</td>
+</tr>
+<tr class="even">
+<td>Small (10 to 25%)</td>
+<td>$941.90</td>
+</tr>
+<tr class="odd">
+<td>Medium (25 to 35%)</td>
+<td>$1,109</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../Images/stats/cocoa_interaction.png" class="img-fluid" alt="Line chart of average weekly revenue by region for each promotion level. The three lines stay in the same order across all four regions."></p>
+<p>The lines for the three promotion levels keep the same order in every region, which matches the non-significant interaction. The Mountain region’s medium-promo average ($1,176) is the highest point, but the test shows it is within normal variation.</p>
+<p><img src="../Images/stats/cocoa_diagnostics.png" class="img-fluid" alt="Residuals versus fitted values and a normal Q-Q plot of the standardized residuals from the ANOVA model."></p>
+<p>The residual plots show roughly even spread across fitted values and a Q-Q plot close to a straight line, so the ANOVA assumptions are reasonable on the log scale.</p>
+</section>
+<section id="recommendation" class="level2">
+<h2 class="anchored" data-anchor-id="recommendation">Recommendation</h2>
+<ul>
+<li>Promotions work: a small promotion added about $142 in average weekly revenue over no promotion, and a medium promotion added about $167 more than a small one.</li>
+<li>Apply the medium promotion depth (25 to 35%) consistently across all regions. There is no evidence that any region needs a different strategy.</li>
+</ul>
+</section>
+<section id="tools" class="level2">
+<h2 class="anchored" data-anchor-id="tools">Tools</h2>
+<p>R, ANOVA, <code>car</code>, <code>tidyverse</code>, <code>pander</code>, ggplot2.</p>
 <p><a href="https://drive.google.com/file/d/1yOpkzG6_UwPMoVR0zy8Nd51WyomOFahj/view?usp=drivesdk" target="_blank">Read the full report on Google Drive</a></p>
-<!-- PASTE: the key test results (F statistic and p-value for promotion level, region, and the interaction) and one chart from the report. -->
 
 
 </section>

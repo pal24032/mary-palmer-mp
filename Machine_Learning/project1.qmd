@@ -1,42 +1,43 @@
 ---
-title: "Classifying Home Age"
-subtitle: "Python | Decision tree classifier"
+title: "Bank Telemarketing Targeting"
+subtitle: "Python | Decision tree classifier | CSE 450 Module 2 group project"
 ---
 
-## Question
+**Team:** Isaac Bean, Seth Ricks, Nathan McDowell, Mary Palmer
 
-Can a model tell whether a home was built before 1980, using only features of the home such as architectural style, garage type, quality, and living area?
+## Problem
+
+Banco Federal de Finanças had just finished an ineffective telemarketing campaign. The bank asked us to show how machine learning could improve who gets called in future campaigns. We had three goals:
+
+- identify the factors most associated with a customer subscribing
+- build a model that finds the customers most likely to respond
+- show that model-based targeting reaches subscribers at a much higher rate than calling people at random
 
 ## Approach
 
-I used a public housing dataset from the BYU-Idaho data science program (`dwellings_ml`). I dropped the identifier and year columns so the model could not see the answer directly, split the data 80/20 into training and test sets, and fit a decision tree classifier in scikit-learn.
+We trained a supervised decision tree on about 37,000 records from the previous campaign, with 70% for training and 30% (about 11,100 customers) held out for testing. The features fall into three groups: customer demographics, contact and timing details (including economic indicators), and the outcome of earlier campaigns. The target was whether the customer subscribed.
 
-```python
-x_features = df.drop(columns=["parcel", "abstrprd", "yrbuilt", "before1980"])
-y_targets = df.before1980
+![](../Images/ml/bank_feature_importance.png){fig-alt="Decision tree feature importance, led by nr.employed and euribor3m."}
 
-train_data, test_data, train_targets, test_targets = train_test_split(
-    x_features, y_targets, test_size=0.2
-)
-
-classifier = DecisionTreeClassifier()
-classifier.fit(train_data, train_targets)
-```
+The two strongest predictors were the bank's quarterly number of employees (`nr.employed`) and the 3-month Euribor rate (`euribor3m`). Both describe the economy when the customer was contacted, so the state of the economy was the best predictor of whether a customer would say yes. The month of contact ranked fourth, which surprised us and which the model cannot explain on its own.
 
 ## Results
 
-The model correctly classified about 90% of the homes in the test set. I reported accuracy, precision, and recall, and explained each one in plain language:
+![](../Images/ml/bank_confusion_matrix.png){fig-alt="Confusion matrix on the test set: 8,079 true no, 1,780 false yes, 414 false no, 848 true yes."}
 
-- **Accuracy:** of all test homes, the share the model labeled correctly.
-- **Precision:** of the homes the model labeled as built before (or after) 1980, the share that really were.
-- **Recall:** of the homes that really were built before (or after) 1980, the share the model found.
+| Metric | Score |
+|---|---|
+| Accuracy | 80.3% |
+| Precision | 32.3% |
+| Recall | 67.2% |
+| F1 score | 43.6% |
 
-## What drives the predictions
+Only about 11.4% of customers subscribed, so a model that always predicted "no" would score 88.7% accuracy and find nobody. We trained with balanced class weights on purpose, which lowers accuracy but finds subscribers. The model found 848 of the 1,262 subscribers in the test set (67.2%). About one in three customers it flagged actually subscribed, which is roughly 2.8 times the random rate of one subscriber in nine calls. The cost is 1,780 calls to customers who did not subscribe.
 
-A one-story architectural style was the most important feature (importance 0.249), followed by an attached garage (0.126). Home quality and living area came next. Every other feature had an importance below 0.05.
+## Other findings
 
-I charted the importances with `lets-plot` to show the client which characteristics matter most.
+- **Prior contact:** the share of customers who said yes was about the same whether or not they had been contacted before, so earlier outreach did not appear to backfire.
+- **Privacy:** the data contains no names, birth dates, locations, government identifiers, contact details, or account specifics, so it is consistent with GDPR.
+- **Limits:** the data is historical and the economic features are correlated with each other, so the model should be retrained as conditions change. Adjusting the classification threshold or tree depth would shift the balance between missed subscribers and wasted calls.
 
-<!-- PASTE (optional): add the rendered feature importance chart or a link to the full report. -->
-
-[Full report on Google Drive](https://drive.google.com/file/d/1FSduafJBpWQvI8izeKb75Kb0CCWLZpSe/view?usp=drivesdk){target="_blank"}
+[View the full notebook](group_bank.ipynb)

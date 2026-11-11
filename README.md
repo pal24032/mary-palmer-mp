@@ -2,7 +2,7 @@
 
 A Quarto website of my economics and data science work, published with GitHub Pages from the `docs/` folder.
 
-Sections: Machine Learning, Statistics, Data Storytelling, Spreadsheet Analytics, and Past Coursework, plus a resume page with PDF and Word downloads.
+Sections: Machine Learning, Statistics, Data Storytelling, and Spreadsheet Analytics, plus a resume page with PDF and Word downloads.
 
 ## Updating the site
 

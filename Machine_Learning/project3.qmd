@@ -1,41 +1,51 @@
 ---
-title: "Comparing Models"
-subtitle: "Python | Random forest, gradient boosting, and regression"
+title: "Bike Rental Demand"
+subtitle: "Python | Neural network regression | CSE 450 Module 4 group project"
 ---
 
-## Questions
+**Team:** Isaac Bean, Seth Ricks, Nathan McDowell, Mary Palmer
 
-1. Which of three classification algorithms best predicts whether a home was built before 1980, and which should I recommend to a client?
-2. Does adding neighborhood data improve that model?
-3. Can a regression model predict the exact year a home was built?
+## Problem
 
-## Q1: Three classifiers
+WelcomeBike, a bike rental company in Washington, D.C., wanted to forecast how many riders to expect per hour and per day over the November and December holidays. We used hourly rental data from January 2011 to September 2023, including the date, hour, weather, and rider type.
 
-I fit a decision tree, a random forest, and a gradient boosting classifier on the same training data and compared their classification reports and feature importances.
+## Cleaning and features
 
-| Model | Accuracy |
+- Split the date into day, month, and year, and combined casual and registered riders into one total.
+- Added **days from Thanksgiving** and **days from Christmas**, which raised R² on a small holdout by about 0.10.
+- Added a **COVID flag** for March 2020 through December 2021.
+- Scaled features with min-max scaling so variables like windspeed (0 to 70) and rider counts (0 to 1,000+) start on equal footing. Z-score scaling gave almost the same result.
+
+A mistake that taught us something: our first model scored nearly 100% because we forgot to remove the casual and registered columns after adding them together, so the model had simply learned to add. We caught it because the result was too good, removed the columns, and rebuilt.
+
+## Model
+
+A neural network with two hidden layers using ReLU activations: 150 nodes with 40% dropout, then 32 nodes with 20% dropout. Dropout guards against overfitting. We trained on mean squared error with a batch size of 80, a learning rate of 0.0008, and early stopping with patience of 7. Training stopped at 48 of a possible 100 epochs once the validation error stopped improving, and we kept the weights from the best epoch.
+
+![](../Images/ml/bike_training_curve.png){fig-alt="Training and validation error falling steadily and leveling off by about epoch 48."}
+
+We also tried training on November and December alone, on the theory that holidays behave differently, but there was not enough data to make an accurate model.
+
+## Results
+
+| Metric | Score |
 |---|---|
-| Decision tree | 0.89 |
-| Random forest | 0.92 |
-| Gradient boosting | 0.89 |
+| R² | 0.951 |
+| RMSE | 75.2 riders |
+| MAE | 46.7 riders |
 
-All three models agreed on the strongest predictors: one-story architecture, an attached garage, and home quality. Gradient boosting ranked the number of bathrooms above living area. I recommended the **random forest** because it had the best accuracy, precision, and recall.
+The model explains about 95% of the variation in riders at a given hour, with a typical miss of about 47 riders.
 
-## Q2: Adding neighborhood data
+![](../Images/ml/bike_weekday_vs_weekend.png){fig-alt="Average riders by hour: weekdays peak at 8 am and 5 pm, while weekends form a single midday hump."}
 
-I joined the neighborhood dataset to the housing data on the parcel number and re-ran the random forest. The top features did not change, and neighborhood itself was not an important feature. Even so, accuracy rose to **0.97**, so I recommended this version of the model.
+![](../Images/ml/bike_monthly_riders.png){fig-alt="Mean riders per hour by month from 2011 to 2023, showing a yearly cycle, a dip in 2020, and a rising trend."}
 
-## Q3: Predicting the year built
+![](../Images/ml/bike_holiday_weeks.png){fig-alt="Predicted riders per day for an average November and December week, Thanksgiving week, and Christmas week."}
 
-This is a regression problem, so I evaluated it with error measures instead of accuracy.
+## Recommendations
 
-| Model | R² | RMSE | MAE |
-|---|---|---|---|
-| Gradient boosting regressor | 0.759 | 18.2 years | 12.8 years |
-| Random forest regressor | 0.887 | 12.5 years | 6.2 years |
+- **Plan for rush hours.** Weekday demand peaks at 8 am and 5 pm, while weekends are a smooth midday curve, so renting the same number of bikes at the same hours on weekends would lose revenue.
+- **Expect growth over years, not months.** Demand dips every year in November and December, but the long-run trend in D.C. is rising.
+- **Supply fewer bikes around holidays.** Thanksgiving week should run slightly below other November weeks, and Christmas week should look like a series of weekends with far fewer riders.
 
-The residual plot for the first model showed it consistently underestimated the year for older homes and overestimated it for newer ones, so I called it a weak model. The random forest regressor cut the typical error roughly in half. It takes longer to run, but both finish in under a minute, so I recommended the random forest regressor.
-
-[Full report on Google Drive](https://drive.google.com/file/d/1aqpbJtfufYTRk5rksRIatcHye569H7cK/view?usp=drivesdk){target="_blank"}
-
-<!-- PASTE (optional): feature importance chart images from the report. -->
+[View the full notebook](mod4_bikes_GROUP_v02.ipynb)

@@ -1,1 +1,6 @@
 /* css styles */
+
+/* keep the right-hand page menu but hide its "On this page" heading */
+#toc-title {
+  display: none;
+}

@@ -3,8 +3,8 @@ title: "Machine Learning"
 toc: false
 ---
 
-Models that predict the age of a home from public housing data. Each project builds on the one before it.
+Three group case studies from CSE 450, each built in Python for a different kind of prediction problem.
 
-- [Classifying Home Age](Machine_Learning/project1.qmd): A decision tree that predicts whether a home was built before 1980.
-- [Machine Learning Pt. 2](Machine_Learning/project2.qmd): The second unit in the sequence, linked from Google Drive.
-- [Comparing Models](Machine_Learning/project3.qmd): Three classifiers compared, then a regression model that predicts the exact year a home was built.
+- [Bank Telemarketing Targeting](Machine_Learning/project1.qmd): A decision tree that finds the customers most likely to respond to a bank campaign.
+- [King County Housing Prices](Machine_Learning/project2.qmd): An XGBoost model that predicts home prices with an R² of 0.898.
+- [Bike Rental Demand](Machine_Learning/project3.qmd): A neural network that forecasts holiday bike rentals with an R² of 0.951.

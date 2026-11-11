@@ -3,8 +3,9 @@ title: "Data Storytelling"
 toc: false
 ---
 
-Dashboards and presentations built in Power BI for non-technical audiences.
+Dashboards and presentations built in Power BI for non-technical audiences, plus a SQL database project.
 
 - [Merger Sales Dashboard](Storytelling/project1.qmd): A dashboard that weighs the case for and against a merger.
 - [Finance Dashboard](Storytelling/project2.qmd): A Power BI final project in finance.
 - [Mutual Fund Risk Portfolio](Storytelling/project3.qmd): Fund recommendations across five risk levels for a retirement-focused family.
+- [SQL: Music Library Database](Storytelling/project4.qmd): A relational database with constraints, transactions, queries, and views.

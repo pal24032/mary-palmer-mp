@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Classifying Home Age – Mary Palmer - Portfolio</title>
+<title>Bank Telemarketing Targeting – Mary Palmer - Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -318,10 +283,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../spreadsheet.html"> 
 <span class="menu-text">Spreadsheet Analytics</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../coursework.html"> 
-<span class="menu-text">Past Coursework</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -334,7 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Machine_Learning/project1.html">Classifying Home Age</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Machine_Learning/project1.html">Bank Telemarketing Targeting</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -359,19 +320,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Machine_Learning/project1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Classifying Home Age</span></a>
+ <span class="menu-text">Bank Telemarketing Targeting</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Machine_Learning/project2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Machine Learning Pt. 2</span></a>
+ <span class="menu-text">King County Housing Prices</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Machine_Learning/project3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Comparing Models</span></a>
+ <span class="menu-text">Bike Rental Demand</span></a>
   </div>
 </li>
     </ul>
@@ -384,10 +345,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question">Question</a></li>
+  <li><a href="#problem" id="toc-problem" class="nav-link active" data-scroll-target="#problem">Problem</a></li>
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
-  <li><a href="#what-drives-the-predictions" id="toc-what-drives-the-predictions" class="nav-link" data-scroll-target="#what-drives-the-predictions">What drives the predictions</a></li>
+  <li><a href="#other-findings" id="toc-other-findings" class="nav-link" data-scroll-target="#other-findings">Other findings</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://pal24032.github.io/mary-palmer-mp/issues/new" class="toc-action"><i class="bi bi-git"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -397,8 +358,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Classifying Home Age</h1>
-<p class="subtitle lead">Python | Decision tree classifier</p>
+<h1 class="title">Bank Telemarketing Targeting</h1>
+<p class="subtitle lead">Python | Decision tree classifier | CSE 450 Module 2 group project</p>
 </div>
 
 
@@ -415,38 +376,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="question" class="level2">
-<h2 class="anchored" data-anchor-id="question">Question</h2>
-<p>Can a model tell whether a home was built before 1980, using only features of the home such as architectural style, garage type, quality, and living area?</p>
+<p><strong>Team:</strong> Isaac Bean, Seth Ricks, Nathan McDowell, Mary Palmer</p>
+<section id="problem" class="level2">
+<h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<p>Banco Federal de Finanças had just finished an ineffective telemarketing campaign. The bank asked us to show how machine learning could improve who gets called in future campaigns. We had three goals:</p>
+<ul>
+<li>identify the factors most associated with a customer subscribing</li>
+<li>build a model that finds the customers most likely to respond</li>
+<li>show that model-based targeting reaches subscribers at a much higher rate than calling people at random</li>
+</ul>
 </section>
 <section id="approach" class="level2">
 <h2 class="anchored" data-anchor-id="approach">Approach</h2>
-<p>I used a public housing dataset from the BYU-Idaho data science program (<code>dwellings_ml</code>). I dropped the identifier and year columns so the model could not see the answer directly, split the data 80/20 into training and test sets, and fit a decision tree classifier in scikit-learn.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x_features <span class="op">=</span> df.drop(columns<span class="op">=</span>[<span class="st">"parcel"</span>, <span class="st">"abstrprd"</span>, <span class="st">"yrbuilt"</span>, <span class="st">"before1980"</span>])</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>y_targets <span class="op">=</span> df.before1980</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>train_data, test_data, train_targets, test_targets <span class="op">=</span> train_test_split(</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    x_features, y_targets, test_size<span class="op">=</span><span class="fl">0.2</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>classifier <span class="op">=</span> DecisionTreeClassifier()</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>classifier.fit(train_data, train_targets)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>We trained a supervised decision tree on about 37,000 records from the previous campaign, with 70% for training and 30% (about 11,100 customers) held out for testing. The features fall into three groups: customer demographics, contact and timing details (including economic indicators), and the outcome of earlier campaigns. The target was whether the customer subscribed.</p>
+<p><img src="../Images/ml/bank_feature_importance.png" class="img-fluid" alt="Decision tree feature importance, led by nr.employed and euribor3m."></p>
+<p>The two strongest predictors were the bank’s quarterly number of employees (<code>nr.employed</code>) and the 3-month Euribor rate (<code>euribor3m</code>). Both describe the economy when the customer was contacted, so the state of the economy was the best predictor of whether a customer would say yes. The month of contact ranked fourth, which surprised us and which the model cannot explain on its own.</p>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
-<p>The model correctly classified about 90% of the homes in the test set. I reported accuracy, precision, and recall, and explained each one in plain language:</p>
-<ul>
-<li><strong>Accuracy:</strong> of all test homes, the share the model labeled correctly.</li>
-<li><strong>Precision:</strong> of the homes the model labeled as built before (or after) 1980, the share that really were.</li>
-<li><strong>Recall:</strong> of the homes that really were built before (or after) 1980, the share the model found.</li>
-</ul>
+<p><img src="../Images/ml/bank_confusion_matrix.png" class="img-fluid" alt="Confusion matrix on the test set: 8,079 true no, 1,780 false yes, 414 false no, 848 true yes."></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Accuracy</td>
+<td>80.3%</td>
+</tr>
+<tr class="even">
+<td>Precision</td>
+<td>32.3%</td>
+</tr>
+<tr class="odd">
+<td>Recall</td>
+<td>67.2%</td>
+</tr>
+<tr class="even">
+<td>F1 score</td>
+<td>43.6%</td>
+</tr>
+</tbody>
+</table>
+<p>Only about 11.4% of customers subscribed, so a model that always predicted “no” would score 88.7% accuracy and find nobody. We trained with balanced class weights on purpose, which lowers accuracy but finds subscribers. The model found 848 of the 1,262 subscribers in the test set (67.2%). About one in three customers it flagged actually subscribed, which is roughly 2.8 times the random rate of one subscriber in nine calls. The cost is 1,780 calls to customers who did not subscribe.</p>
 </section>
-<section id="what-drives-the-predictions" class="level2">
-<h2 class="anchored" data-anchor-id="what-drives-the-predictions">What drives the predictions</h2>
-<p>A one-story architectural style was the most important feature (importance 0.249), followed by an attached garage (0.126). Home quality and living area came next. Every other feature had an importance below 0.05.</p>
-<p>I charted the importances with <code>lets-plot</code> to show the client which characteristics matter most.</p>
-<!-- PASTE (optional): add the rendered feature importance chart or a link to the full report. -->
-<p><a href="https://drive.google.com/file/d/1FSduafJBpWQvI8izeKb75Kb0CCWLZpSe/view?usp=drivesdk" target="_blank">Full report on Google Drive</a></p>
+<section id="other-findings" class="level2">
+<h2 class="anchored" data-anchor-id="other-findings">Other findings</h2>
+<ul>
+<li><strong>Prior contact:</strong> the share of customers who said yes was about the same whether or not they had been contacted before, so earlier outreach did not appear to backfire.</li>
+<li><strong>Privacy:</strong> the data contains no names, birth dates, locations, government identifiers, contact details, or account specifics, so it is consistent with GDPR.</li>
+<li><strong>Limits:</strong> the data is historical and the economic features are correlated with each other, so the model should be retrained as conditions change. Adjusting the classification threshold or tree depth would shift the balance between missed subscribers and wasted calls.</li>
+</ul>
+<p><a href="../Machine_Learning/group_bank.html">View the full notebook</a></p>
 
 
 </section>

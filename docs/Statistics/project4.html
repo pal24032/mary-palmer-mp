@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SQL: Music Library Database – Mary Palmer - Portfolio</title>
+<title>Python: Confidence vs.&nbsp;Retail Sales – Mary Palmer - Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -318,10 +318,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../spreadsheet.html"> 
 <span class="menu-text">Spreadsheet Analytics</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../coursework.html"> 
-<span class="menu-text">Past Coursework</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -334,7 +330,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Coursework/project2.html">SQL: Music Library Database</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Statistics/project4.html">Python: Confidence vs.&nbsp;Retail Sales</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -352,20 +348,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../coursework.html" class="sidebar-item-text sidebar-link">
+  <a href="../statistics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Coursework/project1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Python: Confidence vs.&nbsp;Retail Sales</span></a>
+  <a href="../Statistics/project1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Holiday Cocoa Promotions (ANOVA)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Coursework/project2.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">SQL: Music Library Database</span></a>
+  <a href="../Statistics/project2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Weather Regression</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Statistics/project3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Price of Promotion (Econometrics)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Statistics/project4.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Python: Confidence vs.&nbsp;Retail Sales</span></a>
   </div>
 </li>
     </ul>
@@ -379,10 +387,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#scripts" id="toc-scripts" class="nav-link" data-scroll-target="#scripts">Scripts</a></li>
-  <li><a href="#data-integrity-and-changes" id="toc-data-integrity-and-changes" class="nav-link" data-scroll-target="#data-integrity-and-changes">Data integrity and changes</a></li>
-  <li><a href="#advanced-queries" id="toc-advanced-queries" class="nav-link" data-scroll-target="#advanced-queries">Advanced queries</a></li>
-  <li><a href="#views" id="toc-views" class="nav-link" data-scroll-target="#views">Views</a></li>
+  <li><a href="#what-the-program-does" id="toc-what-the-program-does" class="nav-link" data-scroll-target="#what-the-program-does">What the program does</a></li>
+  <li><a href="#skills-practiced" id="toc-skills-practiced" class="nav-link" data-scroll-target="#skills-practiced">Skills practiced</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://pal24032.github.io/mary-palmer-mp/issues/new" class="toc-action"><i class="bi bi-git"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -392,8 +398,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SQL: Music Library Database</h1>
-<p class="subtitle lead">SQL | Schema design, constraints, transactions, queries, and views</p>
+<h1 class="title">Python: Confidence vs.&nbsp;Retail Sales</h1>
+<p class="subtitle lead">Python | Functions, dictionaries, and correlation</p>
 </div>
 
 
@@ -412,45 +418,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>A relational database that tracks a music library: pieces, the books they are in, composers, genres, difficulty by part, shelf locations, and performance history. I designed the schema, loaded the data, then wrote the scripts that modify and query it.</p>
+<p>A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.</p>
+<p>Data: a monthly consumer confidence index and monthly retail sales, with sources from <a href="https://fred.stlouisfed.org/">FRED</a>.</p>
 </section>
-<section id="scripts" class="level2">
-<h2 class="anchored" data-anchor-id="scripts">Scripts</h2>
-<ul>
-<li><code>build_db_4.sql</code> creates the tables.</li>
-<li><code>fill_db_4.sql</code> loads the data.</li>
-<li><code>final_1.sql</code> cleans up and extends the database, then demonstrates queries and views.</li>
-</ul>
+<section id="what-the-program-does" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-program-does">What the program does</h2>
+<ol type="1">
+<li>Reads the two CSV files into dictionaries keyed by date and merges them into one compound dictionary.</li>
+<li>Validates the user’s input: the dates must parse as “Month, Year”, differ from each other, fall in order, and exist in the data.</li>
+<li>Builds the date range and calculates each series’ percent change between the two dates.</li>
+<li>Calculates the mean, standard deviation, and the Pearson correlation coefficient with NumPy.</li>
+<li>Translates the correlation into a plain-English conclusion, from “almost no correlation” to “very strong correlation.”</li>
+<li>Prints a formatted summary table with <code>tabulate</code>.</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> write_conclusion(correl_coef):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    abs_correl_coef <span class="op">=</span> <span class="bu">abs</span>(correl_coef)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> abs_correl_coef <span class="op">&lt;=</span> <span class="fl">0.16</span>:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        conclusion <span class="op">=</span> <span class="st">"There is almost no correlation between retail sales and CCI in the given time period."</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> abs_correl_coef <span class="op">&lt;=</span> <span class="fl">0.29</span>:</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        conclusion <span class="op">=</span> <span class="st">"There is a very weak correlation between retail sales and CCI in the given time period."</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ... thresholds continue up to "very strong" above 0.89</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="data-integrity-and-changes" class="level2">
-<h2 class="anchored" data-anchor-id="data-integrity-and-changes">Data integrity and changes</h2>
-<ul>
-<li>Converted the composer birth and death year columns to dates.</li>
-<li>Added a <code>CHECK</code> constraint so a piece’s minimum performers can never exceed its maximum.</li>
-<li>Renamed a table for consistency, dropped an unneeded column, and added a “Single Piece/No Book” entry.</li>
-<li>Wrapped inserts and updates in transactions, including adding a new piece and linking it to a book.</li>
-</ul>
-</section>
-<section id="advanced-queries" class="level2">
-<h2 class="anchored" data-anchor-id="advanced-queries">Advanced queries</h2>
-<ul>
-<li>Every piece, book, and composer on a given shelf, using a five-table join.</li>
-<li>The average difficulty of each piece across all of its parts, using <code>AVG</code> and <code>GROUP BY</code>.</li>
-<li>The number of pieces in each book, ranked from most to fewest:</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> bhp.book_id <span class="kw">AS</span> <span class="ot">"Book ID"</span>, b.book_title <span class="kw">AS</span> <span class="ot">"Book Title"</span>, <span class="fu">COUNT</span>(<span class="op">*</span>) <span class="kw">AS</span> <span class="ot">"Num. of Pieces"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> book_has_piece <span class="kw">AS</span> bhp</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">JOIN</span> book <span class="kw">AS</span> b <span class="kw">ON</span> bhp.book_id <span class="op">=</span> b.book_id</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> <span class="dv">1</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> <span class="dv">3</span> <span class="kw">DESC</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="views" class="level2">
-<h2 class="anchored" data-anchor-id="views">Views</h2>
-<ul>
-<li><strong>full_lib_overview</strong> shows each piece with its book, composer, genre, and whether it is in the performance repertoire.</li>
-<li><strong>perf_hist_overview</strong> lists each performance with its event, date, award, and the pieces played, using <code>GROUP_CONCAT</code>.</li>
-</ul>
-<p><a href="https://drive.google.com/drive/folders/1ndlGE4vWN5sYjOXkRIIeYz4I6qdcpBrA" target="_blank">Download the SQL scripts from Google Drive</a></p>
+<section id="skills-practiced" class="level2">
+<h2 class="anchored" data-anchor-id="skills-practiced">Skills practiced</h2>
+<p>Writing small, single-purpose functions with docstrings, reading files with the <code>csv</code> module, working with <code>datetime</code>, handling bad input, and testing the program with a companion <code>test_</code> script.</p>
+<p><a href="https://drive.google.com/file/d/145USObie3mXsuCvZ4SKmUEF7WlnHIGh7/view?usp=drivesdk" target="_blank">Open the full analysis report on Google Drive</a></p>
+<!-- PASTE: the correlation result for one date range you like (for example, 2007 to 2010), from running the program. -->
 
 
 </section>
