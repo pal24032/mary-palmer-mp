@@ -1,11 +1,10 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
-# use quarto markdown to 
+title: "Machine Learning"
+toc: false
 ---
 
-# Title 1 Header
-## Title 2 Header
+Models that predict the age of a home from public housing data. Each project builds on the one before it.
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
-
+- [Classifying Home Age](Machine_Learning/project1.qmd): A decision tree that predicts whether a home was built before 1980.
+- [Machine Learning Pt. 2](Machine_Learning/project2.qmd): The second unit in the sequence, linked from Google Drive.
+- [Comparing Models](Machine_Learning/project3.qmd): Three classifiers compared, then a regression model that predicts the exact year a home was built.

@@ -2,389 +2,669 @@
   {
     "objectID": "storytelling.html",
     "href": "storytelling.html",
-    "title": "about me",
+    "title": "Data Storytelling",
     "section": "",
-    "text": "MarkDown Basics",
+    "text": "Dashboards and presentations built in Power BI for non-technical audiences.\n\nMerger Sales Dashboard: A dashboard that weighs the case for and against a merger.\nFinance Dashboard: A Power BI final project in finance.\nMutual Fund Risk Portfolio: Fund recommendations across five risk levels for a retirement-focused family.\n\n\n\n\n Back to top",
     "crumbs": [
-      "Data Storytelling"
-    ]
-  },
-  {
-    "objectID": "storytelling.html#title-2-header",
-    "href": "storytelling.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Storytelling"
+      "Data Storytelling",
+      "Overview"
     ]
   },
   {
     "objectID": "Storytelling/project2.html",
     "href": "Storytelling/project2.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Finance Dashboard",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "This is my final Power BI project, built around a finance question.",
     "crumbs": [
       "Data Storytelling",
-      "Project 2"
+      "Finance Dashboard"
+    ]
+  },
+  {
+    "objectID": "Storytelling/project2.html#overview",
+    "href": "Storytelling/project2.html#overview",
+    "title": "Finance Dashboard",
+    "section": "",
+    "text": "This is my final Power BI project, built around a finance question.",
+    "crumbs": [
+      "Data Storytelling",
+      "Finance Dashboard"
+    ]
+  },
+  {
+    "objectID": "Storytelling/project2.html#files",
+    "href": "Storytelling/project2.html#files",
+    "title": "Finance Dashboard",
+    "section": "Files",
+    "text": "Files\n\nPower BI file (.pbix) on Google Drive",
+    "crumbs": [
+      "Data Storytelling",
+      "Finance Dashboard"
     ]
   },
   {
     "objectID": "statistics.html",
     "href": "statistics.html",
-    "title": "about me",
+    "title": "Statistics",
     "section": "",
-    "text": "MarkDown Basics",
+    "text": "Applied statistical work in R, from a consulting ANOVA to a group econometrics paper.\n\nHoliday Cocoa Promotions (ANOVA): A consulting report for a food company on whether promotions need to differ by region.\nWeather Regression: A multiple linear regression comparing April 2023 temperatures in Phoenix and Renton.\nPrice of Promotion (Econometrics): A group paper on how promotions relate to retail prices, using store-level panel data.\n\n\n\n\n Back to top",
     "crumbs": [
-      "Statistics"
-    ]
-  },
-  {
-    "objectID": "statistics.html#title-2-header",
-    "href": "statistics.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Statistics"
+      "Statistics",
+      "Overview"
     ]
   },
   {
     "objectID": "Statistics/project2.html",
     "href": "Statistics/project2.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Weather Regression",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "My family has lived in both Arizona and Washington, so I pulled daily weather data (NOAA’s Global Surface Summary of the Day, through the GSODR package) for April 2023 from Phoenix Goodyear Airport and Renton Municipal Airport. How well does the daily minimum temperature predict the daily maximum, and does that relationship differ between the two cities?",
     "crumbs": [
       "Statistics",
-      "Project 2"
+      "Weather Regression"
+    ]
+  },
+  {
+    "objectID": "Statistics/project2.html#question",
+    "href": "Statistics/project2.html#question",
+    "title": "Weather Regression",
+    "section": "",
+    "text": "My family has lived in both Arizona and Washington, so I pulled daily weather data (NOAA’s Global Surface Summary of the Day, through the GSODR package) for April 2023 from Phoenix Goodyear Airport and Renton Municipal Airport. How well does the daily minimum temperature predict the daily maximum, and does that relationship differ between the two cities?",
+    "crumbs": [
+      "Statistics",
+      "Weather Regression"
+    ]
+  },
+  {
+    "objectID": "Statistics/project2.html#model",
+    "href": "Statistics/project2.html#model",
+    "title": "Weather Regression",
+    "section": "Model",
+    "text": "Model\n\\[\n\\hat{Y}_i = \\beta_0 + \\beta_1 X_{i1} + \\beta_2 X_{i2} + \\beta_3 X_{i1} X_{i2}\n\\]\nwhere \\(Y\\) is the daily maximum temperature, \\(X_1\\) is the daily minimum temperature, and \\(X_2\\) is an indicator for Renton (Phoenix is the baseline). The \\(\\beta_2\\) term lets the lines start at different heights, and the \\(\\beta_3\\) interaction lets them have different slopes.\nweather_lm_full &lt;- lm(MAX ~ MIN + AIRPORT + MIN:AIRPORT, data = weather)",
+    "crumbs": [
+      "Statistics",
+      "Weather Regression"
+    ]
+  },
+  {
+    "objectID": "Statistics/project2.html#results",
+    "href": "Statistics/project2.html#results",
+    "title": "Weather Regression",
+    "section": "Results",
+    "text": "Results\nThe model fit 60 daily observations and explained about 92% of the variation in the daily maximum (adjusted \\(R^2\\) = 0.920).\n\n\n\nTerm\nEstimate\np-value\n\n\n\n\nIntercept (Phoenix)\n17.5\n&lt; 0.0001\n\n\nMinimum temperature (Phoenix slope)\n0.914\n&lt; 0.0001\n\n\nRenton shift in intercept\n-9.919\n&lt; 0.0001\n\n\nRenton shift in slope\n0.436\n0.043\n\n\n\n\nIn Phoenix, each 1°C rise in the minimum goes with about a 0.91°C rise in the maximum.\nIn Renton, the line starts about 9.9°C lower, and the slope is steeper at about 1.35°C per 1°C.\n\nI checked all five regression assumptions (linearity, normal errors, constant variance, fixed X, and independent errors) with residual plots and judged the model appropriate. The result matches what the climates would suggest: Phoenix is hotter than Renton in April, and the minimum temperature carries more of the day’s range in Renton.\nFull report on Google Drive",
+    "crumbs": [
+      "Statistics",
+      "Weather Regression"
     ]
   },
   {
     "objectID": "spreadsheet.html",
     "href": "spreadsheet.html",
-    "title": "about me",
+    "title": "Spreadsheet Analytics",
     "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Spreadsheet Analytics"
-    ]
-  },
-  {
-    "objectID": "spreadsheet.html#title-2-header",
-    "href": "spreadsheet.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Spreadsheet Analytics"
-    ]
-  },
-  {
-    "objectID": "Spreadsheet/project2.html",
-    "href": "Spreadsheet/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "Financial modeling in Excel.\n\nMortgage Amortization: A loan calculator and a full 360-payment amortization schedule.\n\n\n\n\n Back to top",
     "crumbs": [
       "Spreadsheet Analytics",
-      "Project 2"
+      "Overview"
     ]
   },
   {
     "objectID": "resume.html",
     "href": "resume.html",
-    "title": "Isaac Newtons’s CV",
+    "title": "Resume",
     "section": "",
-    "text": "Physicist, Mathematician, Cambridge professor.\n\nisaac@applesdofall.org | My wikipedia page\n\n\n\nStanding on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples.\n\n\n\n\n1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow\n\n\n\n\n2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France\n\n\n\n\n\n\n1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001\n\n\n\n\n1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
+    "text": "Download PDF  Download Word"
   },
   {
-    "objectID": "resume.html#currently",
-    "href": "resume.html#currently",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "Standing on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples."
+    "objectID": "resume.html#mary-palmer",
+    "href": "resume.html#mary-palmer",
+    "title": "Resume",
+    "section": "Mary Palmer",
+    "text": "Mary Palmer\nLinkedIn"
   },
   {
     "objectID": "resume.html#education",
     "href": "resume.html#education",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow"
+    "title": "Resume",
+    "section": "Education",
+    "text": "Education\nBachelor of Science in Economics, Minor in Data Science\nBrigham Young University-Idaho, Rexburg, ID\nSeptember 2024 to April 2028\n\nGPA: 4.00\nFull-Ride Merit Scholarship\nEconomics Society President\nRelevant courses: Business Analytics (Power BI), Data Science Programming, Econometrics, Intermediate Statistics, SQL, Spreadsheet Applications"
   },
   {
-    "objectID": "resume.html#awards",
-    "href": "resume.html#awards",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France"
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Resume",
+    "section": "Skills",
+    "text": "Skills\n\nData and tools: Power BI, Excel, Python, R, SQL\nMethods: Statistical modeling, hypothesis testing, data cleaning, data visualization and storytelling"
   },
   {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001"
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Resume",
+    "section": "Experience",
+    "text": "Experience\nAssociate Research Fellow\nBYU-Idaho, Rexburg, ID\nJanuary 2026 to present\n\nDesigned and ran randomized experiments to estimate causal effects on student performance\nManaged survey deployment and treatment assignment, producing clean datasets\nBuilt and integrated student-item datasets (Canvas, Qualtrics, admin); applied fixed effects models with clustered SEs\nDeveloped survey instruments and synthesized literature to support research design\n\nAccount Manager/Trainer\nOptimalShip, Rexburg, ID\nJune 2024 to December 2024\n\nSupported client shipments and B2B sales, contributing $1,800+ in revenue while analyzing employee performance drivers\nCollaborated with internal teams to align operational goals with performance data and outcomes"
   },
   {
-    "objectID": "resume.html#occupation",
-    "href": "resume.html#occupation",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
+    "objectID": "resume.html#projects",
+    "href": "resume.html#projects",
+    "title": "Resume",
+    "section": "Projects",
+    "text": "Projects\nRetail Promotion Pricing and Demand Analysis (RStudio), Fall 2025\n\nAnalyzed 3 years of retail panel data to evaluate price sensitivity and promotion effects\nModeled revenue impacts of promotional pricing and tested regional differences\nDelivered data-driven pricing recommendations based on statistical results\n\nMarket Analysis Project: Mutual Fund Selection (Power BI), Fall 2025\n\nCleaned and analyzed financial data to compare funds by risk and return\nBuilt dashboards and visualizations to communicate insights to non-technical users"
+  },
+  {
+    "objectID": "resume.html#volunteer-and-leadership",
+    "href": "resume.html#volunteer-and-leadership",
+    "title": "Resume",
+    "section": "Volunteer and Leadership",
+    "text": "Volunteer and Leadership\nVolunteer\nDistinguished Young Women, Madison County, ID and Idaho State\nJanuary 2023 to February 2025\n\nMentored participants through coaching and structured feedback following success in local and state-level presentations and interviews"
   },
   {
     "objectID": "Machine_Learning/project3.html",
     "href": "Machine_Learning/project3.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Comparing Models",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "Which of three classification algorithms best predicts whether a home was built before 1980, and which should I recommend to a client?\nDoes adding neighborhood data improve that model?\nCan a regression model predict the exact year a home was built?",
     "crumbs": [
       "Machine Learning",
-      "Project 3"
+      "Comparing Models"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html#questions",
+    "href": "Machine_Learning/project3.html#questions",
+    "title": "Comparing Models",
+    "section": "",
+    "text": "Which of three classification algorithms best predicts whether a home was built before 1980, and which should I recommend to a client?\nDoes adding neighborhood data improve that model?\nCan a regression model predict the exact year a home was built?",
+    "crumbs": [
+      "Machine Learning",
+      "Comparing Models"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html#q1-three-classifiers",
+    "href": "Machine_Learning/project3.html#q1-three-classifiers",
+    "title": "Comparing Models",
+    "section": "Q1: Three classifiers",
+    "text": "Q1: Three classifiers\nI fit a decision tree, a random forest, and a gradient boosting classifier on the same training data and compared their classification reports and feature importances.\n\n\n\nModel\nAccuracy\n\n\n\n\nDecision tree\n0.89\n\n\nRandom forest\n0.92\n\n\nGradient boosting\n0.89\n\n\n\nAll three models agreed on the strongest predictors: one-story architecture, an attached garage, and home quality. Gradient boosting ranked the number of bathrooms above living area. I recommended the random forest because it had the best accuracy, precision, and recall.",
+    "crumbs": [
+      "Machine Learning",
+      "Comparing Models"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html#q2-adding-neighborhood-data",
+    "href": "Machine_Learning/project3.html#q2-adding-neighborhood-data",
+    "title": "Comparing Models",
+    "section": "Q2: Adding neighborhood data",
+    "text": "Q2: Adding neighborhood data\nI joined the neighborhood dataset to the housing data on the parcel number and re-ran the random forest. The top features did not change, and neighborhood itself was not an important feature. Even so, accuracy rose to 0.97, so I recommended this version of the model.",
+    "crumbs": [
+      "Machine Learning",
+      "Comparing Models"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html#q3-predicting-the-year-built",
+    "href": "Machine_Learning/project3.html#q3-predicting-the-year-built",
+    "title": "Comparing Models",
+    "section": "Q3: Predicting the year built",
+    "text": "Q3: Predicting the year built\nThis is a regression problem, so I evaluated it with error measures instead of accuracy.\n\n\n\nModel\nR²\nRMSE\nMAE\n\n\n\n\nGradient boosting regressor\n0.759\n18.2 years\n12.8 years\n\n\nRandom forest regressor\n0.887\n12.5 years\n6.2 years\n\n\n\nThe residual plot for the first model showed it consistently underestimated the year for older homes and overestimated it for newer ones, so I called it a weak model. The random forest regressor cut the typical error roughly in half. It takes longer to run, but both finish in under a minute, so I recommended the random forest regressor.\nFull report on Google Drive",
+    "crumbs": [
+      "Machine Learning",
+      "Comparing Models"
     ]
   },
   {
     "objectID": "Machine_Learning/project1.html",
     "href": "Machine_Learning/project1.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Classifying Home Age",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "Can a model tell whether a home was built before 1980, using only features of the home such as architectural style, garage type, quality, and living area?",
     "crumbs": [
       "Machine Learning",
-      "Project 1"
+      "Classifying Home Age"
     ]
   },
   {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "about me",
+    "objectID": "Machine_Learning/project1.html#question",
+    "href": "Machine_Learning/project1.html#question",
+    "title": "Classifying Home Age",
     "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "exploration.html#title-2-header",
-    "href": "exploration.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Coursework/project3.html",
-    "href": "Coursework/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "Can a model tell whether a home was built before 1980, using only features of the home such as architectural style, garage type, quality, and living area?",
     "crumbs": [
-      "Past Coursework",
-      "Project 3"
+      "Machine Learning",
+      "Classifying Home Age"
     ]
   },
   {
-    "objectID": "Coursework/project1.html",
-    "href": "Coursework/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "objectID": "Machine_Learning/project1.html#approach",
+    "href": "Machine_Learning/project1.html#approach",
+    "title": "Classifying Home Age",
+    "section": "Approach",
+    "text": "Approach\nI used a public housing dataset from the BYU-Idaho data science program (dwellings_ml). I dropped the identifier and year columns so the model could not see the answer directly, split the data 80/20 into training and test sets, and fit a decision tree classifier in scikit-learn.\nx_features = df.drop(columns=[\"parcel\", \"abstrprd\", \"yrbuilt\", \"before1980\"])\ny_targets = df.before1980\n\ntrain_data, test_data, train_targets, test_targets = train_test_split(\n    x_features, y_targets, test_size=0.2\n)\n\nclassifier = DecisionTreeClassifier()\nclassifier.fit(train_data, train_targets)",
     "crumbs": [
-      "Past Coursework",
-      "Project 1"
+      "Machine Learning",
+      "Classifying Home Age"
     ]
   },
   {
-    "objectID": "Cleaning_Projects/project2.html",
-    "href": "Cleaning_Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "objectID": "Machine_Learning/project1.html#results",
+    "href": "Machine_Learning/project1.html#results",
+    "title": "Classifying Home Age",
+    "section": "Results",
+    "text": "Results\nThe model correctly classified about 90% of the homes in the test set. I reported accuracy, precision, and recall, and explained each one in plain language:\n\nAccuracy: of all test homes, the share the model labeled correctly.\nPrecision: of the homes the model labeled as built before (or after) 1980, the share that really were.\nRecall: of the homes that really were built before (or after) 1980, the share the model found.",
     "crumbs": [
-      "Data Cleaning",
-      "Project 2"
+      "Machine Learning",
+      "Classifying Home Age"
     ]
   },
   {
-    "objectID": "cleaning.html",
-    "href": "cleaning.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
+    "objectID": "Machine_Learning/project1.html#what-drives-the-predictions",
+    "href": "Machine_Learning/project1.html#what-drives-the-predictions",
+    "title": "Classifying Home Age",
+    "section": "What drives the predictions",
+    "text": "What drives the predictions\nA one-story architectural style was the most important feature (importance 0.249), followed by an attached garage (0.126). Home quality and living area came next. Every other feature had an importance below 0.05.\nI charted the importances with lets-plot to show the client which characteristics matter most.\n\nFull report on Google Drive",
     "crumbs": [
-      "Data Cleaning"
-    ]
-  },
-  {
-    "objectID": "cleaning.html#title-2-header",
-    "href": "cleaning.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Cleaning"
-    ]
-  },
-  {
-    "objectID": "Cleaning_Projects/project1.html",
-    "href": "Cleaning_Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleaning",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Cleaning_Projects/project3.html",
-    "href": "Cleaning_Projects/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleaning",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Coursework/project2.html",
-    "href": "Coursework/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Past Coursework",
-      "Project 2"
+      "Machine Learning",
+      "Classifying Home Age"
     ]
   },
   {
     "objectID": "coursework.html",
     "href": "coursework.html",
-    "title": "about me",
+    "title": "Past Coursework",
     "section": "",
-    "text": "MarkDown Basics",
+    "text": "Programming and database projects from earlier classes.\n\nPython: Confidence vs. Retail Sales: A command-line program that measures how consumer confidence moves with retail sales.\nSQL: Music Library Database: A relational database with constraints, transactions, queries, and views.\n\n\n\n\n Back to top",
     "crumbs": [
-      "Past Coursework"
+      "Past Coursework",
+      "Overview"
     ]
   },
   {
-    "objectID": "coursework.html#title-2-header",
-    "href": "coursework.html#title-2-header",
-    "title": "about me",
+    "objectID": "Coursework/project1.html",
+    "href": "Coursework/project1.html",
+    "title": "Python: Confidence vs. Retail Sales",
     "section": "",
-    "text": "MarkDown Basics",
+    "text": "A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.\nData: a monthly consumer confidence index and monthly retail sales, with sources from FRED.",
     "crumbs": [
-      "Past Coursework"
+      "Past Coursework",
+      "Python: Confidence vs. Retail Sales"
+    ]
+  },
+  {
+    "objectID": "Coursework/project1.html#overview",
+    "href": "Coursework/project1.html#overview",
+    "title": "Python: Confidence vs. Retail Sales",
+    "section": "",
+    "text": "A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.\nData: a monthly consumer confidence index and monthly retail sales, with sources from FRED.",
+    "crumbs": [
+      "Past Coursework",
+      "Python: Confidence vs. Retail Sales"
+    ]
+  },
+  {
+    "objectID": "Coursework/project1.html#what-the-program-does",
+    "href": "Coursework/project1.html#what-the-program-does",
+    "title": "Python: Confidence vs. Retail Sales",
+    "section": "What the program does",
+    "text": "What the program does\n\nReads the two CSV files into dictionaries keyed by date and merges them into one compound dictionary.\nValidates the user’s input: the dates must parse as “Month, Year”, differ from each other, fall in order, and exist in the data.\nBuilds the date range and calculates each series’ percent change between the two dates.\nCalculates the mean, standard deviation, and the Pearson correlation coefficient with NumPy.\nTranslates the correlation into a plain-English conclusion, from “almost no correlation” to “very strong correlation.”\nPrints a formatted summary table with tabulate.\n\ndef write_conclusion(correl_coef):\n    abs_correl_coef = abs(correl_coef)\n    if abs_correl_coef &lt;= 0.16:\n        conclusion = \"There is almost no correlation between retail sales and CCI in the given time period.\"\n    elif abs_correl_coef &lt;= 0.29:\n        conclusion = \"There is a very weak correlation between retail sales and CCI in the given time period.\"\n    # ... thresholds continue up to \"very strong\" above 0.89",
+    "crumbs": [
+      "Past Coursework",
+      "Python: Confidence vs. Retail Sales"
+    ]
+  },
+  {
+    "objectID": "Coursework/project1.html#skills-practiced",
+    "href": "Coursework/project1.html#skills-practiced",
+    "title": "Python: Confidence vs. Retail Sales",
+    "section": "Skills practiced",
+    "text": "Skills practiced\nWriting small, single-purpose functions with docstrings, reading files with the csv module, working with datetime, handling bad input, and testing the program with a companion test_ script.\nOpen the full analysis report on Google Drive",
+    "crumbs": [
+      "Past Coursework",
+      "Python: Confidence vs. Retail Sales"
+    ]
+  },
+  {
+    "objectID": "Coursework/project2.html",
+    "href": "Coursework/project2.html",
+    "title": "SQL: Music Library Database",
+    "section": "",
+    "text": "A relational database that tracks a music library: pieces, the books they are in, composers, genres, difficulty by part, shelf locations, and performance history. I designed the schema, loaded the data, then wrote the scripts that modify and query it.",
+    "crumbs": [
+      "Past Coursework",
+      "SQL: Music Library Database"
+    ]
+  },
+  {
+    "objectID": "Coursework/project2.html#overview",
+    "href": "Coursework/project2.html#overview",
+    "title": "SQL: Music Library Database",
+    "section": "",
+    "text": "A relational database that tracks a music library: pieces, the books they are in, composers, genres, difficulty by part, shelf locations, and performance history. I designed the schema, loaded the data, then wrote the scripts that modify and query it.",
+    "crumbs": [
+      "Past Coursework",
+      "SQL: Music Library Database"
+    ]
+  },
+  {
+    "objectID": "Coursework/project2.html#scripts",
+    "href": "Coursework/project2.html#scripts",
+    "title": "SQL: Music Library Database",
+    "section": "Scripts",
+    "text": "Scripts\n\nbuild_db_4.sql creates the tables.\nfill_db_4.sql loads the data.\nfinal_1.sql cleans up and extends the database, then demonstrates queries and views.",
+    "crumbs": [
+      "Past Coursework",
+      "SQL: Music Library Database"
+    ]
+  },
+  {
+    "objectID": "Coursework/project2.html#data-integrity-and-changes",
+    "href": "Coursework/project2.html#data-integrity-and-changes",
+    "title": "SQL: Music Library Database",
+    "section": "Data integrity and changes",
+    "text": "Data integrity and changes\n\nConverted the composer birth and death year columns to dates.\nAdded a CHECK constraint so a piece’s minimum performers can never exceed its maximum.\nRenamed a table for consistency, dropped an unneeded column, and added a “Single Piece/No Book” entry.\nWrapped inserts and updates in transactions, including adding a new piece and linking it to a book.",
+    "crumbs": [
+      "Past Coursework",
+      "SQL: Music Library Database"
+    ]
+  },
+  {
+    "objectID": "Coursework/project2.html#advanced-queries",
+    "href": "Coursework/project2.html#advanced-queries",
+    "title": "SQL: Music Library Database",
+    "section": "Advanced queries",
+    "text": "Advanced queries\n\nEvery piece, book, and composer on a given shelf, using a five-table join.\nThe average difficulty of each piece across all of its parts, using AVG and GROUP BY.\nThe number of pieces in each book, ranked from most to fewest:\n\nSELECT bhp.book_id AS \"Book ID\", b.book_title AS \"Book Title\", COUNT(*) AS \"Num. of Pieces\"\nFROM book_has_piece AS bhp\n  JOIN book AS b ON bhp.book_id = b.book_id\nGROUP BY 1\nORDER BY 3 DESC;",
+    "crumbs": [
+      "Past Coursework",
+      "SQL: Music Library Database"
+    ]
+  },
+  {
+    "objectID": "Coursework/project2.html#views",
+    "href": "Coursework/project2.html#views",
+    "title": "SQL: Music Library Database",
+    "section": "Views",
+    "text": "Views\n\nfull_lib_overview shows each piece with its book, composer, genre, and whether it is in the performance repertoire.\nperf_hist_overview lists each performance with its event, date, award, and the pieces played, using GROUP_CONCAT.\n\nDownload the SQL scripts from Google Drive",
+    "crumbs": [
+      "Past Coursework",
+      "SQL: Music Library Database"
     ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "about me",
+    "title": "Mary Palmer",
     "section": "",
-    "text": "MarkDown Basics"
+    "text": "I am an Economics major with a Data Science minor at Brigham Young University-Idaho (expected April 2028), with a 4.00 GPA and a full-ride merit scholarship. I also serve as president of the Economics Society and work as an Associate Research Fellow, where I help design randomized experiments that estimate causal effects on student performance.\nMy work centers on turning messy data into a clear answer: cleaning and joining datasets, choosing a defensible statistical model, and presenting the result so a non-technical reader can act on it.\nTools: Python, R, SQL, Power BI, Excel\nMethods: statistical modeling, hypothesis testing, machine learning, data visualization and storytelling"
   },
   {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
+    "objectID": "index.html#what-is-on-this-site",
+    "href": "index.html#what-is-on-this-site",
+    "title": "Mary Palmer",
+    "section": "What is on this site",
+    "text": "What is on this site\n\n\n\nSection\nWhat you will find\n\n\n\n\nMachine Learning\nClassification and regression models that predict home age from housing data\n\n\nStatistics\nAn ANOVA consulting report, a multiple linear regression, and a group econometrics paper\n\n\nData Storytelling\nPower BI dashboards and a mutual fund recommendation for a retirement-focused client\n\n\nSpreadsheet Analytics\nA mortgage amortization model built in Excel\n\n\nPast Coursework\nA Python analysis program and a SQL database project\n\n\n\nYou can read my full resume or connect with me on LinkedIn."
   },
   {
     "objectID": "Machine_Learning/project2.html",
     "href": "Machine_Learning/project2.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Machine Learning Pt. 2",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "This is the middle project in my machine learning sequence. It sits between the single decision tree in Classifying Home Age and the model comparison in Comparing Models.\nRead the full report on Google Drive\n\n\n\n\n Back to top",
     "crumbs": [
       "Machine Learning",
-      "Project 2"
+      "Machine Learning Pt. 2"
     ]
   },
   {
     "objectID": "ml.html",
     "href": "ml.html",
-    "title": "about me",
+    "title": "Machine Learning",
     "section": "",
-    "text": "MarkDown Basics",
+    "text": "Models that predict the age of a home from public housing data. Each project builds on the one before it.\n\nClassifying Home Age: A decision tree that predicts whether a home was built before 1980.\nMachine Learning Pt. 2: The second unit in the sequence, linked from Google Drive.\nComparing Models: Three classifiers compared, then a regression model that predicts the exact year a home was built.\n\n\n\n\n Back to top",
     "crumbs": [
-      "Machine Learning"
-    ]
-  },
-  {
-    "objectID": "ml.html#title-2-header",
-    "href": "ml.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Machine Learning"
+      "Machine Learning",
+      "Overview"
     ]
   },
   {
     "objectID": "Spreadsheet/project1.html",
     "href": "Spreadsheet/project1.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Mortgage Amortization",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "I built an Excel model that takes a home price, down payment, interest rate, and loan term, and returns the monthly payment, the full amortization schedule, and the minimum salary a buyer would need to qualify.",
     "crumbs": [
       "Spreadsheet Analytics",
-      "Project 1"
+      "Mortgage Amortization"
     ]
   },
   {
-    "objectID": "Spreadsheet/project3.html",
-    "href": "Spreadsheet/project3.html",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "Spreadsheet/project1.html#overview",
+    "href": "Spreadsheet/project1.html#overview",
+    "title": "Mortgage Amortization",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "I built an Excel model that takes a home price, down payment, interest rate, and loan term, and returns the monthly payment, the full amortization schedule, and the minimum salary a buyer would need to qualify.",
     "crumbs": [
       "Spreadsheet Analytics",
-      "Project 3"
+      "Mortgage Amortization"
+    ]
+  },
+  {
+    "objectID": "Spreadsheet/project1.html#inputs-and-outputs",
+    "href": "Spreadsheet/project1.html#inputs-and-outputs",
+    "title": "Mortgage Amortization",
+    "section": "Inputs and outputs",
+    "text": "Inputs and outputs\n\n\n\nInput\nValue\n\n\n\n\nHome price\n$500,000\n\n\nDown payment (20%)\n$100,000\n\n\nLoan amount\n$400,000\n\n\nInterest rate\n7.00%\n\n\nTerm\n30 years (360 payments)\n\n\nMaximum payment-to-salary ratio\n40%\n\n\n\n\n\n\nOutput\nValue\n\n\n\n\nMonthly payment\n$2,661.21\n\n\nTotal of all payments\n$958,035.59\n\n\nTotal interest paid\n$558,035.59\n\n\nMinimum monthly salary to qualify\n$6,653.02\n\n\nMinimum annual salary to qualify\n$79,836.30\n\n\n\nThe payment does not include insurance or property taxes.",
+    "crumbs": [
+      "Spreadsheet Analytics",
+      "Mortgage Amortization"
+    ]
+  },
+  {
+    "objectID": "Spreadsheet/project1.html#what-the-schedule-shows",
+    "href": "Spreadsheet/project1.html#what-the-schedule-shows",
+    "title": "Mortgage Amortization",
+    "section": "What the schedule shows",
+    "text": "What the schedule shows\nThe schedule splits every payment into interest and principal and tracks the remaining balance.\n\n\n\nPayment\nInterest\nPrincipal\nBalance\n\n\n\n\n1\n$2,333.33\n$327.88\n$399,672.12\n\n\n180 (year 15)\n$1,732.52\n$928.69\n$296,075.46\n\n\n360 (final)\n$15.43\n$2,645.78\n$0.00\n\n\n\nBecause interest is charged on the remaining balance, the first payment sends only about 12% toward principal, and after 15 years the borrower still owes about 74% of the loan.\nDownload the Excel workbook from Google Drive",
+    "crumbs": [
+      "Spreadsheet Analytics",
+      "Mortgage Amortization"
     ]
   },
   {
     "objectID": "Statistics/project1.html",
     "href": "Statistics/project1.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "Teton Pantry Co. runs promotions on its 12 oz. Holiday Cocoa. Should the promotion depth be set differently for each sales region?",
     "crumbs": [
       "Statistics",
-      "Project 1"
+      "Holiday Cocoa Promotions (ANOVA)"
+    ]
+  },
+  {
+    "objectID": "Statistics/project1.html#question",
+    "href": "Statistics/project1.html#question",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "section": "",
+    "text": "Teton Pantry Co. runs promotions on its 12 oz. Holiday Cocoa. Should the promotion depth be set differently for each sales region?",
+    "crumbs": [
+      "Statistics",
+      "Holiday Cocoa Promotions (ANOVA)"
+    ]
+  },
+  {
+    "objectID": "Statistics/project1.html#approach",
+    "href": "Statistics/project1.html#approach",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "section": "Approach",
+    "text": "Approach\nI built a consulting report in R (car, tidyverse, pander) from the company’s sales data.\n\nCalculated revenue as units sold times actual price.\nGrouped each week’s promotion depth into three levels: none, small (depth under 0.25), and medium (depth from 0.25 to 0.36).\nUsed ANOVA to compare revenue across promotion levels and regions.",
+    "crumbs": [
+      "Statistics",
+      "Holiday Cocoa Promotions (ANOVA)"
+    ]
+  },
+  {
+    "objectID": "Statistics/project1.html#conclusion",
+    "href": "Statistics/project1.html#conclusion",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe report’s headline recommendation is that holiday cocoa promotions do not need to differ by region.\nRead the full report on Google Drive",
+    "crumbs": [
+      "Statistics",
+      "Holiday Cocoa Promotions (ANOVA)"
     ]
   },
   {
     "objectID": "Statistics/project3.html",
     "href": "Statistics/project3.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Price of Promotion (Econometrics)",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "Measuring the Price of Promotion: A Store-Level Analysis of Consumer Expenditure\nErral Asper, Kathryn Haroldsen, Taylor Landini, Mary Palmer, and Harrison Thomas (April 2026)",
     "crumbs": [
       "Statistics",
-      "Project 3"
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Statistics/project3.html#question",
+    "href": "Statistics/project3.html#question",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "Question",
+    "text": "Question\nDoes promotional advertising push the prices consumers pay up or down? Economic theory points both ways: price-focused promotions can intensify competition, while brand-building advertising can reduce price sensitivity and support higher prices.",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Statistics/project3.html#data",
+    "href": "Statistics/project3.html#data",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "Data",
+    "text": "Data\nWe used the Dominick’s Finer Foods scanner database, compiled by the University of Chicago Booth School of Business from about 100 grocery stores from 1989 to 1994, and focused on the frozen dinner category.\n\nUnbalanced panel of 19,306 store-item units over weeks 1 to 255, for 1,645,316 observations\nRemoved observations flagged as unreliable, prices of $0, and prices above $6 (over 99% of the data fell below that cutoff)\nPromotions coded as Bonus Buy, Coupon, or Simple Price Reduction, compared with weeks with no recorded promotion",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Statistics/project3.html#method",
+    "href": "Statistics/project3.html#method",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "Method",
+    "text": "Method\nFixed effects regression with store-item fixed effects, so that each product in each store is compared only against itself across weeks. Model 1 regresses price on the three promotion types. Model 2 adds the retailer’s profit margin.",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Statistics/project3.html#findings",
+    "href": "Statistics/project3.html#findings",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "Findings",
+    "text": "Findings\nRelative to non-promotion weeks, average prices were lower by:\n\n\n\nPromotion type\nAverage price difference\n\n\n\n\nBonus Buy\n$0.11\n\n\nSimple Price Reduction\n$0.46\n\n\nCoupon\n$0.95\n\n\n\n\nCoupons were the deepest discount and also produced the highest median sales volume.\nAdding profit (Model 2) shrank the promotion coefficients to near zero. Because profit depends directly on price, we treated it as endogenous and based our conclusions on Model 1.\nA Breusch-Pagan test (BP = 830.21, p &lt; 0.01) found heteroskedasticity, so we used robust standard errors. Variance inflation factors near 1.0 showed no multicollinearity.",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Statistics/project3.html#limitations",
+    "href": "Statistics/project3.html#limitations",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "Limitations",
+    "text": "Limitations\nThe data are observational, cover one retailer and one time period, and record promotions imperfectly, so the results should not be read as causal or applied directly to modern online retail.\nRead the full paper (PDF) on Google Drive",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
     ]
   },
   {
     "objectID": "Storytelling/project1.html",
     "href": "Storytelling/project1.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Merger Sales Dashboard",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "This Power BI dashboard evaluates a proposed merger between AdventureWorks and GoBig, a company that specializes in extreme sports. The landing page lays out the case for and against the merger side by side, scores overall confidence at 7 out of 10, and recommends negotiating a 70/30 split. Each point on that page links to a supporting dashboard page.\n\n\n\nThe landing page: reasons to merge, reasons not to, and a merge confidence score of 7 with a recommended 70/30 split.",
     "crumbs": [
       "Data Storytelling",
-      "Project 1"
+      "Merger Sales Dashboard"
+    ]
+  },
+  {
+    "objectID": "Storytelling/project1.html#overview",
+    "href": "Storytelling/project1.html#overview",
+    "title": "Merger Sales Dashboard",
+    "section": "",
+    "text": "This Power BI dashboard evaluates a proposed merger between AdventureWorks and GoBig, a company that specializes in extreme sports. The landing page lays out the case for and against the merger side by side, scores overall confidence at 7 out of 10, and recommends negotiating a 70/30 split. Each point on that page links to a supporting dashboard page.\n\n\n\nThe landing page: reasons to merge, reasons not to, and a merge confidence score of 7 with a recommended 70/30 split.",
+    "crumbs": [
+      "Data Storytelling",
+      "Merger Sales Dashboard"
+    ]
+  },
+  {
+    "objectID": "Storytelling/project1.html#what-the-data-shows",
+    "href": "Storytelling/project1.html#what-the-data-shows",
+    "title": "Merger Sales Dashboard",
+    "section": "What the data shows",
+    "text": "What the data shows\n\nRevenue growth has flattened. Total revenue across the period is $66.12M with $30.19M in gross profit and an average profit of $226.26 per sale. Quarterly revenue climbed from 2019 through 2022, which is why the page reads “profitable but plateauing.”\nMargins are healthy but uneven. Gross profit margin rose from about 40% in 2019 to about 46% by the end of 2022, while clothing profit margins stood out as a concern.\n\n\n\n\nRevenue, gross profit, and margin by year and quarter, with a table and bar chart toggle.\n\n\n\nYounger customers drive sales. AdventureWorks’ main demographic is males ages 20 to 30, which lines up with GoBig’s customer base. Millennials and Gen Z lead revenue, although Gen Z revenue peaked in 2022 and has since fallen back below Millennials.\n\n\n\n\nQuarterly revenue by generation.\n\n\n\nBikes carry the business. Bikes generate the most revenue and profit even with lower inventory, and they turn over inventory far faster than components.\n\n\n\n\nGross profit versus markup by product, with estimated inventory turnover by category.",
+    "crumbs": [
+      "Data Storytelling",
+      "Merger Sales Dashboard"
+    ]
+  },
+  {
+    "objectID": "Storytelling/project1.html#tools",
+    "href": "Storytelling/project1.html#tools",
+    "title": "Merger Sales Dashboard",
+    "section": "Tools",
+    "text": "Tools\nPower BI, with time-intelligence measures (prior period, month-to-date, quarter-to-date, year-to-date), conditional formatting, and page-to-page navigation buttons.",
+    "crumbs": [
+      "Data Storytelling",
+      "Merger Sales Dashboard"
     ]
   },
   {
     "objectID": "Storytelling/project3.html",
     "href": "Storytelling/project3.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Mutual Fund Risk Portfolio",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "I analyzed a dataset of about 10,000 mutual funds and ETFs to find strong investment options for a middle-income family planning for retirement. Using Power BI (and Tableau), AI-supported research, and financial risk measures, I compared funds across five risk levels, with standard deviation as the main measure of risk.",
     "crumbs": [
       "Data Storytelling",
-      "Project 3"
+      "Mutual Fund Risk Portfolio"
+    ]
+  },
+  {
+    "objectID": "Storytelling/project3.html#overview",
+    "href": "Storytelling/project3.html#overview",
+    "title": "Mutual Fund Risk Portfolio",
+    "section": "",
+    "text": "I analyzed a dataset of about 10,000 mutual funds and ETFs to find strong investment options for a middle-income family planning for retirement. Using Power BI (and Tableau), AI-supported research, and financial risk measures, I compared funds across five risk levels, with standard deviation as the main measure of risk.",
+    "crumbs": [
+      "Data Storytelling",
+      "Mutual Fund Risk Portfolio"
+    ]
+  },
+  {
+    "objectID": "Storytelling/project3.html#the-final-presentation",
+    "href": "Storytelling/project3.html#the-final-presentation",
+    "title": "Mutual Fund Risk Portfolio",
+    "section": "The final presentation",
+    "text": "The final presentation\nFor the final presentation I:\n\nexplained the current market context\norganized funds by risk category\nchose one recommended fund or ETF within each category\nbuilt data-driven visuals to support each recommendation\n\nI also focused on making the analysis understandable for a non-expert audience, with clear storytelling, client-centered explanations, and a professional presentation design.",
+    "crumbs": [
+      "Data Storytelling",
+      "Mutual Fund Risk Portfolio"
+    ]
+  },
+  {
+    "objectID": "Storytelling/project3.html#materials",
+    "href": "Storytelling/project3.html#materials",
+    "title": "Mutual Fund Risk Portfolio",
+    "section": "Materials",
+    "text": "Materials\n\nRecorded presentation (video) on Google Drive\nPower BI project folder on Google Drive",
+    "crumbs": [
+      "Data Storytelling",
+      "Mutual Fund Risk Portfolio"
     ]
   }
 ]

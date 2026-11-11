@@ -1,10 +1,24 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
-# use quarto markdown to 
+title: "Mary Palmer"
+subtitle: "Economics and data science portfolio"
+toc: false
 ---
 
-# Title 1 Header
-## Title 2 Header
+I am an Economics major with a Data Science minor at Brigham Young University-Idaho (expected April 2028), with a 4.00 GPA and a full-ride merit scholarship. I also serve as president of the Economics Society and work as an Associate Research Fellow, where I help design randomized experiments that estimate causal effects on student performance.
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+My work centers on turning messy data into a clear answer: cleaning and joining datasets, choosing a defensible statistical model, and presenting the result so a non-technical reader can act on it.
+
+**Tools:** Python, R, SQL, Power BI, Excel  
+**Methods:** statistical modeling, hypothesis testing, machine learning, data visualization and storytelling
+
+## What is on this site
+
+| Section | What you will find |
+|---|---|
+| [Machine Learning](ml.qmd) | Classification and regression models that predict home age from housing data |
+| [Statistics](statistics.qmd) | An ANOVA consulting report, a multiple linear regression, and a group econometrics paper |
+| [Data Storytelling](storytelling.qmd) | Power BI dashboards and a mutual fund recommendation for a retirement-focused client |
+| [Spreadsheet Analytics](spreadsheet.qmd) | A mortgage amortization model built in Excel |
+| [Past Coursework](coursework.qmd) | A Python analysis program and a SQL database project |
+
+You can read my full [resume](resume.qmd) or connect with me on [LinkedIn](https://www.linkedin.com/in/mary-palmer-mp/).

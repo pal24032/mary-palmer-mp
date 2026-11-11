@@ -1,28 +1,45 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
-format:
-  html:
-    self-contained: true
-    page-layout: full
-    title-block-banner: true
-    toc: true
-    toc-depth: 3
-    toc-location: body
-    number-sections: false
-    html-math-method: katex
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: hover
-    code-tools:
-        source: false
-        toggle: true
-        caption: See code
-execute: 
-  warning: false
-    
+title: "Mortgage Amortization"
+subtitle: "Excel | Loan calculator and 360-payment schedule"
 ---
 
-### Paste in a template
+## Overview
+
+I built an Excel model that takes a home price, down payment, interest rate, and loan term, and returns the monthly payment, the full amortization schedule, and the minimum salary a buyer would need to qualify.
+
+## Inputs and outputs
+
+| Input | Value |
+|---|---|
+| Home price | $500,000 |
+| Down payment (20%) | $100,000 |
+| Loan amount | $400,000 |
+| Interest rate | 7.00% |
+| Term | 30 years (360 payments) |
+| Maximum payment-to-salary ratio | 40% |
+
+| Output | Value |
+|---|---|
+| Monthly payment | $2,661.21 |
+| Total of all payments | $958,035.59 |
+| Total interest paid | $558,035.59 |
+| Minimum monthly salary to qualify | $6,653.02 |
+| Minimum annual salary to qualify | $79,836.30 |
+
+The payment does not include insurance or property taxes.
+
+## What the schedule shows
+
+The schedule splits every payment into interest and principal and tracks the remaining balance.
+
+| Payment | Interest | Principal | Balance |
+|---|---|---|---|
+| 1 | $2,333.33 | $327.88 | $399,672.12 |
+| 180 (year 15) | $1,732.52 | $928.69 | $296,075.46 |
+| 360 (final) | $15.43 | $2,645.78 | $0.00 |
+
+Because interest is charged on the remaining balance, the first payment sends only about 12% toward principal, and after 15 years the borrower still owes about 74% of the loan.
+
+[Download the Excel workbook from Google Drive](https://drive.google.com/file/d/1JqiBzdw0A9sUTmbNUEw_qrfuQl3GdGhb/view?usp=drivesdk){target="_blank"}
+
+<!-- PASTE (optional): a screenshot of the input section or a balance-over-time chart. -->

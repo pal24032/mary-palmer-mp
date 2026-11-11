@@ -1,28 +1,38 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
-format:
-  html:
-    self-contained: true
-    page-layout: full
-    title-block-banner: true
-    toc: true
-    toc-depth: 3
-    toc-location: body
-    number-sections: false
-    html-math-method: katex
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: hover
-    code-tools:
-        source: false
-        toggle: true
-        caption: See code
-execute: 
-  warning: false
-    
+title: "Weather Regression"
+subtitle: "R | Multiple linear regression with an interaction"
 ---
 
-### Paste in a template
+## Question
+
+My family has lived in both Arizona and Washington, so I pulled daily weather data (NOAA's Global Surface Summary of the Day, through the `GSODR` package) for April 2023 from Phoenix Goodyear Airport and Renton Municipal Airport. How well does the daily minimum temperature predict the daily maximum, and does that relationship differ between the two cities?
+
+## Model
+
+$$
+\hat{Y}_i = \beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \beta_3 X_{i1} X_{i2}
+$$
+
+where $Y$ is the daily maximum temperature, $X_1$ is the daily minimum temperature, and $X_2$ is an indicator for Renton (Phoenix is the baseline). The $\beta_2$ term lets the lines start at different heights, and the $\beta_3$ interaction lets them have different slopes.
+
+```r
+weather_lm_full <- lm(MAX ~ MIN + AIRPORT + MIN:AIRPORT, data = weather)
+```
+
+## Results
+
+The model fit 60 daily observations and explained about 92% of the variation in the daily maximum (adjusted $R^2$ = 0.920).
+
+| Term | Estimate | p-value |
+|---|---|---|
+| Intercept (Phoenix) | 17.5 | < 0.0001 |
+| Minimum temperature (Phoenix slope) | 0.914 | < 0.0001 |
+| Renton shift in intercept | -9.919 | < 0.0001 |
+| Renton shift in slope | 0.436 | 0.043 |
+
+- In Phoenix, each 1°C rise in the minimum goes with about a 0.91°C rise in the maximum.
+- In Renton, the line starts about 9.9°C lower, and the slope is steeper at about 1.35°C per 1°C.
+
+I checked all five regression assumptions (linearity, normal errors, constant variance, fixed X, and independent errors) with residual plots and judged the model appropriate. The result matches what the climates would suggest: Phoenix is hotter than Renton in April, and the minimum temperature carries more of the day's range in Renton.
+
+[Full report on Google Drive](https://drive.google.com/file/d/1dGiQQLXzsnI26uQJ1CmasxB0j9-XmCKj/view?usp=drivesdk){target="_blank"}

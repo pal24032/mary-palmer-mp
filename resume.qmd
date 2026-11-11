@@ -1,89 +1,68 @@
 ---
-layout: cv
-title: Isaac Newtons's CV
+title: "Resume"
+toc: false
 ---
-# Isaac Newton
-Physicist, Mathematician, Cambridge professor.
 
-<div id="webaddress">
-<a href="isaac@applesdofall.org">isaac@applesdofall.org</a>
-| <a href="http://en.wikipedia.org/wiki/Isaac_Newton">My wikipedia page</a>
-</div>
+<p>
+<a class="btn btn-primary" href="files/Mary_Palmer_Resume.pdf" download><i class="bi bi-file-earmark-pdf"></i> Download PDF</a>
+<a class="btn btn-outline-primary" href="files/Mary_Palmer_Resume.docx" download><i class="bi bi-file-earmark-word"></i> Download Word</a>
+</p>
 
+## Mary Palmer
 
-## Currently
-
-Standing on the shoulders of giants
-
-### Specialized in
-
-Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.wikipedia.org/wiki/Robert_Hooke)
-
-
-### Research interests
-
-Cooling, power series, optics, alchemy, planetary motions, apples.
-
+[LinkedIn](https://www.linkedin.com/in/marypalmermp)
 
 ## Education
 
-`1654-1660`
-__The King's School, Grantham.__
+**Bachelor of Science in Economics, Minor in Data Science**  
+Brigham Young University-Idaho, Rexburg, ID  
+September 2024 to April 2028
 
-`June 1661 - now`
-__Trinity College, Cambridge__
+- GPA: 4.00
+- Full-Ride Merit Scholarship
+- Economics Society President
+- Relevant courses: Business Analytics (Power BI), Data Science Programming, Econometrics, Intermediate Statistics, SQL, Spreadsheet Applications
 
-- Sizar
+## Skills
 
-`1667 - death`
-__Trinity College, Cambridge__
+- **Data and tools:** Power BI, Excel, Python, R, SQL
+- **Methods:** Statistical modeling, hypothesis testing, data cleaning, data visualization and storytelling
 
-- Fellow
+## Experience
 
+**Associate Research Fellow**  
+BYU-Idaho, Rexburg, ID  
+January 2026 to present
 
+- Designed and ran randomized experiments to estimate causal effects on student performance
+- Managed survey deployment and treatment assignment, producing clean datasets
+- Built and integrated student-item datasets (Canvas, Qualtrics, admin); applied fixed effects models with clustered SEs
+- Developed survey instruments and synthesized literature to support research design
 
-## Awards
+**Account Manager/Trainer**  
+OptimalShip, Rexburg, ID  
+June 2024 to December 2024
 
-`2012`
-President, *Royal Society*, London, UK
+- Supported client shipments and B2B sales, contributing $1,800+ in revenue while analyzing employee performance drivers
+- Collaborated with internal teams to align operational goals with performance data and outcomes
 
-Associate, *French Academy of Science*, Paris, France
+## Projects
 
+**Retail Promotion Pricing and Demand Analysis** (RStudio), Fall 2025
 
+- Analyzed 3 years of retail panel data to evaluate price sensitivity and promotion effects
+- Modeled revenue impacts of promotional pricing and tested regional differences
+- Delivered data-driven pricing recommendations based on statistical results
 
-## Publications
+**Market Analysis Project: Mutual Fund Selection** (Power BI), Fall 2025
 
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
+- Cleaned and analyzed financial data to compare funds by risk and return
+- Built dashboards and visualizations to communicate insights to non-technical users
 
-### Journals
+## Volunteer and Leadership
 
-`1669`
-Newton Sir I, De analysi per æquationes numero terminorum infinitas. 
+**Volunteer**  
+Distinguished Young Women, Madison County, ID and Idaho State  
+January 2023 to February 2025
 
-`1669`
-Lectiones opticæ.
-
-etc. etc. etc.
-
-### Patents
-
-`2012`
-Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.techdirt.com/articles/20121011/09312820678/if-patents-had-been-around-time-newton.shtml) patent 001
-
-
-## Occupation
-
-`1600`
-__Royal Mint__, London
-
-- Warden
-- Minted coins
-
-`1600`
-__Lucasian professor of Mathematics__, Cambridge University
-
-
-
-<!-- ### Footer
-
-Last updated: May 2013 -->
+- Mentored participants through coaching and structured feedback following success in local and state-level presentations and interviews

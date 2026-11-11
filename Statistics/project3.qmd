@@ -1,28 +1,43 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
-format:
-  html:
-    self-contained: true
-    page-layout: full
-    title-block-banner: true
-    toc: true
-    toc-depth: 3
-    toc-location: body
-    number-sections: false
-    html-math-method: katex
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: hover
-    code-tools:
-        source: false
-        toggle: true
-        caption: See code
-execute: 
-  warning: false
-    
+title: "Price of Promotion (Econometrics)"
+subtitle: "R | Group research paper using store-level panel data"
 ---
 
-### Paste in a template
+**Measuring the Price of Promotion: A Store-Level Analysis of Consumer Expenditure**  
+Erral Asper, Kathryn Haroldsen, Taylor Landini, Mary Palmer, and Harrison Thomas (April 2026)
+
+## Question
+
+Does promotional advertising push the prices consumers pay up or down? Economic theory points both ways: price-focused promotions can intensify competition, while brand-building advertising can reduce price sensitivity and support higher prices.
+
+## Data
+
+We used the Dominick's Finer Foods scanner database, compiled by the University of Chicago Booth School of Business from about 100 grocery stores from 1989 to 1994, and focused on the frozen dinner category.
+
+- Unbalanced panel of **19,306 store-item units** over weeks 1 to 255, for **1,645,316 observations**
+- Removed observations flagged as unreliable, prices of $0, and prices above $6 (over 99% of the data fell below that cutoff)
+- Promotions coded as Bonus Buy, Coupon, or Simple Price Reduction, compared with weeks with no recorded promotion
+
+## Method
+
+Fixed effects regression with store-item fixed effects, so that each product in each store is compared only against itself across weeks. Model 1 regresses price on the three promotion types. Model 2 adds the retailer's profit margin.
+
+## Findings
+
+Relative to non-promotion weeks, average prices were lower by:
+
+| Promotion type | Average price difference |
+|---|---|
+| Bonus Buy | $0.11 |
+| Simple Price Reduction | $0.46 |
+| Coupon | $0.95 |
+
+- Coupons were the deepest discount and also produced the highest median sales volume.
+- Adding profit (Model 2) shrank the promotion coefficients to near zero. Because profit depends directly on price, we treated it as endogenous and based our conclusions on Model 1.
+- A Breusch-Pagan test (BP = 830.21, p < 0.01) found heteroskedasticity, so we used robust standard errors. Variance inflation factors near 1.0 showed no multicollinearity.
+
+## Limitations
+
+The data are observational, cover one retailer and one time period, and record promotions imperfectly, so the results should not be read as causal or applied directly to modern online retail.
+
+[Read the full paper (PDF) on Google Drive](https://drive.google.com/file/d/1yC7TGiJYouxj3DRDPVwY-B5jLhAWF1fg/view?usp=drivesdk){target="_blank"}

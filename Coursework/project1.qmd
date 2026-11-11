@@ -1,28 +1,37 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
-format:
-  html:
-    self-contained: true
-    page-layout: full
-    title-block-banner: true
-    toc: true
-    toc-depth: 3
-    toc-location: body
-    number-sections: false
-    html-math-method: katex
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: hover
-    code-tools:
-        source: false
-        toggle: true
-        caption: See code
-execute: 
-  warning: false
-    
+title: "Python: Confidence vs. Retail Sales"
+subtitle: "Python | Functions, dictionaries, and correlation"
 ---
 
-### Paste in a template
+## Overview
+
+A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.
+
+Data: a monthly consumer confidence index and monthly retail sales, with sources from [FRED](https://fred.stlouisfed.org/).
+
+## What the program does
+
+1. Reads the two CSV files into dictionaries keyed by date and merges them into one compound dictionary.
+2. Validates the user's input: the dates must parse as "Month, Year", differ from each other, fall in order, and exist in the data.
+3. Builds the date range and calculates each series' percent change between the two dates.
+4. Calculates the mean, standard deviation, and the Pearson correlation coefficient with NumPy.
+5. Translates the correlation into a plain-English conclusion, from "almost no correlation" to "very strong correlation."
+6. Prints a formatted summary table with `tabulate`.
+
+```python
+def write_conclusion(correl_coef):
+    abs_correl_coef = abs(correl_coef)
+    if abs_correl_coef <= 0.16:
+        conclusion = "There is almost no correlation between retail sales and CCI in the given time period."
+    elif abs_correl_coef <= 0.29:
+        conclusion = "There is a very weak correlation between retail sales and CCI in the given time period."
+    # ... thresholds continue up to "very strong" above 0.89
+```
+
+## Skills practiced
+
+Writing small, single-purpose functions with docstrings, reading files with the `csv` module, working with `datetime`, handling bad input, and testing the program with a companion `test_` script.
+
+[Open the full analysis report on Google Drive](https://drive.google.com/file/d/145USObie3mXsuCvZ4SKmUEF7WlnHIGh7/view?usp=drivesdk){target="_blank"}
+
+<!-- PASTE: the correlation result for one date range you like (for example, 2007 to 2010), from running the program. -->

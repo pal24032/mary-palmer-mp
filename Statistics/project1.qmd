@@ -1,28 +1,24 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
-format:
-  html:
-    self-contained: true
-    page-layout: full
-    title-block-banner: true
-    toc: true
-    toc-depth: 3
-    toc-location: body
-    number-sections: false
-    html-math-method: katex
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: hover
-    code-tools:
-        source: false
-        toggle: true
-        caption: See code
-execute: 
-  warning: false
-    
+title: "Holiday Cocoa Promotions (ANOVA)"
+subtitle: "R | Consulting report for Teton Pantry Co."
 ---
 
-### Paste in a template
+## Question
+
+Teton Pantry Co. runs promotions on its 12 oz. Holiday Cocoa. Should the promotion depth be set differently for each sales region?
+
+## Approach
+
+I built a consulting report in R (`car`, `tidyverse`, `pander`) from the company's sales data.
+
+- Calculated **revenue** as units sold times actual price.
+- Grouped each week's **promotion depth** into three levels: none, small (depth under 0.25), and medium (depth from 0.25 to 0.36).
+- Used ANOVA to compare revenue across promotion levels and regions.
+
+## Conclusion
+
+The report's headline recommendation is that **holiday cocoa promotions do not need to differ by region**.
+
+[Read the full report on Google Drive](https://drive.google.com/file/d/1yOpkzG6_UwPMoVR0zy8Nd51WyomOFahj/view?usp=drivesdk){target="_blank"}
+
+<!-- PASTE: the key test results (F statistic and p-value for promotion level, region, and the interaction) and one chart from the report. -->

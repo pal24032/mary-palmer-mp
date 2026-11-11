@@ -1,6 +1,8 @@
 project: 
   type: website
   output-dir: docs
+  resources:
+    - files/*
 
 website:
   title: "Mary Palmer - Portfolio"
@@ -23,9 +25,7 @@ website:
       - text: "Home"
         file: index.qmd
       - text: "My Resume"
-        file: resume.docx
-      - text: "Data Cleaning"
-        file: cleaning.qmd
+        file: resume.qmd
       - text: "Machine Learning"
         file: ml.qmd
       - text: "Statistics"
@@ -37,104 +37,61 @@ website:
       - text: "Past Coursework"
         file: coursework.qmd
 
-
   sidebar: 
-    - title: "Data Cleaning"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Data Cleaning"
-          file: cleaning.qmd
-        - text: "---"
-        - text: "Project 1"
-          file: Cleaning_Projects/project1.qmd
-        - text: "---"
-        - text: "Project 2"
-          file: Cleaning_Projects/project2.qmd
-        - text: "---"
-        - text: "Project 3"
-          file: Cleaning_Projects/project3.qmd
-        - text: "---"
-    - title: "Past Coursework"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Past Coursework"
-          file: coursework.qmd
-        - text: "---"
-        - text: "Project 1"
-          file: Coursework/project1.qmd
-        - text: "---"
-        - text: "Project 2"
-          file: Coursework/project2.qmd
-        - text: "---"
-        - text: "Project 3"
-          file: Coursework/project3.qmd
-        - text: "---"
-    - title: "Data Storytelling"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Data Storytelling"
-          file: storytelling.qmd
-        - text: "---"
-        - text: "Project 1"
-          file: Storytelling/project1.qmd
-        - text: "---"
-        - text: "Project 2"
-          file: Storytelling/project2.qmd
-        - text: "---"
-        - text: "Project 3"
-          file: Storytelling/project3.qmd
-        - text: "---"
     - title: "Machine Learning"
       style: "docked"
       background: light
       contents:
-        - text: "Machine Learning"
+        - text: "Overview"
           file: ml.qmd
-        - text: "---"
-        - text: "Project 1"
+        - text: "Classifying Home Age"
           file: Machine_Learning/project1.qmd
-        - text: "---"
-        - text: "Project 2"
+        - text: "Machine Learning Pt. 2"
           file: Machine_Learning/project2.qmd
-        - text: "---"
-        - text: "Project 3"
+        - text: "Comparing Models"
           file: Machine_Learning/project3.qmd
-        - text: "---"
     - title: "Statistics"
       style: "docked"
       background: light
       contents:
-        - text: "Statistics"
+        - text: "Overview"
           file: statistics.qmd
-        - text: "---"
-        - text: "Project 1"
+        - text: "Holiday Cocoa Promotions (ANOVA)"
           file: Statistics/project1.qmd
-        - text: "---"
-        - text: "Project 2"
+        - text: "Weather Regression"
           file: Statistics/project2.qmd
-        - text: "---"
-        - text: "Project 3"
+        - text: "Price of Promotion (Econometrics)"
           file: Statistics/project3.qmd
-        - text: "---"
+    - title: "Data Storytelling"
+      style: "docked"
+      background: light
+      contents:
+        - text: "Overview"
+          file: storytelling.qmd
+        - text: "Merger Sales Dashboard"
+          file: Storytelling/project1.qmd
+        - text: "Finance Dashboard"
+          file: Storytelling/project2.qmd
+        - text: "Mutual Fund Risk Portfolio"
+          file: Storytelling/project3.qmd
     - title: "Spreadsheet Analytics"
       style: "docked"
       background: light
       contents:
-        - text: "Spreadsheet Analytics"
+        - text: "Overview"
           file: spreadsheet.qmd
-        - text: "---"
-        - text: "Project 1"
+        - text: "Mortgage Amortization"
           file: Spreadsheet/project1.qmd
-        - text: "---"
-        - text: "Project 2"
-          file: Spreadsheet/project2.qmd
-        - text: "---"
-        - text: "Project 3"
-          file: Spreadsheet/project3.qmd
-        - text: "---"
+    - title: "Past Coursework"
+      style: "docked"
+      background: light
+      contents:
+        - text: "Overview"
+          file: coursework.qmd
+        - text: "Python: Confidence vs. Retail Sales"
+          file: Coursework/project1.qmd
+        - text: "SQL: Music Library Database"
+          file: Coursework/project2.qmd
 
   
 format:  

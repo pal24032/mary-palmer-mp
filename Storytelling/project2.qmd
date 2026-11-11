@@ -1,28 +1,16 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
-format:
-  html:
-    self-contained: true
-    page-layout: full
-    title-block-banner: true
-    toc: true
-    toc-depth: 3
-    toc-location: body
-    number-sections: false
-    html-math-method: katex
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: hover
-    code-tools:
-        source: false
-        toggle: true
-        caption: See code
-execute: 
-  warning: false
-    
+title: "Finance Dashboard"
+subtitle: "Power BI | Final project"
 ---
 
-### Paste in a template
+## Overview
+
+This is my final Power BI project, built around a finance question.
+
+## Files
+
+- [Power BI file (.pbix) on Google Drive](https://drive.google.com/file/d/10-p4s-phvAk7kKlYK6Ok-ay_5fi2ipeV/view?usp=drivesdk)
+
+<!-- PASTE: 2 to 3 sentences on the business question and the main finding, then add screenshots to Images/dashboards/ and reference them here.
+<iframe title="Finance Dashboard" width="100%" height="600" src="PASTE-POWER-BI-PUBLISH-TO-WEB-LINK-HERE" frameborder="0" allowFullScreen="true"></iframe>
+-->

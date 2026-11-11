@@ -1,10 +1,10 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
-# use quarto markdown to 
+title: "Statistics"
+toc: false
 ---
 
-# Title 1 Header
-## Title 2 Header
+Applied statistical work in R, from a consulting ANOVA to a group econometrics paper.
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+- [Holiday Cocoa Promotions (ANOVA)](Statistics/project1.qmd): A consulting report for a food company on whether promotions need to differ by region.
+- [Weather Regression](Statistics/project2.qmd): A multiple linear regression comparing April 2023 temperatures in Phoenix and Renton.
+- [Price of Promotion (Econometrics)](Statistics/project3.qmd): A group paper on how promotions relate to retail prices, using store-level panel data.

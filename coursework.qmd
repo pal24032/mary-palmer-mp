@@ -1,10 +1,9 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
-# use quarto markdown to 
+title: "Past Coursework"
+toc: false
 ---
 
-# Title 1 Header
-## Title 2 Header
+Programming and database projects from earlier classes.
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+- [Python: Confidence vs. Retail Sales](Coursework/project1.qmd): A command-line program that measures how consumer confidence moves with retail sales.
+- [SQL: Music Library Database](Coursework/project2.qmd): A relational database with constraints, transactions, queries, and views.

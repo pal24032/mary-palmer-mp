@@ -1,28 +1,42 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
-format:
-  html:
-    self-contained: true
-    page-layout: full
-    title-block-banner: true
-    toc: true
-    toc-depth: 3
-    toc-location: body
-    number-sections: false
-    html-math-method: katex
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: hover
-    code-tools:
-        source: false
-        toggle: true
-        caption: See code
-execute: 
-  warning: false
-    
+title: "SQL: Music Library Database"
+subtitle: "SQL | Schema design, constraints, transactions, queries, and views"
 ---
 
-### Paste in a template
+## Overview
+
+A relational database that tracks a music library: pieces, the books they are in, composers, genres, difficulty by part, shelf locations, and performance history. I designed the schema, loaded the data, then wrote the scripts that modify and query it.
+
+## Scripts
+
+- `build_db_4.sql` creates the tables.
+- `fill_db_4.sql` loads the data.
+- `final_1.sql` cleans up and extends the database, then demonstrates queries and views.
+
+## Data integrity and changes
+
+- Converted the composer birth and death year columns to dates.
+- Added a `CHECK` constraint so a piece's minimum performers can never exceed its maximum.
+- Renamed a table for consistency, dropped an unneeded column, and added a "Single Piece/No Book" entry.
+- Wrapped inserts and updates in transactions, including adding a new piece and linking it to a book.
+
+## Advanced queries
+
+- Every piece, book, and composer on a given shelf, using a five-table join.
+- The average difficulty of each piece across all of its parts, using `AVG` and `GROUP BY`.
+- The number of pieces in each book, ranked from most to fewest:
+
+```sql
+SELECT bhp.book_id AS "Book ID", b.book_title AS "Book Title", COUNT(*) AS "Num. of Pieces"
+FROM book_has_piece AS bhp
+  JOIN book AS b ON bhp.book_id = b.book_id
+GROUP BY 1
+ORDER BY 3 DESC;
+```
+
+## Views
+
+- **full_lib_overview** shows each piece with its book, composer, genre, and whether it is in the performance repertoire.
+- **perf_hist_overview** lists each performance with its event, date, award, and the pieces played, using `GROUP_CONCAT`.
+
+[Download the SQL scripts from Google Drive](https://drive.google.com/drive/folders/1ndlGE4vWN5sYjOXkRIIeYz4I6qdcpBrA){target="_blank"}
