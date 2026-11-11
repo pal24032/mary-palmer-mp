@@ -4,7 +4,7 @@ subtitle: "Economics and data science portfolio"
 toc: false
 ---
 
-I am an Economics major with a Data Science minor at Brigham Young University-Idaho (expected April 2028), with a 4.00 GPA and a full-ride merit scholarship. I also serve as president of the Economics Society and work as an Associate Research Fellow, where I help design randomized experiments that estimate causal effects on student performance.
+I am an Economics major with a Data Science minor at Brigham Young University-Idaho (expected April 2028), with a 4.00 GPA and a full-ride merit scholarship. I also serve as president of the Economics Society and work as a Senior Research Fellow, where I run randomized experiments that estimate causal effects on student performance.
 
 My work centers on turning messy data into a clear answer: cleaning and joining datasets, choosing a defensible statistical model, and presenting the result so a non-technical reader can act on it.
 
