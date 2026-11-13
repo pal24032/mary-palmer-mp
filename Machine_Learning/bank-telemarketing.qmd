@@ -3,8 +3,6 @@ title: "Bank Telemarketing Targeting"
 subtitle: "Python | Decision tree classifier | CSE 450 Module 2 group project"
 ---
 
-**Team:** Isaac Bean, Seth Ricks, Nathan McDowell, Mary Palmer
-
 ## Problem
 
 Banco Federal de Finanças had just finished an ineffective telemarketing campaign. The bank asked us to show how machine learning could improve who gets called in future campaigns. We had three goals:

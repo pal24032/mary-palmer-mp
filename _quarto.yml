@@ -43,11 +43,11 @@ website:
         - text: "Overview"
           file: ml.qmd
         - text: "Bank Telemarketing Targeting"
-          file: Machine_Learning/project1.qmd
+          file: Machine_Learning/bank-telemarketing.qmd
         - text: "King County Housing Prices"
-          file: Machine_Learning/project2.qmd
+          file: Machine_Learning/housing-prices.qmd
         - text: "Bike Rental Demand"
-          file: Machine_Learning/project3.qmd
+          file: Machine_Learning/bike-demand.qmd
     - title: "Statistics"
       style: "docked"
       background: light
@@ -55,13 +55,13 @@ website:
         - text: "Overview"
           file: statistics.qmd
         - text: "Holiday Cocoa Promotions (ANOVA)"
-          file: Statistics/project1.qmd
+          file: Statistics/cocoa-anova.qmd
         - text: "Weather Regression"
-          file: Statistics/project2.qmd
+          file: Statistics/weather-regression.qmd
         - text: "Price of Promotion (Econometrics)"
-          file: Statistics/project3.qmd
+          file: Statistics/price-of-promotion.qmd
         - text: "Python: Confidence vs. Retail Sales"
-          file: Statistics/project4.qmd
+          file: Statistics/confidence-vs-sales.qmd
     - title: "Data Storytelling"
       style: "docked"
       background: light
@@ -69,13 +69,15 @@ website:
         - text: "Overview"
           file: storytelling.qmd
         - text: "Merger Sales Dashboard"
-          file: Storytelling/project1.qmd
+          file: Storytelling/merger-dashboard.qmd
         - text: "Finance Dashboard"
-          file: Storytelling/project2.qmd
+          file: Storytelling/finance-dashboard.qmd
         - text: "Mutual Fund Risk Portfolio"
-          file: Storytelling/project3.qmd
+          file: Storytelling/mutual-fund-risk.qmd
+        - text: "Survey Analysis: Religious Perceptions"
+          file: Storytelling/survey-analysis.qmd
         - text: "SQL: Music Library Database"
-          file: Storytelling/project4.qmd
+          file: Storytelling/music-database.qmd
     - title: "Spreadsheet Analytics"
       style: "docked"
       background: light
@@ -83,7 +85,7 @@ website:
         - text: "Overview"
           file: spreadsheet.qmd
         - text: "Mortgage Amortization"
-          file: Spreadsheet/project1.qmd
+          file: Spreadsheet/mortgage-amortization.qmd
 
   
 format:  

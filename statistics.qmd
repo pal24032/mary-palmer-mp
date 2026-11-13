@@ -5,7 +5,7 @@ toc: false
 
 Applied statistical work in R and Python, from a consulting ANOVA to a group econometrics paper.
 
-- [Holiday Cocoa Promotions (ANOVA)](Statistics/project1.qmd): A consulting report for a food company on whether promotions need to differ by region.
-- [Weather Regression](Statistics/project2.qmd): A multiple linear regression comparing April 2023 temperatures in Phoenix and Renton.
-- [Price of Promotion (Econometrics)](Statistics/project3.qmd): A group paper on how promotions relate to retail prices, using store-level panel data.
-- [Python: Confidence vs. Retail Sales](Statistics/project4.qmd): A command-line program that measures how consumer confidence moves with retail sales.
+- [Holiday Cocoa Promotions (ANOVA)](Statistics/cocoa-anova.qmd): A consulting report for a food company on whether promotions need to differ by region.
+- [Weather Regression](Statistics/weather-regression.qmd): A multiple linear regression comparing April 2023 temperatures in Phoenix and Renton.
+- [Price of Promotion (Econometrics)](Statistics/price-of-promotion.qmd): A group paper on how promotions relate to retail prices, using store-level panel data.
+- [Python: Confidence vs. Retail Sales](Statistics/confidence-vs-sales.qmd): A command-line program that measures how consumer confidence moves with retail sales.

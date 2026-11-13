@@ -5,6 +5,6 @@ toc: false
 
 Three group case studies from CSE 450, each built in Python for a different kind of prediction problem.
 
-- [Bank Telemarketing Targeting](Machine_Learning/project1.qmd): A decision tree that finds the customers most likely to respond to a bank campaign.
-- [King County Housing Prices](Machine_Learning/project2.qmd): An XGBoost model that predicts home prices with an R² of 0.898.
-- [Bike Rental Demand](Machine_Learning/project3.qmd): A neural network that forecasts holiday bike rentals with an R² of 0.951.
+- [Bank Telemarketing Targeting](Machine_Learning/bank-telemarketing.qmd): A decision tree that finds the customers most likely to respond to a bank campaign.
+- [King County Housing Prices](Machine_Learning/housing-prices.qmd): An XGBoost model that predicts home prices with an R² of 0.898.
+- [Bike Rental Demand](Machine_Learning/bike-demand.qmd): A neural network that forecasts holiday bike rentals with an R² of 0.951.

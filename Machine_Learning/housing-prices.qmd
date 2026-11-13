@@ -3,8 +3,6 @@ title: "King County Housing Prices"
 subtitle: "Python | XGBoost regression | CSE 450 Module 3 group project"
 ---
 
-**Team:** Isaac Bean, Seth Ricks, Nathan McDowell, Mary Palmer
-
 ## Problem
 
 A client in the housing and insurance space asked for a model that predicts home prices in King County, Washington, using sales from January 2014 to December 2015. The data includes bedrooms, bathrooms, floors, living area, lot size, year built, renovation year, view, waterfront, and a construction grade.

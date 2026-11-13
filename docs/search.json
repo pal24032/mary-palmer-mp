@@ -1,62 +1,205 @@
 [
   {
-    "objectID": "storytelling.html",
-    "href": "storytelling.html",
-    "title": "Data Storytelling",
+    "objectID": "spreadsheet.html",
+    "href": "spreadsheet.html",
+    "title": "Spreadsheet Analytics",
     "section": "",
-    "text": "Dashboards and presentations built in Power BI for non-technical audiences, plus a SQL database project.\n\nMerger Sales Dashboard: A dashboard that weighs the case for and against a merger.\nFinance Dashboard: A Power BI final project in finance.\nMutual Fund Risk Portfolio: Fund recommendations across five risk levels for a retirement-focused family.\nSQL: Music Library Database: A relational database with constraints, transactions, queries, and views.\n\n\n\n\n Back to top",
+    "text": "Financial modeling in Excel.\n\nMortgage Amortization: A loan calculator and a full 360-payment amortization schedule.\n\n\n\n\n Back to top",
     "crumbs": [
-      "Data Storytelling",
+      "Spreadsheet Analytics",
       "Overview"
     ]
   },
   {
-    "objectID": "Storytelling/project3.html",
-    "href": "Storytelling/project3.html",
-    "title": "Mutual Fund Risk Portfolio",
+    "objectID": "Spreadsheet/mortgage-amortization.html",
+    "href": "Spreadsheet/mortgage-amortization.html",
+    "title": "Mortgage Amortization",
     "section": "",
-    "text": "I analyzed a dataset of about 10,000 mutual funds and ETFs to find strong investment options for a middle-income family planning for retirement. Using Power BI (and Tableau), AI-supported research, and financial risk measures, I compared funds across five risk levels, with standard deviation as the main measure of risk.",
+    "text": "I built an Excel model that takes a home price, down payment, interest rate, and loan term, and returns the monthly payment, the full amortization schedule, and the minimum salary a buyer would need to qualify.",
     "crumbs": [
-      "Data Storytelling",
-      "Mutual Fund Risk Portfolio"
+      "Spreadsheet Analytics",
+      "Mortgage Amortization"
     ]
   },
   {
-    "objectID": "Storytelling/project3.html#overview",
-    "href": "Storytelling/project3.html#overview",
-    "title": "Mutual Fund Risk Portfolio",
+    "objectID": "Spreadsheet/mortgage-amortization.html#overview",
+    "href": "Spreadsheet/mortgage-amortization.html#overview",
+    "title": "Mortgage Amortization",
     "section": "",
-    "text": "I analyzed a dataset of about 10,000 mutual funds and ETFs to find strong investment options for a middle-income family planning for retirement. Using Power BI (and Tableau), AI-supported research, and financial risk measures, I compared funds across five risk levels, with standard deviation as the main measure of risk.",
+    "text": "I built an Excel model that takes a home price, down payment, interest rate, and loan term, and returns the monthly payment, the full amortization schedule, and the minimum salary a buyer would need to qualify.",
     "crumbs": [
-      "Data Storytelling",
-      "Mutual Fund Risk Portfolio"
+      "Spreadsheet Analytics",
+      "Mortgage Amortization"
     ]
   },
   {
-    "objectID": "Storytelling/project3.html#the-final-presentation",
-    "href": "Storytelling/project3.html#the-final-presentation",
-    "title": "Mutual Fund Risk Portfolio",
-    "section": "The final presentation",
-    "text": "The final presentation\nFor the final presentation I:\n\nexplained the current market context\norganized funds by risk category\nchose one recommended fund or ETF within each category\nbuilt data-driven visuals to support each recommendation\n\nI also focused on making the analysis understandable for a non-expert audience, with clear storytelling, client-centered explanations, and a professional presentation design.",
+    "objectID": "Spreadsheet/mortgage-amortization.html#inputs-and-outputs",
+    "href": "Spreadsheet/mortgage-amortization.html#inputs-and-outputs",
+    "title": "Mortgage Amortization",
+    "section": "Inputs and outputs",
+    "text": "Inputs and outputs\n\n\n\nInput\nValue\n\n\n\n\nHome price\n$500,000\n\n\nDown payment (20%)\n$100,000\n\n\nLoan amount\n$400,000\n\n\nInterest rate\n7.00%\n\n\nTerm\n30 years (360 payments)\n\n\nMaximum payment-to-salary ratio\n40%\n\n\n\n\n\n\nOutput\nValue\n\n\n\n\nMonthly payment\n$2,661.21\n\n\nTotal of all payments\n$958,035.59\n\n\nTotal interest paid\n$558,035.59\n\n\nMinimum monthly salary to qualify\n$6,653.02\n\n\nMinimum annual salary to qualify\n$79,836.30\n\n\n\nThe payment does not include insurance or property taxes.",
     "crumbs": [
-      "Data Storytelling",
-      "Mutual Fund Risk Portfolio"
+      "Spreadsheet Analytics",
+      "Mortgage Amortization"
     ]
   },
   {
-    "objectID": "Storytelling/project3.html#materials",
-    "href": "Storytelling/project3.html#materials",
-    "title": "Mutual Fund Risk Portfolio",
-    "section": "Materials",
-    "text": "Materials\n\nRecorded presentation (video) on Google Drive\nPower BI project folder on Google Drive",
+    "objectID": "Spreadsheet/mortgage-amortization.html#what-the-schedule-shows",
+    "href": "Spreadsheet/mortgage-amortization.html#what-the-schedule-shows",
+    "title": "Mortgage Amortization",
+    "section": "What the schedule shows",
+    "text": "What the schedule shows\nThe schedule splits every payment into interest and principal and tracks the remaining balance.\n\n\n\nPayment\nInterest\nPrincipal\nBalance\n\n\n\n\n1\n$2,333.33\n$327.88\n$399,672.12\n\n\n180 (year 15)\n$1,732.52\n$928.69\n$296,075.46\n\n\n360 (final)\n$15.43\n$2,645.78\n$0.00\n\n\n\nBecause interest is charged on the remaining balance, the first payment sends only about 12% toward principal, and after 15 years the borrower still owes about 74% of the loan.\nDownload the Excel workbook from Google Drive",
     "crumbs": [
-      "Data Storytelling",
-      "Mutual Fund Risk Portfolio"
+      "Spreadsheet Analytics",
+      "Mortgage Amortization"
     ]
   },
   {
-    "objectID": "Storytelling/project1.html",
-    "href": "Storytelling/project1.html",
+    "objectID": "Statistics/cocoa-anova.html",
+    "href": "Statistics/cocoa-anova.html",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "section": "",
+    "text": "Teton Pantry Co. sells a 12 oz. Holiday Cocoa through five retailers in four regions. Regional managers disagreed about whether promotions should be deeper in some regions than others. Do promotion depth and region change weekly revenue, and does the effect of a promotion depend on the region?",
+    "crumbs": [
+      "Statistics",
+      "Holiday Cocoa Promotions (ANOVA)"
+    ]
+  },
+  {
+    "objectID": "Statistics/cocoa-anova.html#question",
+    "href": "Statistics/cocoa-anova.html#question",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "section": "",
+    "text": "Teton Pantry Co. sells a 12 oz. Holiday Cocoa through five retailers in four regions. Regional managers disagreed about whether promotions should be deeper in some regions than others. Do promotion depth and region change weekly revenue, and does the effect of a promotion depend on the region?",
+    "crumbs": [
+      "Statistics",
+      "Holiday Cocoa Promotions (ANOVA)"
+    ]
+  },
+  {
+    "objectID": "Statistics/cocoa-anova.html#about-this-project",
+    "href": "Statistics/cocoa-anova.html#about-this-project",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "section": "About this project",
+    "text": "About this project\nThis was a role-play consulting exercise for MATH 325. The client emails, the sales data (2022 to 2024), and the cover image were generated with ChatGPT 5.1. My replies to the client and the full analysis are my own. ChatGPT was also used to help debug code, customize the graphs, and choose the statistical test.",
+    "crumbs": [
+      "Statistics",
+      "Holiday Cocoa Promotions (ANOVA)"
+    ]
+  },
+  {
+    "objectID": "Statistics/cocoa-anova.html#approach",
+    "href": "Statistics/cocoa-anova.html#approach",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "section": "Approach",
+    "text": "Approach\nI built the report in R (car, tidyverse, pander).\n\nCalculated revenue per retailer-week as units sold times actual price.\nGrouped promotion depth into three levels: none (0%), small (10 to 25%), and medium (25 to 35%).\nFit a two-way ANOVA with interaction on log revenue: log(revenue) ~ promo + region + promo:region. The log transform stabilizes the variance of the revenue data.",
+    "crumbs": [
+      "Statistics",
+      "Holiday Cocoa Promotions (ANOVA)"
+    ]
+  },
+  {
+    "objectID": "Statistics/cocoa-anova.html#results",
+    "href": "Statistics/cocoa-anova.html#results",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "section": "Results",
+    "text": "Results\n\n\n\nTerm\nDf\nF value\np-value\n\n\n\n\nPromotion depth\n2\n55.73\n1.4e-24\n\n\nRegion\n3\n0.19\n0.905\n\n\nPromotion x Region\n6\n0.92\n0.480\n\n\nResiduals\n3,732\n\n\n\n\n\nPromotion depth is significant. Region and the promotion-by-region interaction are not, at α = 0.05.\n\n\n\nPromotion level\nMean weekly revenue per retailer\n\n\n\n\nNone\n$799.80\n\n\nSmall (10 to 25%)\n$941.90\n\n\nMedium (25 to 35%)\n$1,109\n\n\n\n\nThe lines for the three promotion levels keep the same order in every region, which matches the non-significant interaction. The Mountain region’s medium-promo average ($1,176) is the highest point, but the test shows it is within normal variation.\n\nThe residual plots show roughly even spread across fitted values and a Q-Q plot close to a straight line, so the ANOVA assumptions are reasonable on the log scale.",
+    "crumbs": [
+      "Statistics",
+      "Holiday Cocoa Promotions (ANOVA)"
+    ]
+  },
+  {
+    "objectID": "Statistics/cocoa-anova.html#recommendation",
+    "href": "Statistics/cocoa-anova.html#recommendation",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "section": "Recommendation",
+    "text": "Recommendation\n\nPromotions work: a small promotion added about $142 in average weekly revenue over no promotion, and a medium promotion added about $167 more than a small one.\nApply the medium promotion depth (25 to 35%) consistently across all regions. There is no evidence that any region needs a different strategy.",
+    "crumbs": [
+      "Statistics",
+      "Holiday Cocoa Promotions (ANOVA)"
+    ]
+  },
+  {
+    "objectID": "Statistics/cocoa-anova.html#tools",
+    "href": "Statistics/cocoa-anova.html#tools",
+    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "section": "Tools",
+    "text": "Tools\nR, ANOVA, car, tidyverse, pander, ggplot2.\nRead the full report on Google Drive",
+    "crumbs": [
+      "Statistics",
+      "Holiday Cocoa Promotions (ANOVA)"
+    ]
+  },
+  {
+    "objectID": "Statistics/price-of-promotion.html",
+    "href": "Statistics/price-of-promotion.html",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "",
+    "text": "Measuring the Price of Promotion: A Store-Level Analysis of Consumer Expenditure\nErral Asper, Kathryn Haroldsen, Taylor Landini, Mary Palmer, and Harrison Thomas (April 2026)",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Statistics/price-of-promotion.html#question",
+    "href": "Statistics/price-of-promotion.html#question",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "Question",
+    "text": "Question\nDoes promotional advertising push the prices consumers pay up or down? Economic theory points both ways: price-focused promotions can intensify competition, while brand-building advertising can reduce price sensitivity and support higher prices.",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Statistics/price-of-promotion.html#data",
+    "href": "Statistics/price-of-promotion.html#data",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "Data",
+    "text": "Data\nWe used the Dominick’s Finer Foods scanner database, compiled by the University of Chicago Booth School of Business from about 100 grocery stores from 1989 to 1994, and focused on the frozen dinner category.\n\nUnbalanced panel of 19,306 store-item units over weeks 1 to 255, for 1,645,316 observations\nRemoved observations flagged as unreliable, prices of $0, and prices above $6 (over 99% of the data fell below that cutoff)\nPromotions coded as Bonus Buy, Coupon, or Simple Price Reduction, compared with weeks with no recorded promotion",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Statistics/price-of-promotion.html#method",
+    "href": "Statistics/price-of-promotion.html#method",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "Method",
+    "text": "Method\nFixed effects regression with store-item fixed effects, so that each product in each store is compared only against itself across weeks. Model 1 regresses price on the three promotion types. Model 2 adds the retailer’s profit margin.",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Statistics/price-of-promotion.html#findings",
+    "href": "Statistics/price-of-promotion.html#findings",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "Findings",
+    "text": "Findings\nRelative to non-promotion weeks, average prices were lower by:\n\n\n\nPromotion type\nAverage price difference\n\n\n\n\nBonus Buy\n$0.11\n\n\nSimple Price Reduction\n$0.46\n\n\nCoupon\n$0.95\n\n\n\n\nCoupons were the deepest discount and also produced the highest median sales volume.\nAdding profit (Model 2) shrank the promotion coefficients to near zero. Because profit depends directly on price, we treated it as endogenous and based our conclusions on Model 1.\nA Breusch-Pagan test (BP = 830.21, p &lt; 0.01) found heteroskedasticity, so we used robust standard errors. Variance inflation factors near 1.0 showed no multicollinearity.",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Statistics/price-of-promotion.html#limitations",
+    "href": "Statistics/price-of-promotion.html#limitations",
+    "title": "Price of Promotion (Econometrics)",
+    "section": "Limitations",
+    "text": "Limitations\nThe data are observational, cover one retailer and one time period, and record promotions imperfectly, so the results should not be read as causal or applied directly to modern online retail.\nRead the full paper (PDF) on Google Drive",
+    "crumbs": [
+      "Statistics",
+      "Price of Promotion (Econometrics)"
+    ]
+  },
+  {
+    "objectID": "Storytelling/merger-dashboard.html",
+    "href": "Storytelling/merger-dashboard.html",
     "title": "Merger Sales Dashboard",
     "section": "",
     "text": "This Power BI dashboard evaluates a proposed merger between AdventureWorks and GoBig, a company that specializes in extreme sports. The landing page lays out the case for and against the merger side by side, scores overall confidence at 7 out of 10, and recommends negotiating a 70/30 split. Each point on that page links to a supporting dashboard page.",
@@ -66,8 +209,8 @@
     ]
   },
   {
-    "objectID": "Storytelling/project1.html#overview",
-    "href": "Storytelling/project1.html#overview",
+    "objectID": "Storytelling/merger-dashboard.html#overview",
+    "href": "Storytelling/merger-dashboard.html#overview",
     "title": "Merger Sales Dashboard",
     "section": "",
     "text": "This Power BI dashboard evaluates a proposed merger between AdventureWorks and GoBig, a company that specializes in extreme sports. The landing page lays out the case for and against the merger side by side, scores overall confidence at 7 out of 10, and recommends negotiating a 70/30 split. Each point on that page links to a supporting dashboard page.",
@@ -77,8 +220,8 @@
     ]
   },
   {
-    "objectID": "Storytelling/project1.html#what-the-data-shows",
-    "href": "Storytelling/project1.html#what-the-data-shows",
+    "objectID": "Storytelling/merger-dashboard.html#what-the-data-shows",
+    "href": "Storytelling/merger-dashboard.html#what-the-data-shows",
     "title": "Merger Sales Dashboard",
     "section": "What the data shows",
     "text": "What the data shows\n\nRevenue growth has flattened. Total revenue across the period is $66.12M with $30.19M in gross profit and an average profit of $226.26 per sale. Quarterly revenue climbed from 2019 through 2022, which is why the page reads “profitable but plateauing.”\nMargins are healthy but uneven. Gross profit margin rose from about 40% in 2019 to about 46% by the end of 2022, while clothing profit margins stood out as a concern.\n\n\n\nYounger customers drive sales. AdventureWorks’ main demographic is males ages 20 to 30, which lines up with GoBig’s customer base. Millennials and Gen Z lead revenue, although Gen Z revenue peaked in 2022 and has since fallen back below Millennials.\n\n\n\nBikes carry the business. Bikes generate the most revenue and profit even with lower inventory, and they turn over inventory far faster than components.",
@@ -88,8 +231,8 @@
     ]
   },
   {
-    "objectID": "Storytelling/project1.html#tools",
-    "href": "Storytelling/project1.html#tools",
+    "objectID": "Storytelling/merger-dashboard.html#tools",
+    "href": "Storytelling/merger-dashboard.html#tools",
     "title": "Merger Sales Dashboard",
     "section": "Tools",
     "text": "Tools\nPower BI, with time-intelligence measures (prior period, month-to-date, quarter-to-date, year-to-date), conditional formatting, and page-to-page navigation buttons.",
@@ -99,102 +242,102 @@
     ]
   },
   {
-    "objectID": "Statistics/project4.html",
-    "href": "Statistics/project4.html",
-    "title": "Python: Confidence vs. Retail Sales",
+    "objectID": "Storytelling/music-database.html",
+    "href": "Storytelling/music-database.html",
+    "title": "SQL: Music Library Database",
     "section": "",
-    "text": "A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.\nData: a monthly consumer confidence index and monthly retail sales, with sources from FRED.",
+    "text": "A relational database that tracks a music library: pieces, the books they are in, composers, genres, difficulty by part, shelf locations, and performance history. I designed the schema, loaded the data, then wrote the scripts that modify and query it.",
     "crumbs": [
-      "Statistics",
-      "Python: Confidence vs. Retail Sales"
+      "Data Storytelling",
+      "SQL: Music Library Database"
     ]
   },
   {
-    "objectID": "Statistics/project4.html#overview",
-    "href": "Statistics/project4.html#overview",
-    "title": "Python: Confidence vs. Retail Sales",
+    "objectID": "Storytelling/music-database.html#overview",
+    "href": "Storytelling/music-database.html#overview",
+    "title": "SQL: Music Library Database",
     "section": "",
-    "text": "A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.\nData: a monthly consumer confidence index and monthly retail sales, with sources from FRED.",
+    "text": "A relational database that tracks a music library: pieces, the books they are in, composers, genres, difficulty by part, shelf locations, and performance history. I designed the schema, loaded the data, then wrote the scripts that modify and query it.",
     "crumbs": [
-      "Statistics",
-      "Python: Confidence vs. Retail Sales"
+      "Data Storytelling",
+      "SQL: Music Library Database"
     ]
   },
   {
-    "objectID": "Statistics/project4.html#what-the-program-does",
-    "href": "Statistics/project4.html#what-the-program-does",
-    "title": "Python: Confidence vs. Retail Sales",
-    "section": "What the program does",
-    "text": "What the program does\n\nReads the two CSV files into dictionaries keyed by date and merges them into one compound dictionary.\nValidates the user’s input: the dates must parse as “Month, Year”, differ from each other, fall in order, and exist in the data.\nBuilds the date range and calculates each series’ percent change between the two dates.\nCalculates the mean, standard deviation, and the Pearson correlation coefficient with NumPy.\nTranslates the correlation into a plain-English conclusion, from “almost no correlation” to “very strong correlation.”\nPrints a formatted summary table with tabulate.\n\ndef write_conclusion(correl_coef):\n    abs_correl_coef = abs(correl_coef)\n    if abs_correl_coef &lt;= 0.16:\n        conclusion = \"There is almost no correlation between retail sales and CCI in the given time period.\"\n    elif abs_correl_coef &lt;= 0.29:\n        conclusion = \"There is a very weak correlation between retail sales and CCI in the given time period.\"\n    # ... thresholds continue up to \"very strong\" above 0.89",
+    "objectID": "Storytelling/music-database.html#scripts",
+    "href": "Storytelling/music-database.html#scripts",
+    "title": "SQL: Music Library Database",
+    "section": "Scripts",
+    "text": "Scripts\n\nbuild_db_4.sql creates the tables.\nfill_db_4.sql loads the data.\nfinal_1.sql cleans up and extends the database, then demonstrates queries and views.",
     "crumbs": [
-      "Statistics",
-      "Python: Confidence vs. Retail Sales"
+      "Data Storytelling",
+      "SQL: Music Library Database"
     ]
   },
   {
-    "objectID": "Statistics/project4.html#skills-practiced",
-    "href": "Statistics/project4.html#skills-practiced",
-    "title": "Python: Confidence vs. Retail Sales",
-    "section": "Skills practiced",
-    "text": "Skills practiced\nWriting small, single-purpose functions with docstrings, reading files with the csv module, working with datetime, handling bad input, and testing the program with a companion test_ script.\nOpen the full analysis report on Google Drive",
+    "objectID": "Storytelling/music-database.html#data-integrity-and-changes",
+    "href": "Storytelling/music-database.html#data-integrity-and-changes",
+    "title": "SQL: Music Library Database",
+    "section": "Data integrity and changes",
+    "text": "Data integrity and changes\n\nConverted the composer birth and death year columns to dates.\nAdded a CHECK constraint so a piece’s minimum performers can never exceed its maximum.\nRenamed a table for consistency, dropped an unneeded column, and added a “Single Piece/No Book” entry.\nWrapped inserts and updates in transactions, including adding a new piece and linking it to a book.",
     "crumbs": [
-      "Statistics",
-      "Python: Confidence vs. Retail Sales"
+      "Data Storytelling",
+      "SQL: Music Library Database"
     ]
   },
   {
-    "objectID": "Statistics/project2.html",
-    "href": "Statistics/project2.html",
-    "title": "Weather Regression",
+    "objectID": "Storytelling/music-database.html#advanced-queries",
+    "href": "Storytelling/music-database.html#advanced-queries",
+    "title": "SQL: Music Library Database",
+    "section": "Advanced queries",
+    "text": "Advanced queries\n\nEvery piece, book, and composer on a given shelf, using a five-table join.\nThe average difficulty of each piece across all of its parts, using AVG and GROUP BY.\nThe number of pieces in each book, ranked from most to fewest:\n\nSELECT bhp.book_id AS \"Book ID\", b.book_title AS \"Book Title\", COUNT(*) AS \"Num. of Pieces\"\nFROM book_has_piece AS bhp\n  JOIN book AS b ON bhp.book_id = b.book_id\nGROUP BY 1\nORDER BY 3 DESC;",
+    "crumbs": [
+      "Data Storytelling",
+      "SQL: Music Library Database"
+    ]
+  },
+  {
+    "objectID": "Storytelling/music-database.html#views",
+    "href": "Storytelling/music-database.html#views",
+    "title": "SQL: Music Library Database",
+    "section": "Views",
+    "text": "Views\n\nfull_lib_overview shows each piece with its book, composer, genre, and whether it is in the performance repertoire.\nperf_hist_overview lists each performance with its event, date, award, and the pieces played, using GROUP_CONCAT.\n\nDownload the SQL scripts from Google Drive",
+    "crumbs": [
+      "Data Storytelling",
+      "SQL: Music Library Database"
+    ]
+  },
+  {
+    "objectID": "Storytelling/finance-dashboard.html",
+    "href": "Storytelling/finance-dashboard.html",
+    "title": "Finance Dashboard",
     "section": "",
-    "text": "My family has lived in both Arizona and Washington, so I pulled daily weather data (NOAA’s Global Surface Summary of the Day, through the GSODR package) for April 2023 from Phoenix Goodyear Airport and Renton Municipal Airport. How well does the daily minimum temperature predict the daily maximum, and does that relationship differ between the two cities?",
+    "text": "This is my final Power BI project, built around a finance question.",
     "crumbs": [
-      "Statistics",
-      "Weather Regression"
+      "Data Storytelling",
+      "Finance Dashboard"
     ]
   },
   {
-    "objectID": "Statistics/project2.html#question",
-    "href": "Statistics/project2.html#question",
-    "title": "Weather Regression",
+    "objectID": "Storytelling/finance-dashboard.html#overview",
+    "href": "Storytelling/finance-dashboard.html#overview",
+    "title": "Finance Dashboard",
     "section": "",
-    "text": "My family has lived in both Arizona and Washington, so I pulled daily weather data (NOAA’s Global Surface Summary of the Day, through the GSODR package) for April 2023 from Phoenix Goodyear Airport and Renton Municipal Airport. How well does the daily minimum temperature predict the daily maximum, and does that relationship differ between the two cities?",
+    "text": "This is my final Power BI project, built around a finance question.",
     "crumbs": [
-      "Statistics",
-      "Weather Regression"
+      "Data Storytelling",
+      "Finance Dashboard"
     ]
   },
   {
-    "objectID": "Statistics/project2.html#model",
-    "href": "Statistics/project2.html#model",
-    "title": "Weather Regression",
-    "section": "Model",
-    "text": "Model\n\\[\n\\hat{Y}_i = \\beta_0 + \\beta_1 X_{i1} + \\beta_2 X_{i2} + \\beta_3 X_{i1} X_{i2}\n\\]\nwhere \\(Y\\) is the daily maximum temperature, \\(X_1\\) is the daily minimum temperature, and \\(X_2\\) is an indicator for Renton (Phoenix is the baseline). The \\(\\beta_2\\) term lets the lines start at different heights, and the \\(\\beta_3\\) interaction lets them have different slopes.\nweather_lm_full &lt;- lm(MAX ~ MIN + AIRPORT + MIN:AIRPORT, data = weather)",
+    "objectID": "Storytelling/finance-dashboard.html#files",
+    "href": "Storytelling/finance-dashboard.html#files",
+    "title": "Finance Dashboard",
+    "section": "Files",
+    "text": "Files\n\nPower BI file (.pbix) on Google Drive",
     "crumbs": [
-      "Statistics",
-      "Weather Regression"
-    ]
-  },
-  {
-    "objectID": "Statistics/project2.html#results",
-    "href": "Statistics/project2.html#results",
-    "title": "Weather Regression",
-    "section": "Results",
-    "text": "Results\nThe model fit 60 daily observations and explained about 92% of the variation in the daily maximum (adjusted \\(R^2\\) = 0.920).\n\n\n\nTerm\nEstimate\np-value\n\n\n\n\nIntercept (Phoenix)\n17.5\n&lt; 0.0001\n\n\nMinimum temperature (Phoenix slope)\n0.914\n&lt; 0.0001\n\n\nRenton shift in intercept\n-9.919\n&lt; 0.0001\n\n\nRenton shift in slope\n0.436\n0.043\n\n\n\n\nIn Phoenix, each 1°C rise in the minimum goes with about a 0.91°C rise in the maximum.\nIn Renton, the line starts about 9.9°C lower, and the slope is steeper at about 1.35°C per 1°C.\n\nI checked all five regression assumptions (linearity, normal errors, constant variance, fixed X, and independent errors) with residual plots and judged the model appropriate. The result matches what the climates would suggest: Phoenix is hotter than Renton in April, and the minimum temperature carries more of the day’s range in Renton.\nFull report on Google Drive",
-    "crumbs": [
-      "Statistics",
-      "Weather Regression"
-    ]
-  },
-  {
-    "objectID": "spreadsheet.html",
-    "href": "spreadsheet.html",
-    "title": "Spreadsheet Analytics",
-    "section": "",
-    "text": "Financial modeling in Excel.\n\nMortgage Amortization: A loan calculator and a full 360-payment amortization schedule.\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Spreadsheet Analytics",
-      "Overview"
+      "Data Storytelling",
+      "Finance Dashboard"
     ]
   },
   {
@@ -247,41 +390,41 @@
     "text": "Leadership and Volunteer\n\nEconomics Society: President\nWomen’s Church Group: President\nChurch Organist: 3 years\nDistinguished Young Women: Mentor, State First Runner-Up, $6,000+ in scholarships"
   },
   {
-    "objectID": "ml.html",
-    "href": "ml.html",
-    "title": "Machine Learning",
+    "objectID": "storytelling.html",
+    "href": "storytelling.html",
+    "title": "Data Storytelling",
     "section": "",
-    "text": "Three group case studies from CSE 450, each built in Python for a different kind of prediction problem.\n\nBank Telemarketing Targeting: A decision tree that finds the customers most likely to respond to a bank campaign.\nKing County Housing Prices: An XGBoost model that predicts home prices with an R² of 0.898.\nBike Rental Demand: A neural network that forecasts holiday bike rentals with an R² of 0.951.\n\n\n\n\n Back to top",
+    "text": "Dashboards and presentations built in Power BI for non-technical audiences, plus a SQL database project.\n\nMerger Sales Dashboard: A dashboard that weighs the case for and against a merger.\nFinance Dashboard: A Power BI final project in finance.\nMutual Fund Risk Portfolio: Fund recommendations across five risk levels for a retirement-focused family.\nSurvey Analysis: Religious Perceptions: A Power BI analysis of survey data on demographic patterns in religious perceptions.\nSQL: Music Library Database: A relational database with constraints, transactions, queries, and views.\n\n\n\n\n Back to top",
     "crumbs": [
-      "Machine Learning",
+      "Data Storytelling",
       "Overview"
     ]
   },
   {
-    "objectID": "Machine_Learning/project2.html",
-    "href": "Machine_Learning/project2.html",
+    "objectID": "Machine_Learning/housing-prices.html",
+    "href": "Machine_Learning/housing-prices.html",
     "title": "King County Housing Prices",
     "section": "",
-    "text": "Team: Isaac Bean, Seth Ricks, Nathan McDowell, Mary Palmer",
+    "text": "A client in the housing and insurance space asked for a model that predicts home prices in King County, Washington, using sales from January 2014 to December 2015. The data includes bedrooms, bathrooms, floors, living area, lot size, year built, renovation year, view, waterfront, and a construction grade.",
     "crumbs": [
       "Machine Learning",
       "King County Housing Prices"
     ]
   },
   {
-    "objectID": "Machine_Learning/project2.html#problem",
-    "href": "Machine_Learning/project2.html#problem",
+    "objectID": "Machine_Learning/housing-prices.html#problem",
+    "href": "Machine_Learning/housing-prices.html#problem",
     "title": "King County Housing Prices",
-    "section": "Problem",
-    "text": "Problem\nA client in the housing and insurance space asked for a model that predicts home prices in King County, Washington, using sales from January 2014 to December 2015. The data includes bedrooms, bathrooms, floors, living area, lot size, year built, renovation year, view, waterfront, and a construction grade.",
+    "section": "",
+    "text": "A client in the housing and insurance space asked for a model that predicts home prices in King County, Washington, using sales from January 2014 to December 2015. The data includes bedrooms, bathrooms, floors, living area, lot size, year built, renovation year, view, waterfront, and a construction grade.",
     "crumbs": [
       "Machine Learning",
       "King County Housing Prices"
     ]
   },
   {
-    "objectID": "Machine_Learning/project2.html#cleaning-and-features",
-    "href": "Machine_Learning/project2.html#cleaning-and-features",
+    "objectID": "Machine_Learning/housing-prices.html#cleaning-and-features",
+    "href": "Machine_Learning/housing-prices.html#cleaning-and-features",
     "title": "King County Housing Prices",
     "section": "Cleaning and features",
     "text": "Cleaning and features\n\nSplit the sale date into separate month and year features and dropped the day, which did not help the model.\nKept the construction grade (1 to 13) as a number instead of binning it. The model improved because grade is an ordered ranking.\nBuilt distance from the center of Seattle, house age, and years since renovation.\nTested the 30-year mortgage rate from FRED and left it out because it did not improve predictive power.\nTook the log of price. Raw prices are heavily right-skewed, so a few very expensive homes would dominate the error. The log shifts the model toward minimizing percentage error, and predictions are converted back to dollars afterward.",
@@ -291,8 +434,8 @@
     ]
   },
   {
-    "objectID": "Machine_Learning/project2.html#model",
-    "href": "Machine_Learning/project2.html#model",
+    "objectID": "Machine_Learning/housing-prices.html#model",
+    "href": "Machine_Learning/housing-prices.html#model",
     "title": "King County Housing Prices",
     "section": "Model",
     "text": "Model\nWe used XGBoost, an ensemble of gradient-boosted decision trees where each tree corrects the errors of the ones before it. Our first 30% test split turned out to be biased toward homes without basements, so we switched to 5-fold cross-validation, which trains and tests the model five times on different slices and averages the results.",
@@ -302,8 +445,8 @@
     ]
   },
   {
-    "objectID": "Machine_Learning/project2.html#results",
-    "href": "Machine_Learning/project2.html#results",
+    "objectID": "Machine_Learning/housing-prices.html#results",
+    "href": "Machine_Learning/housing-prices.html#results",
     "title": "King County Housing Prices",
     "section": "Results",
     "text": "Results\n\n\n\nMetric\nScore\n\n\n\n\nR²\n0.898\n\n\nRMSE\n$116,957\n\n\nMAE\n$64,596\n\n\nMean absolute percentage error\n12.1%\n\n\n\nAbout 90% of the variation in prices was explained on data held out during cross-validation. About 32% of predictions landed within 5% of the true price, 57% within 10%, and 83% within 20%.\n\nError grows for expensive homes, with accuracy dropping above about $1.5M, because there are few of them to learn from.\n\nGrade was by far the strongest feature (importance 0.37), followed by latitude, living area, waterfront, and view. A geographic cluster covering high-end downtown Seattle was also important.",
@@ -313,8 +456,8 @@
     ]
   },
   {
-    "objectID": "Machine_Learning/project2.html#recommendations",
-    "href": "Machine_Learning/project2.html#recommendations",
+    "objectID": "Machine_Learning/housing-prices.html#recommendations",
+    "href": "Machine_Learning/housing-prices.html#recommendations",
     "title": "King County Housing Prices",
     "section": "Recommendations",
     "text": "Recommendations\n\nPresent estimates as a range instead of a single number.\nManually review extreme high-priced outliers.\nInclude distance from a major city in future models.\n\nWe also declined a request to lower estimates in low-income areas to protect insurance customers. That would have required confidential personal data and would have compromised the model’s integrity. The model already reflects neighborhood conditions through features like the living area of the 15 nearest homes.\nView the full notebook",
@@ -328,61 +471,33 @@
     "href": "Machine_Learning/mod4_bikes_GROUP_v02.html",
     "title": "Notebook: Bike Rental Demand",
     "section": "",
-    "text": "Code\n# Data dictionary: https://byui-cse.github.io/cse450-course/module-04/bikes-dictionary.txt\n# Data: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bikes.csv\n# Load some test data\nimport polars as pl\ndf = pl.read_csv('https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bikes.csv', infer_schema_length=None)\ndf.describe()\n\n\n\nshape: (9, 13)\n\n\n\nstatistic\ndteday\nhr\ncasual\nregistered\ntemp_c\nfeels_like_c\nhum\nwindspeed\nweathersit\nseason\nholiday\nworkingday\n\n\nstr\nstr\nf64\nf64\nf64\nf64\nf64\nf64\nf64\nf64\nf64\nf64\nf64\n\n\n\n\n\"count\"\n\"112475\"\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n\n\n\"null_count\"\n\"0\"\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n\n\n\"mean\"\nnull\n11.501098\n90.434612\n249.193625\n15.376487\n14.659325\n0.636624\n13.100614\n1.405441\n2.495799\n0.0303\n0.684312\n\n\n\"std\"\nnull\n6.921864\n128.655621\n258.267544\n9.749467\n11.428324\n0.190328\n7.8576\n0.68345\n1.101152\n0.171412\n0.464791\n\n\n\"min\"\n\"1/1/2011\"\n0.0\n0.0\n0.0\n-14.7\n-24.0\n0.0889\n0.0\n1.0\n1.0\n0.0\n0.0\n\n\n\"25%\"\nnull\n6.0\n7.0\n48.0\n7.6\n5.4\n0.4841\n7.7\n1.0\n2.0\n0.0\n0.0\n\n\n\"50%\"\nnull\n12.0\n36.0\n180.0\n16.0\n16.0\n0.6409\n12.2\n1.0\n2.0\n0.0\n1.0\n\n\n\"75%\"\nnull\n18.0\n122.0\n360.0\n23.5\n23.5\n0.7988\n17.5\n2.0\n3.0\n0.0\n1.0\n\n\n\"max\"\n\"9/9/2023\"\n23.0\n1244.0\n1702.0\n40.5\n49.6\n1.0\n69.8\n4.0\n4.0\n1.0\n1.0\n\n\n\n\n\n\n\n\nCode\n# Import the libraries we need\n# TensorFlow and tf.keras\nimport tensorflow as tf\nfrom tensorflow import keras\nfrom keras.layers import Dense, Dropout, Normalization\n\nimport numpy as np\n\n%pip install lets-plot\nfrom lets_plot import *\nLetsPlot.setup_html()\nimport matplotlib.pyplot as plt\nfrom tensorflow.keras import Sequential\nfrom tensorflow.keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import root_mean_squared_error, r2_score\nfrom sklearn.preprocessing import MinMaxScaler\n\n\n\nCollecting lets-plot\n\n  Downloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (9.7 kB)\n\nCollecting pypng (from lets-plot)\n\n  Downloading pypng-0.20220715.0-py3-none-any.whl.metadata (13 kB)\n\nCollecting palettable (from lets-plot)\n\n  Downloading palettable-3.3.3-py2.py3-none-any.whl.metadata (3.3 kB)\n\nRequirement already satisfied: pillow in /usr/local/lib/python3.13/dist-packages (from lets-plot) (11.3.0)\n\nDownloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.9 MB)\n\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 43.5 MB/s  0:00:00\n\nDownloading palettable-3.3.3-py2.py3-none-any.whl (332 kB)\n\nDownloading pypng-0.20220715.0-py3-none-any.whl (58 kB)\n\nInstalling collected packages: pypng, palettable, lets-plot\n\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3/3 [lets-plot]\n\nSuccessfully installed lets-plot-4.11.0 palettable-3.3.3 pypng-0.20220715.0\n\n\n\n\n\n\nCode\nimport datetime as dt\n\ndef thanksgiving(y):\n    first = dt.date(y, 11, 1)\n    first_thu = first + dt.timedelta(days=(3 - first.weekday()) % 7)  # Monday = 0\n    return first_thu + dt.timedelta(weeks=3)\n\ndef clip_off(n, lo, hi):\n    return str(n) if lo &lt;= n &lt;= hi else \"none\"\n\ndef holiday_lookup(dates):\n    rows = []\n    for d in dates:\n        tg = (d - thanksgiving(d.year)).days\n        xm = min(((d - dt.date(y, 12, 25)).days for y in (d.year - 1, d.year)), key=abs)\n        rows.append((d, \"tg_\" + clip_off(tg, -3, 4), \"xm_\" + clip_off(xm, -3, 7)))\n    return pl.DataFrame(rows, schema=[\"date\", \"tg_off\", \"xm_off\"], orient=\"row\")\n\ncategorical_cols = [\"month\", \"weekday\", \"weathersit\", \"season\", \"year\", \"hr\"]\n\nSTART = df[\"dteday\"].str.to_date(\"%m/%d/%Y\").min()   # fixed training start date\nRECENT = pl.date(2022, 1, 1)                          # start of the recent growth period\n\n\ndef prep(df):\n    date = pl.col(\"dteday\").str.to_date(\"%m/%d/%Y\")\n    lookup = holiday_lookup(df.select(date.alias(\"d\"))[\"d\"].unique().to_list())\n    return (\n        df.with_columns(\n            date=date,\n            days=(date - pl.lit(START)).dt.total_days(),\n            recent_days=(date - RECENT).dt.total_days().clip(lower_bound=0),\n            covid=((date &gt;= pl.date(2020, 3, 1)) & (date &lt;= pl.date(2021, 12, 31))).cast(pl.Int8),\n            month=date.dt.month(),\n            weekday=date.dt.weekday(),\n            # Converts temp and feels like into Fahrenheit\n            temp_f=pl.col('temp_c') * 1.8 + 32,\n            feels_like_f=pl.col('feels_like_c') * 1.8 + 32,\n        )\n        .join(lookup, on=\"date\", how=\"left\")\n        .drop(\"dteday\", \"date\", \"casual\", \"registered\", \"total\", strict=False)\n        .to_dummies(columns=categorical_cols + [\"tg_off\", \"xm_off\"])\n    )\n\nX_df = prep(df)\nFEATURES = X_df.columns   # the model expects exactly these columns, in this order\nX = X_df.to_numpy().astype(\"float32\")\ny = (df[\"casual\"] + df[\"registered\"]).to_numpy().astype(\"float32\")\n\n\n\n\nCode\n\n# Recency weights: oldest rows get 0.5, newest rows get 1.0 (raise the 0.5 floor for less emphasis)\ndays_all = (df[\"dteday\"].str.to_date(\"%m/%d/%Y\") - START).dt.total_days().to_numpy()\nw = (0.5 + 0.5 * days_all / days_all.max()).astype(\"float32\")\n\nX_train, X_val, y_train, y_val, w_train, w_val = train_test_split(\n    X, y, w, test_size=0.2, random_state=48\n)\n\n# min/max scaling lives inside the model, so a holdout is scaled with the training min/max\nx_min = X_train.min(axis=0)\nx_rng = X_train.max(axis=0) - x_min\nx_rng[x_rng == 0] = 1.0   # avoid dividing by zero on constant columns\nnorm = keras.layers.Rescaling(scale=1.0 / x_rng, offset=-x_min / x_rng)\ny_min, y_max = y_train.min(), y_train.max()\ny_norm = keras.layers.Rescaling(scale=y_max - y_min, offset=y_min)   # inverse: back to riders\n\nmodel = keras.Sequential([\n    keras.Input(shape=(X_train.shape[1],)),\n    norm,\n    Dense(150, activation=\"relu\"),\n    Dropout(0.4),\n    Dense(32, activation=\"relu\"),\n    Dropout(0.2),\n    Dense(1),\n    y_norm,\n])\nmodel.compile(optimizer=keras.optimizers.Adam(learning_rate=0.0008),\n              loss=\"mse\", metrics=[\"mae\", keras.metrics.R2Score(name=\"r2\")])\nearly_stop = keras.callbacks.EarlyStopping(monitor=\"val_loss\", patience=7,\n                                           restore_best_weights=True)\nhistory = model.fit(\n    X_train, y_train.reshape(-1, 1),\n    sample_weight=w_train,\n    validation_data=(X_val, y_val.reshape(-1, 1)),\n    epochs=30, batch_size=80, callbacks=[early_stop],\n)\nhist = pl.DataFrame(history.history)\n\n\n\nEpoch 1/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 15s 11ms/step - loss: 46884.9531 - mae: 171.3856 - r2: 0.4807 - val_loss: 18751.0605 - val_mae: 99.4833 - val_r2: 0.8373\n\nEpoch 2/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 10s 9ms/step - loss: 18375.6328 - mae: 108.4745 - r2: 0.7955 - val_loss: 12601.0381 - val_mae: 80.2204 - val_r2: 0.8907\n\nEpoch 3/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 14039.4180 - mae: 94.3192 - r2: 0.8450 - val_loss: 9817.3086 - val_mae: 69.1267 - val_r2: 0.9148\n\nEpoch 4/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 12160.0410 - mae: 86.7975 - r2: 0.8663 - val_loss: 9072.5322 - val_mae: 68.0905 - val_r2: 0.9213\n\nEpoch 5/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 5ms/step - loss: 11132.2627 - mae: 82.7736 - r2: 0.8779 - val_loss: 8944.0156 - val_mae: 67.2568 - val_r2: 0.9224\n\nEpoch 6/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 10465.7363 - mae: 80.2207 - r2: 0.8852 - val_loss: 8680.3643 - val_mae: 66.9961 - val_r2: 0.9247\n\nEpoch 7/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - loss: 10125.1611 - mae: 78.8094 - r2: 0.8892 - val_loss: 8313.6250 - val_mae: 64.3002 - val_r2: 0.9279\n\nEpoch 8/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - loss: 9698.2764 - mae: 77.0386 - r2: 0.8937 - val_loss: 7393.0664 - val_mae: 57.6417 - val_r2: 0.9358\n\nEpoch 9/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 9503.5156 - mae: 76.2322 - r2: 0.8961 - val_loss: 8755.4941 - val_mae: 65.7389 - val_r2: 0.9240\n\nEpoch 10/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 9112.0684 - mae: 74.4174 - r2: 0.9003 - val_loss: 7338.6636 - val_mae: 58.4500 - val_r2: 0.9363\n\nEpoch 11/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - loss: 9142.4033 - mae: 74.5810 - r2: 0.9001 - val_loss: 8073.1333 - val_mae: 67.7488 - val_r2: 0.9299\n\nEpoch 12/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 8828.7090 - mae: 73.3646 - r2: 0.9033 - val_loss: 7243.0928 - val_mae: 58.8334 - val_r2: 0.9371\n\nEpoch 13/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - loss: 8641.3652 - mae: 72.3383 - r2: 0.9053 - val_loss: 7172.2065 - val_mae: 57.3490 - val_r2: 0.9378\n\nEpoch 14/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - loss: 8595.2012 - mae: 72.0436 - r2: 0.9060 - val_loss: 6775.3462 - val_mae: 54.5843 - val_r2: 0.9412\n\nEpoch 15/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 5ms/step - loss: 8552.7715 - mae: 71.8048 - r2: 0.9065 - val_loss: 7787.2012 - val_mae: 63.9166 - val_r2: 0.9324\n\nEpoch 16/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - loss: 8375.8906 - mae: 71.2302 - r2: 0.9083 - val_loss: 6845.0981 - val_mae: 54.6876 - val_r2: 0.9406\n\nEpoch 17/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 8224.8389 - mae: 70.5430 - r2: 0.9098 - val_loss: 6807.6768 - val_mae: 54.7143 - val_r2: 0.9409\n\nEpoch 18/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 8321.3994 - mae: 70.6946 - r2: 0.9092 - val_loss: 6725.3853 - val_mae: 52.5134 - val_r2: 0.9416\n\nEpoch 19/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 5ms/step - loss: 8316.4434 - mae: 70.5003 - r2: 0.9092 - val_loss: 7096.0801 - val_mae: 59.4732 - val_r2: 0.9384\n\nEpoch 20/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 8166.7861 - mae: 70.0776 - r2: 0.9109 - val_loss: 7282.8062 - val_mae: 57.0175 - val_r2: 0.9368\n\nEpoch 21/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 8038.4180 - mae: 69.4517 - r2: 0.9122 - val_loss: 7232.0728 - val_mae: 61.3901 - val_r2: 0.9372\n\nEpoch 22/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 5ms/step - loss: 8066.0327 - mae: 69.5248 - r2: 0.9121 - val_loss: 6645.0122 - val_mae: 53.6474 - val_r2: 0.9423\n\nEpoch 23/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 7869.6431 - mae: 69.0718 - r2: 0.9141 - val_loss: 6733.2852 - val_mae: 54.6525 - val_r2: 0.9416\n\nEpoch 24/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - loss: 7887.4824 - mae: 68.8726 - r2: 0.9138 - val_loss: 6540.9673 - val_mae: 56.3341 - val_r2: 0.9432\n\nEpoch 25/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 5ms/step - loss: 7924.4072 - mae: 68.7482 - r2: 0.9137 - val_loss: 6804.5630 - val_mae: 55.5053 - val_r2: 0.9410\n\nEpoch 26/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 7799.0386 - mae: 68.3772 - r2: 0.9149 - val_loss: 6114.8599 - val_mae: 48.6242 - val_r2: 0.9469\n\nEpoch 27/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 7921.9297 - mae: 68.7180 - r2: 0.9135 - val_loss: 6572.8472 - val_mae: 57.8172 - val_r2: 0.9430\n\nEpoch 28/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 6s 5ms/step - loss: 7751.7217 - mae: 68.1036 - r2: 0.9153 - val_loss: 6537.3589 - val_mae: 55.9317 - val_r2: 0.9433\n\nEpoch 29/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 7802.4629 - mae: 68.3029 - r2: 0.9148 - val_loss: 5976.0757 - val_mae: 48.1615 - val_r2: 0.9481\n\nEpoch 30/30\n\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 7635.3223 - mae: 67.9154 - r2: 0.9167 - val_loss: 6364.2983 - val_mae: 55.0153 - val_r2: 0.9448\n\n\n\n\n\n\nCode\nhist = hist.with_row_index()\nmse_hist = (hist.select('index', 'loss', 'val_loss')\n    .unpivot(index='index', variable_name='metric', value_name='mse')\n    .with_columns(pl.col('metric').replace({'loss': 'training error', 'val_loss': 'validation error'})))\n\npred = np.maximum(model.predict(X_val).flatten(), 0)\n\nmae = np.abs(pred - y_val).mean()\nprint(f\"Average error: {mae:.1f} riders\")\n\n\n\n703/703 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step\n\nAverage error: 48.1 riders\n\n\n\n\n\n\nCode\ndef align(df, features):\n    \"\"\"Match a prepped dataframe to the training columns, in the same order.\"\"\"\n    # Add dummy columns that exist in training but not in this data (e.g. a month missing from the mini holdout)\n    missing = [c for c in features if c not in df.columns]\n    if missing:\n        df = df.with_columns([pl.lit(0).alias(c) for c in missing])\n    # Drop any extra columns and put the rest in training order\n    return df.select(features)\n\n# holdout testing (biking dataset)\ntest_raw = pl.read_csv(\n    \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bikes_december.csv\"\n)\n\n# Same feature prep as training, then match the training columns and order\ntest_df = align(prep(test_raw), FEATURES)\nX_test = test_df.to_numpy().astype(\"float32\")\n\n# Scaling happens inside the model, so no separate transform step\npredictions_holdout = np.maximum(np.round(model.predict(X_test).flatten()), 0)\n\npredictions_df = pl.DataFrame({\"predictions\": predictions_holdout})\npredictions_df.write_csv(\"team3-module4-predictions.csv\")\n\n\n\n46/46 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step\n\n\n\n\n\n\nCode\ndef plot_history():\n    plt.figure()\n    plt.xlabel('Epoch')\n    plt.ylabel('Mean Square Error')\n    plt.plot(hist['index'], hist['loss'], label='Train Error')\n    plt.plot(hist['index'], hist['val_loss'], label='Val Error')\n    plt.legend()\n    plt.show()\n\nplot_history()\n\n\n\n\n\n\n\n\n\n\n\nCode\nfrom sklearn.metrics import mean_squared_error, root_mean_squared_error, r2_score\n\npred = np.maximum(model.predict(X_val).flatten(), 0)\n\nmse = mean_squared_error(y_val, pred)\nrmse = root_mean_squared_error(y_val, pred)\nmae = np.abs(pred - y_val).mean()\nr2 = r2_score(y_val, pred)\n\nprint(f\"MSE:  {mse:.1f}\")\nprint(f\"RMSE: {rmse:.1f} riders\")\nprint(f\"MAE:  {mae:.1f} riders\")\nprint(f\"R2:   {r2:.3f}\")\n\n\n\n703/703 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step\n\nMSE:  5972.7\n\nRMSE: 77.3 riders\n\nMAE:  48.1 riders\n\nR2:   0.948\n\n\n\n\n\n\nCode\nmonthly = (df.with_columns(date=pl.col(\"dteday\").str.to_date(\"%m/%d/%Y\"),\n                           total=pl.col(\"casual\") + pl.col(\"registered\"))\n             .with_columns(month_start=pl.col(\"date\").dt.truncate(\"1mo\"))\n             .group_by(\"month_start\").agg(pl.col(\"total\").mean().alias(\"mean_riders\"))\n             .sort(\"month_start\"))\n\n(ggplot(monthly, aes(\"month_start\", \"mean_riders\"))\n + geom_line()\n + geom_point(size=2)\n + ggtitle(\"Mean riders per hour, by month\"))\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nCode\nimport seaborn as sns\n\n# hour for each validation row (same split as X_val / y_val)\nhr_all = df[\"hr\"].to_numpy()\n_, hr_val = train_test_split(hr_all, test_size=0.2, random_state=48)\n\npred = np.maximum(model.predict(X_val).flatten(), 0)   # in riders (use np.expm1 first if you trained on log)\nres = pl.DataFrame({\n    \"hour\": hr_val.astype(int),\n    \"actual\": y_val,            # in riders (use np.expm1(y_val) if you trained on log)\n    \"predictions\": pred,\n}).with_columns(residual=pl.col(\"actual\") - pl.col(\"predictions\"))\n\npdf = res.to_pandas()\nfig, axes = plt.subplots(1, 2, figsize=(20, 6))\n\nsns.boxplot(data=pdf, x=\"hour\", y=\"residual\", ax=axes[0], color=\"tab:blue\", fliersize=2)\naxes[0].axhline(0, color=\"red\", lw=1)\naxes[0].set_title(\"Validation residuals by hour of day (actual - predicted)\")\naxes[0].set_xlabel(\"Hour of day\")\naxes[0].set_ylabel(\"Residual (bikes)\")\n\nby_hour = pdf.groupby(\"hour\")[\"residual\"].agg(\n    mean_residual=\"mean\",\n    mean_abs_error=lambda r: r.abs().mean(),\n)\nby_hour.plot(ax=axes[1], marker=\"o\")\naxes[1].axhline(0, color=\"black\", lw=1)\naxes[1].set_title(\"Mean residual and mean absolute error by hour\")\naxes[1].set_xlabel(\"Hour of day\")\naxes[1].set_xticks(range(24))\n\nplt.tight_layout()\nplt.show()\n\n\n\n703/703 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport datetime as dt\n\ndaily = (df.with_columns(date=pl.col(\"dteday\").str.to_date(\"%m/%d/%Y\"),\n                         total=pl.col(\"casual\") + pl.col(\"registered\"))\n           .group_by(\"date\").agg(pl.col(\"total\").sum()).sort(\"date\"))\ntot = dict(zip(daily[\"date\"].to_list(), daily[\"total\"].to_list()))\n\ndef thanksgiving(y):\n    first = dt.date(y, 11, 1)\n    first_thu = first + dt.timedelta(days=(3 - first.weekday()) % 7)   # python: Monday = 0\n    return first_thu + dt.timedelta(weeks=3)\n\nholidays = {\"thanksgiving\": thanksgiving, \"christmas\": lambda y: dt.date(y, 12, 25)}\n\nrows = []\nfor name, fn in holidays.items():\n    for y in range(2011, 2023):\n        h = fn(y)\n        for off in range(-3, 5):\n            day = h + dt.timedelta(days=off)\n            base = [tot[day + dt.timedelta(weeks=k)] for k in (-3, -2, 2, 3)\n                    if day + dt.timedelta(weeks=k) in tot]\n            if day in tot and len(base) &gt;= 3:\n                rows.append((name, y, off, tot[day] / (sum(base) / len(base))))\n\nr = pl.DataFrame(rows, schema=[\"holiday\", \"year\", \"offset\", \"ratio\"], orient=\"row\")\nprint(r.group_by([\"holiday\", \"offset\"])\n       .agg(median=pl.col(\"ratio\").median(), low=pl.col(\"ratio\").min(),\n            high=pl.col(\"ratio\").max())\n       .sort([\"holiday\", \"offset\"]))\n\n\nshape: (16, 5)\n┌──────────────┬────────┬──────────┬──────────┬──────────┐\n│ holiday      ┆ offset ┆ median   ┆ low      ┆ high     │\n│ ---          ┆ ---    ┆ ---      ┆ ---      ┆ ---      │\n│ str          ┆ i64    ┆ f64      ┆ f64      ┆ f64      │\n╞══════════════╪════════╪══════════╪══════════╪══════════╡\n│ christmas    ┆ -3     ┆ 0.825076 ┆ 0.197781 ┆ 0.98003  │\n│ christmas    ┆ -2     ┆ 0.598075 ┆ 0.227363 ┆ 1.104185 │\n│ christmas    ┆ -1     ┆ 0.378718 ┆ 0.162196 ┆ 0.556049 │\n│ christmas    ┆ 0      ┆ 0.254649 ┆ 0.15522  ┆ 0.527314 │\n│ christmas    ┆ 1      ┆ 0.402173 ┆ 0.089089 ┆ 1.044809 │\n│ …            ┆ …      ┆ …        ┆ …        ┆ …        │\n│ thanksgiving ┆ 0      ┆ 0.401865 ┆ 0.203426 ┆ 1.027836 │\n│ thanksgiving ┆ 1      ┆ 0.641317 ┆ 0.368308 ┆ 0.98553  │\n│ thanksgiving ┆ 2      ┆ 0.726509 ┆ 0.285605 ┆ 1.287239 │\n│ thanksgiving ┆ 3      ┆ 0.806863 ┆ 0.304432 ┆ 1.179882 │\n│ thanksgiving ┆ 4      ┆ 0.979817 ┆ 0.542756 ┆ 1.095467 │\n└──────────────┴────────┴──────────┴──────────┴──────────┘\n\n\n\n\nCode\nimport polars as pl\n\ntest_raw = pl.read_csv(\n    \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bikes_december.csv\"\n)\npreds = pl.read_csv(\"team3-module4-predictions.csv\")\n\nholdout_plot = (\n    test_raw\n    .select(\n        (pl.col(\"dteday\").str.to_date(\"%m/%d/%Y\").cast(pl.Datetime)\n         + pl.duration(hours=pl.col(\"hr\"))).alias(\"time\")\n    )\n    .with_columns(preds[\"predictions\"].alias(\"pred\"))\n    .sort(\"time\")\n    .with_columns(pl.col(\"time\").dt.strftime(\"%b %Y\").alias(\"month\"))\n)\n\nprint(holdout_plot.height, holdout_plot[\"time\"].n_unique())\n\n\n1465 1464\n\n\n\n\nCode\ndaily_mean = pl.concat([hist_day, pred_day]).sort(\"date\")\n\n(ggplot(daily_mean, aes(x=\"date\", y=\"mean_riders\", color=\"source\"))\n + geom_line(size=1)\n + geom_point(size=1.5)\n + scale_color_manual(values={\"Historical\": \"steelblue\", \"Predicted\": \"darkorange\"})\n + scale_x_datetime(format=\"%b %Y\")\n + labs(title=\"Mean Riders per Hour by Day, 2023\",\n        x=\"\", y=\"Mean riders per hour\", color=\"\")\n + theme_classic()\n + ggsize(700, 350))\n\n\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n/tmp/ipykernel_1197/3268580100.py in &lt;cell line: 0&gt;()\n----&gt; 1 daily_mean = pl.concat([hist_day, pred_day]).sort(\"date\")\n      2 \n      3 (ggplot(daily_mean, aes(x=\"date\", y=\"mean_riders\", color=\"source\"))\n      4  + geom_line(size=1)\n      5  + geom_point(size=1.5)\n\nNameError: name 'hist_day' is not defined\n\n\n\n\n\nCode\nfrom datetime import datetime\n\ndef add_how(df):\n    return df.with_columns(\n        ((pl.col(\"time\").dt.weekday().cast(pl.Int32) - 1) * 24\n         + pl.col(\"time\").dt.hour().cast(pl.Int32)).alias(\"hour_of_week\")\n    )\n\nthx_start, thx_end = datetime(2023, 11, 20), datetime(2023, 11, 27)\nxmas_start, xmas_end = datetime(2023, 12, 22), datetime(2023, 12, 29)\n\nbase = add_how(holdout_plot)\n\nis_thx = (pl.col(\"time\") &gt;= thx_start) & (pl.col(\"time\") &lt; thx_end)\nis_xmas = (pl.col(\"time\") &gt;= xmas_start) & (pl.col(\"time\") &lt; xmas_end)\n\nnormal = (\n    base.filter(~is_thx & ~is_xmas)\n        .group_by(\"hour_of_week\")\n        .agg(pl.col(\"pred\").mean())\n        .with_columns(pl.lit(\"Avg of other Nov/Dec weeks\").alias(\"week\"))\n        .select(\"hour_of_week\", \"pred\", \"week\")\n)\n\nthx = (base.filter(is_thx)\n       .with_columns(pl.lit(\"Thanksgiving week\").alias(\"week\"))\n       .select(\"hour_of_week\", \"pred\", \"week\"))\n\nxmas = (base.filter(is_xmas)\n        .with_columns(pl.lit(\"Christmas week\").alias(\"week\"))\n        .select(\"hour_of_week\", \"pred\", \"week\"))\n\ncompare = pl.concat([normal, thx, xmas]).sort(\"hour_of_week\")\n\n(ggplot(compare, aes(x=\"hour_of_week\", y=\"pred\", color=\"week\"))\n + geom_line(size=0.9)\n + scale_x_continuous(breaks=[0, 24, 48, 72, 96, 120, 144],\n                      labels=[\"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\", \"Sat\", \"Sun\"])\n + labs(title=\"Predicted Riders Per Day: Holiday Weeks vs Average Week\",\n        x=\"\", y=\"Predicted riders\", color=\"\")\n + theme_classic()\n + ggsize(1000, 400))\n\n\n\n\n\n Back to top"
+    "text": "Code\n# Data dictionary: https://byui-cse.github.io/cse450-course/module-04/bikes-dictionary.txt\n# Data: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bikes.csv\n# Load some test data\nimport polars as pl\ndf = pl.read_csv('https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bikes.csv', infer_schema_length=None)\ndf.describe()\n\n\n\nshape: (9, 13)\n\n\n\nstatistic\ndteday\nhr\ncasual\nregistered\ntemp_c\nfeels_like_c\nhum\nwindspeed\nweathersit\nseason\nholiday\nworkingday\n\n\nstr\nstr\nf64\nf64\nf64\nf64\nf64\nf64\nf64\nf64\nf64\nf64\nf64\n\n\n\n\n\"count\"\n\"112475\"\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n112475.0\n\n\n\"null_count\"\n\"0\"\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n\n\n\"mean\"\nnull\n11.501098\n90.434612\n249.193625\n15.376487\n14.659325\n0.636624\n13.100614\n1.405441\n2.495799\n0.0303\n0.684312\n\n\n\"std\"\nnull\n6.921864\n128.655621\n258.267544\n9.749467\n11.428324\n0.190328\n7.8576\n0.68345\n1.101152\n0.171412\n0.464791\n\n\n\"min\"\n\"1/1/2011\"\n0.0\n0.0\n0.0\n-14.7\n-24.0\n0.0889\n0.0\n1.0\n1.0\n0.0\n0.0\n\n\n\"25%\"\nnull\n6.0\n7.0\n48.0\n7.6\n5.4\n0.4841\n7.7\n1.0\n2.0\n0.0\n0.0\n\n\n\"50%\"\nnull\n12.0\n36.0\n180.0\n16.0\n16.0\n0.6409\n12.2\n1.0\n2.0\n0.0\n1.0\n\n\n\"75%\"\nnull\n18.0\n122.0\n360.0\n23.5\n23.5\n0.7988\n17.5\n2.0\n3.0\n0.0\n1.0\n\n\n\"max\"\n\"9/9/2023\"\n23.0\n1244.0\n1702.0\n40.5\n49.6\n1.0\n69.8\n4.0\n4.0\n1.0\n1.0\n\n\n\n\n\n\n\n\nCode\n# Import the libraries we need\n# TensorFlow and tf.keras\nimport tensorflow as tf\nfrom tensorflow import keras\nfrom keras.layers import Dense, Dropout, Normalization\n\nimport numpy as np\n\n%pip install lets-plot\nfrom lets_plot import *\nLetsPlot.setup_html()\nimport matplotlib.pyplot as plt\nfrom tensorflow.keras import Sequential\nfrom tensorflow.keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import root_mean_squared_error, r2_score\nfrom sklearn.preprocessing import MinMaxScaler\n\n\n\nCollecting lets-plot\n  Downloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (9.7 kB)\nCollecting pypng (from lets-plot)\n  Downloading pypng-0.20220715.0-py3-none-any.whl.metadata (13 kB)\nCollecting palettable (from lets-plot)\n  Downloading palettable-3.3.3-py2.py3-none-any.whl.metadata (3.3 kB)\nRequirement already satisfied: pillow in /usr/local/lib/python3.13/dist-packages (from lets-plot) (11.3.0)\nDownloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.9 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 43.5 MB/s  0:00:00\nDownloading palettable-3.3.3-py2.py3-none-any.whl (332 kB)\nDownloading pypng-0.20220715.0-py3-none-any.whl (58 kB)\nInstalling collected packages: pypng, palettable, lets-plot\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3/3 [lets-plot]\nSuccessfully installed lets-plot-4.11.0 palettable-3.3.3 pypng-0.20220715.0\n\n\n\n\n\n\nCode\nimport datetime as dt\n\ndef thanksgiving(y):\n    first = dt.date(y, 11, 1)\n    first_thu = first + dt.timedelta(days=(3 - first.weekday()) % 7)  # Monday = 0\n    return first_thu + dt.timedelta(weeks=3)\n\ndef clip_off(n, lo, hi):\n    return str(n) if lo &lt;= n &lt;= hi else \"none\"\n\ndef holiday_lookup(dates):\n    rows = []\n    for d in dates:\n        tg = (d - thanksgiving(d.year)).days\n        xm = min(((d - dt.date(y, 12, 25)).days for y in (d.year - 1, d.year)), key=abs)\n        rows.append((d, \"tg_\" + clip_off(tg, -3, 4), \"xm_\" + clip_off(xm, -3, 7)))\n    return pl.DataFrame(rows, schema=[\"date\", \"tg_off\", \"xm_off\"], orient=\"row\")\n\ncategorical_cols = [\"month\", \"weekday\", \"weathersit\", \"season\", \"year\", \"hr\"]\n\nSTART = df[\"dteday\"].str.to_date(\"%m/%d/%Y\").min()   # fixed training start date\nRECENT = pl.date(2022, 1, 1)                          # start of the recent growth period\n\n\ndef prep(df):\n    date = pl.col(\"dteday\").str.to_date(\"%m/%d/%Y\")\n    lookup = holiday_lookup(df.select(date.alias(\"d\"))[\"d\"].unique().to_list())\n    return (\n        df.with_columns(\n            date=date,\n            days=(date - pl.lit(START)).dt.total_days(),\n            recent_days=(date - RECENT).dt.total_days().clip(lower_bound=0),\n            covid=((date &gt;= pl.date(2020, 3, 1)) & (date &lt;= pl.date(2021, 12, 31))).cast(pl.Int8),\n            month=date.dt.month(),\n            weekday=date.dt.weekday(),\n            # Converts temp and feels like into Fahrenheit\n            temp_f=pl.col('temp_c') * 1.8 + 32,\n            feels_like_f=pl.col('feels_like_c') * 1.8 + 32,\n        )\n        .join(lookup, on=\"date\", how=\"left\")\n        .drop(\"dteday\", \"date\", \"casual\", \"registered\", \"total\", strict=False)\n        .to_dummies(columns=categorical_cols + [\"tg_off\", \"xm_off\"])\n    )\n\nX_df = prep(df)\nFEATURES = X_df.columns   # the model expects exactly these columns, in this order\nX = X_df.to_numpy().astype(\"float32\")\ny = (df[\"casual\"] + df[\"registered\"]).to_numpy().astype(\"float32\")\n\n\n\n\nCode\n\n# Recency weights: oldest rows get 0.5, newest rows get 1.0 (raise the 0.5 floor for less emphasis)\ndays_all = (df[\"dteday\"].str.to_date(\"%m/%d/%Y\") - START).dt.total_days().to_numpy()\nw = (0.5 + 0.5 * days_all / days_all.max()).astype(\"float32\")\n\nX_train, X_val, y_train, y_val, w_train, w_val = train_test_split(\n    X, y, w, test_size=0.2, random_state=48\n)\n\n# min/max scaling lives inside the model, so a holdout is scaled with the training min/max\nx_min = X_train.min(axis=0)\nx_rng = X_train.max(axis=0) - x_min\nx_rng[x_rng == 0] = 1.0   # avoid dividing by zero on constant columns\nnorm = keras.layers.Rescaling(scale=1.0 / x_rng, offset=-x_min / x_rng)\ny_min, y_max = y_train.min(), y_train.max()\ny_norm = keras.layers.Rescaling(scale=y_max - y_min, offset=y_min)   # inverse: back to riders\n\nmodel = keras.Sequential([\n    keras.Input(shape=(X_train.shape[1],)),\n    norm,\n    Dense(150, activation=\"relu\"),\n    Dropout(0.4),\n    Dense(32, activation=\"relu\"),\n    Dropout(0.2),\n    Dense(1),\n    y_norm,\n])\nmodel.compile(optimizer=keras.optimizers.Adam(learning_rate=0.0008),\n              loss=\"mse\", metrics=[\"mae\", keras.metrics.R2Score(name=\"r2\")])\nearly_stop = keras.callbacks.EarlyStopping(monitor=\"val_loss\", patience=7,\n                                           restore_best_weights=True)\nhistory = model.fit(\n    X_train, y_train.reshape(-1, 1),\n    sample_weight=w_train,\n    validation_data=(X_val, y_val.reshape(-1, 1)),\n    epochs=30, batch_size=80, callbacks=[early_stop],\n)\nhist = pl.DataFrame(history.history)\n\n\n\nEpoch 1/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 15s 11ms/step - loss: 46884.9531 - mae: 171.3856 - r2: 0.4807 - val_loss: 18751.0605 - val_mae: 99.4833 - val_r2: 0.8373\nEpoch 2/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 10s 9ms/step - loss: 18375.6328 - mae: 108.4745 - r2: 0.7955 - val_loss: 12601.0381 - val_mae: 80.2204 - val_r2: 0.8907\nEpoch 3/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 14039.4180 - mae: 94.3192 - r2: 0.8450 - val_loss: 9817.3086 - val_mae: 69.1267 - val_r2: 0.9148\nEpoch 4/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 12160.0410 - mae: 86.7975 - r2: 0.8663 - val_loss: 9072.5322 - val_mae: 68.0905 - val_r2: 0.9213\nEpoch 5/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 5ms/step - loss: 11132.2627 - mae: 82.7736 - r2: 0.8779 - val_loss: 8944.0156 - val_mae: 67.2568 - val_r2: 0.9224\nEpoch 6/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 10465.7363 - mae: 80.2207 - r2: 0.8852 - val_loss: 8680.3643 - val_mae: 66.9961 - val_r2: 0.9247\nEpoch 7/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - loss: 10125.1611 - mae: 78.8094 - r2: 0.8892 - val_loss: 8313.6250 - val_mae: 64.3002 - val_r2: 0.9279\nEpoch 8/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - loss: 9698.2764 - mae: 77.0386 - r2: 0.8937 - val_loss: 7393.0664 - val_mae: 57.6417 - val_r2: 0.9358\nEpoch 9/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 9503.5156 - mae: 76.2322 - r2: 0.8961 - val_loss: 8755.4941 - val_mae: 65.7389 - val_r2: 0.9240\nEpoch 10/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 9112.0684 - mae: 74.4174 - r2: 0.9003 - val_loss: 7338.6636 - val_mae: 58.4500 - val_r2: 0.9363\nEpoch 11/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - loss: 9142.4033 - mae: 74.5810 - r2: 0.9001 - val_loss: 8073.1333 - val_mae: 67.7488 - val_r2: 0.9299\nEpoch 12/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 8828.7090 - mae: 73.3646 - r2: 0.9033 - val_loss: 7243.0928 - val_mae: 58.8334 - val_r2: 0.9371\nEpoch 13/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - loss: 8641.3652 - mae: 72.3383 - r2: 0.9053 - val_loss: 7172.2065 - val_mae: 57.3490 - val_r2: 0.9378\nEpoch 14/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - loss: 8595.2012 - mae: 72.0436 - r2: 0.9060 - val_loss: 6775.3462 - val_mae: 54.5843 - val_r2: 0.9412\nEpoch 15/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 5ms/step - loss: 8552.7715 - mae: 71.8048 - r2: 0.9065 - val_loss: 7787.2012 - val_mae: 63.9166 - val_r2: 0.9324\nEpoch 16/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - loss: 8375.8906 - mae: 71.2302 - r2: 0.9083 - val_loss: 6845.0981 - val_mae: 54.6876 - val_r2: 0.9406\nEpoch 17/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 8224.8389 - mae: 70.5430 - r2: 0.9098 - val_loss: 6807.6768 - val_mae: 54.7143 - val_r2: 0.9409\nEpoch 18/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 8321.3994 - mae: 70.6946 - r2: 0.9092 - val_loss: 6725.3853 - val_mae: 52.5134 - val_r2: 0.9416\nEpoch 19/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 5ms/step - loss: 8316.4434 - mae: 70.5003 - r2: 0.9092 - val_loss: 7096.0801 - val_mae: 59.4732 - val_r2: 0.9384\nEpoch 20/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 8166.7861 - mae: 70.0776 - r2: 0.9109 - val_loss: 7282.8062 - val_mae: 57.0175 - val_r2: 0.9368\nEpoch 21/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 8038.4180 - mae: 69.4517 - r2: 0.9122 - val_loss: 7232.0728 - val_mae: 61.3901 - val_r2: 0.9372\nEpoch 22/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 5ms/step - loss: 8066.0327 - mae: 69.5248 - r2: 0.9121 - val_loss: 6645.0122 - val_mae: 53.6474 - val_r2: 0.9423\nEpoch 23/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - loss: 7869.6431 - mae: 69.0718 - r2: 0.9141 - val_loss: 6733.2852 - val_mae: 54.6525 - val_r2: 0.9416\nEpoch 24/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - loss: 7887.4824 - mae: 68.8726 - r2: 0.9138 - val_loss: 6540.9673 - val_mae: 56.3341 - val_r2: 0.9432\nEpoch 25/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 5s 5ms/step - loss: 7924.4072 - mae: 68.7482 - r2: 0.9137 - val_loss: 6804.5630 - val_mae: 55.5053 - val_r2: 0.9410\nEpoch 26/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 7799.0386 - mae: 68.3772 - r2: 0.9149 - val_loss: 6114.8599 - val_mae: 48.6242 - val_r2: 0.9469\nEpoch 27/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 7921.9297 - mae: 68.7180 - r2: 0.9135 - val_loss: 6572.8472 - val_mae: 57.8172 - val_r2: 0.9430\nEpoch 28/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 6s 5ms/step - loss: 7751.7217 - mae: 68.1036 - r2: 0.9153 - val_loss: 6537.3589 - val_mae: 55.9317 - val_r2: 0.9433\nEpoch 29/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 7802.4629 - mae: 68.3029 - r2: 0.9148 - val_loss: 5976.0757 - val_mae: 48.1615 - val_r2: 0.9481\nEpoch 30/30\n1125/1125 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - loss: 7635.3223 - mae: 67.9154 - r2: 0.9167 - val_loss: 6364.2983 - val_mae: 55.0153 - val_r2: 0.9448\n\n\n\n\n\n\nCode\nhist = hist.with_row_index()\nmse_hist = (hist.select('index', 'loss', 'val_loss')\n    .unpivot(index='index', variable_name='metric', value_name='mse')\n    .with_columns(pl.col('metric').replace({'loss': 'training error', 'val_loss': 'validation error'})))\n\npred = np.maximum(model.predict(X_val).flatten(), 0)\n\nmae = np.abs(pred - y_val).mean()\nprint(f\"Average error: {mae:.1f} riders\")\n\n\n\n703/703 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step\nAverage error: 48.1 riders\n\n\n\n\n\n\nCode\ndef align(df, features):\n    \"\"\"Match a prepped dataframe to the training columns, in the same order.\"\"\"\n    # Add dummy columns that exist in training but not in this data (e.g. a month missing from the mini holdout)\n    missing = [c for c in features if c not in df.columns]\n    if missing:\n        df = df.with_columns([pl.lit(0).alias(c) for c in missing])\n    # Drop any extra columns and put the rest in training order\n    return df.select(features)\n\n# holdout testing (biking dataset)\ntest_raw = pl.read_csv(\n    \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bikes_december.csv\"\n)\n\n# Same feature prep as training, then match the training columns and order\ntest_df = align(prep(test_raw), FEATURES)\nX_test = test_df.to_numpy().astype(\"float32\")\n\n# Scaling happens inside the model, so no separate transform step\npredictions_holdout = np.maximum(np.round(model.predict(X_test).flatten()), 0)\n\npredictions_df = pl.DataFrame({\"predictions\": predictions_holdout})\npredictions_df.write_csv(\"team3-module4-predictions.csv\")\n\n\n\n46/46 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step\n\n\n\n\n\n\nCode\ndef plot_history():\n    plt.figure()\n    plt.xlabel('Epoch')\n    plt.ylabel('Mean Square Error')\n    plt.plot(hist['index'], hist['loss'], label='Train Error')\n    plt.plot(hist['index'], hist['val_loss'], label='Val Error')\n    plt.legend()\n    plt.show()\n\nplot_history()\n\n\n\n\n\n\n\n\n\n\n\nCode\nfrom sklearn.metrics import mean_squared_error, root_mean_squared_error, r2_score\n\npred = np.maximum(model.predict(X_val).flatten(), 0)\n\nmse = mean_squared_error(y_val, pred)\nrmse = root_mean_squared_error(y_val, pred)\nmae = np.abs(pred - y_val).mean()\nr2 = r2_score(y_val, pred)\n\nprint(f\"MSE:  {mse:.1f}\")\nprint(f\"RMSE: {rmse:.1f} riders\")\nprint(f\"MAE:  {mae:.1f} riders\")\nprint(f\"R2:   {r2:.3f}\")\n\n\n\n703/703 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step\nMSE:  5972.7\nRMSE: 77.3 riders\nMAE:  48.1 riders\nR2:   0.948\n\n\n\n\n\n\nCode\nmonthly = (df.with_columns(date=pl.col(\"dteday\").str.to_date(\"%m/%d/%Y\"),\n                           total=pl.col(\"casual\") + pl.col(\"registered\"))\n             .with_columns(month_start=pl.col(\"date\").dt.truncate(\"1mo\"))\n             .group_by(\"month_start\").agg(pl.col(\"total\").mean().alias(\"mean_riders\"))\n             .sort(\"month_start\"))\n\n(ggplot(monthly, aes(\"month_start\", \"mean_riders\"))\n + geom_line()\n + geom_point(size=2)\n + ggtitle(\"Mean riders per hour, by month\"))\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nCode\nimport seaborn as sns\n\n# hour for each validation row (same split as X_val / y_val)\nhr_all = df[\"hr\"].to_numpy()\n_, hr_val = train_test_split(hr_all, test_size=0.2, random_state=48)\n\npred = np.maximum(model.predict(X_val).flatten(), 0)   # in riders (use np.expm1 first if you trained on log)\nres = pl.DataFrame({\n    \"hour\": hr_val.astype(int),\n    \"actual\": y_val,            # in riders (use np.expm1(y_val) if you trained on log)\n    \"predictions\": pred,\n}).with_columns(residual=pl.col(\"actual\") - pl.col(\"predictions\"))\n\npdf = res.to_pandas()\nfig, axes = plt.subplots(1, 2, figsize=(20, 6))\n\nsns.boxplot(data=pdf, x=\"hour\", y=\"residual\", ax=axes[0], color=\"tab:blue\", fliersize=2)\naxes[0].axhline(0, color=\"red\", lw=1)\naxes[0].set_title(\"Validation residuals by hour of day (actual - predicted)\")\naxes[0].set_xlabel(\"Hour of day\")\naxes[0].set_ylabel(\"Residual (bikes)\")\n\nby_hour = pdf.groupby(\"hour\")[\"residual\"].agg(\n    mean_residual=\"mean\",\n    mean_abs_error=lambda r: r.abs().mean(),\n)\nby_hour.plot(ax=axes[1], marker=\"o\")\naxes[1].axhline(0, color=\"black\", lw=1)\naxes[1].set_title(\"Mean residual and mean absolute error by hour\")\naxes[1].set_xlabel(\"Hour of day\")\naxes[1].set_xticks(range(24))\n\nplt.tight_layout()\nplt.show()\n\n\n\n703/703 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport datetime as dt\n\ndaily = (df.with_columns(date=pl.col(\"dteday\").str.to_date(\"%m/%d/%Y\"),\n                         total=pl.col(\"casual\") + pl.col(\"registered\"))\n           .group_by(\"date\").agg(pl.col(\"total\").sum()).sort(\"date\"))\ntot = dict(zip(daily[\"date\"].to_list(), daily[\"total\"].to_list()))\n\ndef thanksgiving(y):\n    first = dt.date(y, 11, 1)\n    first_thu = first + dt.timedelta(days=(3 - first.weekday()) % 7)   # python: Monday = 0\n    return first_thu + dt.timedelta(weeks=3)\n\nholidays = {\"thanksgiving\": thanksgiving, \"christmas\": lambda y: dt.date(y, 12, 25)}\n\nrows = []\nfor name, fn in holidays.items():\n    for y in range(2011, 2023):\n        h = fn(y)\n        for off in range(-3, 5):\n            day = h + dt.timedelta(days=off)\n            base = [tot[day + dt.timedelta(weeks=k)] for k in (-3, -2, 2, 3)\n                    if day + dt.timedelta(weeks=k) in tot]\n            if day in tot and len(base) &gt;= 3:\n                rows.append((name, y, off, tot[day] / (sum(base) / len(base))))\n\nr = pl.DataFrame(rows, schema=[\"holiday\", \"year\", \"offset\", \"ratio\"], orient=\"row\")\nprint(r.group_by([\"holiday\", \"offset\"])\n       .agg(median=pl.col(\"ratio\").median(), low=pl.col(\"ratio\").min(),\n            high=pl.col(\"ratio\").max())\n       .sort([\"holiday\", \"offset\"]))\n\n\nshape: (16, 5)\n┌──────────────┬────────┬──────────┬──────────┬──────────┐\n│ holiday      ┆ offset ┆ median   ┆ low      ┆ high     │\n│ ---          ┆ ---    ┆ ---      ┆ ---      ┆ ---      │\n│ str          ┆ i64    ┆ f64      ┆ f64      ┆ f64      │\n╞══════════════╪════════╪══════════╪══════════╪══════════╡\n│ christmas    ┆ -3     ┆ 0.825076 ┆ 0.197781 ┆ 0.98003  │\n│ christmas    ┆ -2     ┆ 0.598075 ┆ 0.227363 ┆ 1.104185 │\n│ christmas    ┆ -1     ┆ 0.378718 ┆ 0.162196 ┆ 0.556049 │\n│ christmas    ┆ 0      ┆ 0.254649 ┆ 0.15522  ┆ 0.527314 │\n│ christmas    ┆ 1      ┆ 0.402173 ┆ 0.089089 ┆ 1.044809 │\n│ …            ┆ …      ┆ …        ┆ …        ┆ …        │\n│ thanksgiving ┆ 0      ┆ 0.401865 ┆ 0.203426 ┆ 1.027836 │\n│ thanksgiving ┆ 1      ┆ 0.641317 ┆ 0.368308 ┆ 0.98553  │\n│ thanksgiving ┆ 2      ┆ 0.726509 ┆ 0.285605 ┆ 1.287239 │\n│ thanksgiving ┆ 3      ┆ 0.806863 ┆ 0.304432 ┆ 1.179882 │\n│ thanksgiving ┆ 4      ┆ 0.979817 ┆ 0.542756 ┆ 1.095467 │\n└──────────────┴────────┴──────────┴──────────┴──────────┘\n\n\n\n\nCode\nimport polars as pl\n\ntest_raw = pl.read_csv(\n    \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bikes_december.csv\"\n)\npreds = pl.read_csv(\"team3-module4-predictions.csv\")\n\nholdout_plot = (\n    test_raw\n    .select(\n        (pl.col(\"dteday\").str.to_date(\"%m/%d/%Y\").cast(pl.Datetime)\n         + pl.duration(hours=pl.col(\"hr\"))).alias(\"time\")\n    )\n    .with_columns(preds[\"predictions\"].alias(\"pred\"))\n    .sort(\"time\")\n    .with_columns(pl.col(\"time\").dt.strftime(\"%b %Y\").alias(\"month\"))\n)\n\nprint(holdout_plot.height, holdout_plot[\"time\"].n_unique())\n\n\n1465 1464\n\n\n\n\nCode\ndaily_mean = pl.concat([hist_day, pred_day]).sort(\"date\")\n\n(ggplot(daily_mean, aes(x=\"date\", y=\"mean_riders\", color=\"source\"))\n + geom_line(size=1)\n + geom_point(size=1.5)\n + scale_color_manual(values={\"Historical\": \"steelblue\", \"Predicted\": \"darkorange\"})\n + scale_x_datetime(format=\"%b %Y\")\n + labs(title=\"Mean Riders per Hour by Day, 2023\",\n        x=\"\", y=\"Mean riders per hour\", color=\"\")\n + theme_classic()\n + ggsize(700, 350))\n\n\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n/tmp/ipykernel_1197/3268580100.py in &lt;cell line: 0&gt;()\n----&gt; 1 daily_mean = pl.concat([hist_day, pred_day]).sort(\"date\")\n      2 \n      3 (ggplot(daily_mean, aes(x=\"date\", y=\"mean_riders\", color=\"source\"))\n      4  + geom_line(size=1)\n      5  + geom_point(size=1.5)\n\nNameError: name 'hist_day' is not defined\n\n\n\n\n\nCode\nfrom datetime import datetime\n\ndef add_how(df):\n    return df.with_columns(\n        ((pl.col(\"time\").dt.weekday().cast(pl.Int32) - 1) * 24\n         + pl.col(\"time\").dt.hour().cast(pl.Int32)).alias(\"hour_of_week\")\n    )\n\nthx_start, thx_end = datetime(2023, 11, 20), datetime(2023, 11, 27)\nxmas_start, xmas_end = datetime(2023, 12, 22), datetime(2023, 12, 29)\n\nbase = add_how(holdout_plot)\n\nis_thx = (pl.col(\"time\") &gt;= thx_start) & (pl.col(\"time\") &lt; thx_end)\nis_xmas = (pl.col(\"time\") &gt;= xmas_start) & (pl.col(\"time\") &lt; xmas_end)\n\nnormal = (\n    base.filter(~is_thx & ~is_xmas)\n        .group_by(\"hour_of_week\")\n        .agg(pl.col(\"pred\").mean())\n        .with_columns(pl.lit(\"Avg of other Nov/Dec weeks\").alias(\"week\"))\n        .select(\"hour_of_week\", \"pred\", \"week\")\n)\n\nthx = (base.filter(is_thx)\n       .with_columns(pl.lit(\"Thanksgiving week\").alias(\"week\"))\n       .select(\"hour_of_week\", \"pred\", \"week\"))\n\nxmas = (base.filter(is_xmas)\n        .with_columns(pl.lit(\"Christmas week\").alias(\"week\"))\n        .select(\"hour_of_week\", \"pred\", \"week\"))\n\ncompare = pl.concat([normal, thx, xmas]).sort(\"hour_of_week\")\n\n(ggplot(compare, aes(x=\"hour_of_week\", y=\"pred\", color=\"week\"))\n + geom_line(size=0.9)\n + scale_x_continuous(breaks=[0, 24, 48, 72, 96, 120, 144],\n                      labels=[\"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\", \"Sat\", \"Sun\"])\n + labs(title=\"Predicted Riders Per Day: Holiday Weeks vs Average Week\",\n        x=\"\", y=\"Predicted riders\", color=\"\")\n + theme_classic()\n + ggsize(1000, 400))\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "Machine_Learning/group_bank.html",
-    "href": "Machine_Learning/group_bank.html",
-    "title": "Notebook: Bank Telemarketing Targeting",
-    "section": "",
-    "text": "Code\n!pip install lets_plot\n\n\n\nCollecting lets_plot\n\n  Downloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (9.7 kB)\n\nCollecting pypng (from lets_plot)\n\n  Downloading pypng-0.20220715.0-py3-none-any.whl.metadata (13 kB)\n\nCollecting palettable (from lets_plot)\n\n  Downloading palettable-3.3.3-py2.py3-none-any.whl.metadata (3.3 kB)\n\nRequirement already satisfied: pillow in /usr/local/lib/python3.13/dist-packages (from lets_plot) (11.3.0)\n\nDownloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.9 MB)\n\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 37.9 MB/s eta 0:00:00\n\nDownloading palettable-3.3.3-py2.py3-none-any.whl (332 kB)\n\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 332.3/332.3 kB 16.1 MB/s eta 0:00:00\n\nDownloading pypng-0.20220715.0-py3-none-any.whl (58 kB)\n\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.1/58.1 kB 3.1 MB/s eta 0:00:00\n\nInstalling collected packages: pypng, palettable, lets_plot\n\nSuccessfully installed lets_plot-4.11.0 palettable-3.3.3 pypng-0.20220715.0\n\n\n\n\n\n\nCode\nimport polars as pl\n\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import (\n    accuracy_score,\n    precision_score,\n    recall_score,\n    f1_score,\n    classification_report,\n    confusion_matrix,\n    ConfusionMatrixDisplay\n)\n\n### Training\n\ncampaign = pl.read_csv(\n    'https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bank.csv',\n    schema_overrides={'nr.employed': pl.Float64},\n)\n\nfeatures = [\n    'age', 'job', 'marital', 'education', 'default', 'housing',\n    'loan', 'contact', 'month', 'day_of_week', 'campaign', 'pdays',\n    'previous', 'poutcome', 'emp.var.rate', 'cons.price.idx',\n    'cons.conf.idx', 'euribor3m', 'nr.employed', 'prev_contact'\n]\n\n# Columns we want to one-hot encode (added 'prev_contact' here)\nonehot_cols = [\n    'job', 'education', 'default', 'housing', 'loan',\n    'marital', 'poutcome', 'day_of_week', 'prev_contact'\n]\n\nmonth_map = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,\n             'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12}\n\ndef prep(df):\n    return (\n        df.with_columns(\n            (pl.col('contact') == 'cellular').cast(pl.Int8),\n            pl.col('month').replace_strict(month_map),\n            # Create prev_contact: 'no' if pdays == 999, otherwise 'yes'\n            pl.when(pl.col('pdays') == 999)\n              .then(pl.lit('no'))\n              .otherwise(pl.lit('yes'))\n              .alias('prev_contact')\n        )\n        .select(features)\n        .to_dummies(columns=onehot_cols)\n    )\n\n# Encode our features and target as needed\nX = prep(campaign)\ny = campaign['y'].str.to_lowercase().is_in(['yes', 'true', '1']).to_numpy()\n\n# Split our data into training and test data, with 30% reserved for testing\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y,\n    test_size=0.30,\n    random_state=42,   # makes the shuffle repeatable\n    stratify=y        # keeps the yes rate about the same in train and test\n)\n\n\n\n\n\nCode\n# Build the decision tree\n# (random_state here is separate: it fixes how the tree breaks ties)\nclf = DecisionTreeClassifier(max_depth=5, class_weight='balanced', random_state=42)\n\n# Train it\nclf.fit(X_train, y_train)\n\n# Test it\npred = clf.predict(X_test)\n# print(\"accuracy:\", round(accuracy_score(y_test, pred), 3))\n# print(\"F1:\", round(f1_score(y_test, pred), 3))\n\nprint(classification_report(y_test, pred))\n\n\n              precision    recall  f1-score   support\n\n       False       0.95      0.82      0.88      9859\n        True       0.32      0.67      0.44      1262\n\n    accuracy                           0.80     11121\n   macro avg       0.64      0.75      0.66     11121\nweighted avg       0.88      0.80      0.83     11121\n\n\n\n\n\nCode\nConfusionMatrixDisplay.from_estimator(\n    clf,\n    X_test,\n    y_test,\n    display_labels=[\"no\", \"yes\"],\n    cmap=\"Blues\"\n)\n\n\n\n\n\n\n\n\n\n\n\nCode\nfrom lets_plot import *\n\ntree_importance = (\n    pl.DataFrame({\n        \"feature\": X_train.columns,\n        \"importance\": clf.feature_importances_\n    })\n    .sort(\"importance\", descending=True)\n)\n\ntree_importance.head(10)\n\nggplot(\n    tree_importance.head(10).sort(\"importance\"),\n    aes(x=\"importance\", y=\"feature\")\n) + \\\n    geom_bar(stat=\"identity\") + \\\n    labs(\n        title=\"Decision Tree Feature Importance\",\n        x=\"Importance\",\n        y=\"Feature\"\n    )\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nCode\n###  Testing (mini-holdout)\n\n# Test document\n# test = pl.read_csv(\n#     \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bank_holdout_test_mini.csv\",\n#     schema_overrides={'nr.employed': pl.Float64},\n# )\n\ntest = pl.read_csv(\n    \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bank_holdout_test.csv\",\n    schema_overrides={'nr.employed': pl.Float64},\n)\n\n# Transform the test data using the exact same prep as the training data\ntest = prep(test)\n\n# Add any dummy columns the holdout is missing (e.g. default_yes), filled with 0\ntest = test.with_columns(\n    [\n        pl.lit(0).alias(col)\n        for col in X.columns\n        if col not in test.columns\n    ]\n)\n\n# only use columns that we had in the training data, in the same order\ntest = test.select(X.columns)\n\npredictions = clf.predict(test).astype(int)\n\n# Convert the predictions to a dataframe and label the column 'predictions'\npredictions = pl.DataFrame(predictions, schema=['predictions'])\n\npredictions.write_csv(\"team3-module2-predictions.csv\")\n\npredictions[\"predictions\"].value_counts()\n\n\n\nshape: (2, 2)\n\n\n\npredictions\ncount\n\n\ni64\nu32\n\n\n\n\n0\n3165\n\n\n1\n954\n\n\n\n\n\n\n\n\nCode\nplot_df = campaign.select(['campaign', 'previous']).with_columns(\n    pl.Series('y', y)\n)\n\nplot_df.head()\n\nfrom lets_plot import *\nLetsPlot.setup_html()\n\nplot_pl = (\n    plot_df\n    .filter(pl.col('campaign') &lt;= 15)\n    .with_columns(pl.col('y').replace_strict({False: 'no', True: 'yes'}))\n)\n\n(\n    ggplot(plot_pl, aes(x='campaign', fill='y'))\n    + geom_histogram(aes(y='..density..'), binwidth=1)\n    + facet_wrap('y', nrow = 1)\n    + labs(title='campaign by signup', y='share within group')\n    + theme_classic()\n    + ggsize(900, 400)\n)\n\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nCode\n(\n    campaign\n    .with_columns(pl.Series('y', y))\n    .group_by('marital', \"day_of_week\")\n    .agg(\n        pl.col('y').mean().alias('yes_rate'),\n        pl.len().alias('n'),\n    )\n    .sort(\"yes_rate\", descending = True)\n)\n\nday_order = ['mon', 'tue', 'wed', 'thu', 'fri']\n\n(\n    X_test\n    .with_columns(\n        pl.Series('y', y_test),\n        pl.Series('pred', pred),\n        pl.col('nr.employed').qcut(3, labels=['low', 'mid', 'high'], allow_duplicates=True).alias('employ'),\n    )\n    .group_by('employ')\n    .agg(\n        pl.len().alias('n'),\n        pl.col('y').mean().alias('yes_rate'),\n        (pl.col('pred') == pl.col('y')).mean().alias('accuracy'),\n        ((pl.col('pred') & pl.col('y')).sum() / pl.col('y').sum()).alias('recall'),\n    )\n    .sort('employ')\n)\n\n\n\nshape: (2, 5)\n\n\n\nemploy\nn\nyes_rate\naccuracy\nrecall\n\n\ncat\nu32\nf64\nf64\nf64\n\n\n\n\n\"low\"\n5798\n0.167127\n0.671093\n0.862745\n\n\n\"mid\"\n5323\n0.055044\n0.946083\n0.040956\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mary Palmer",
-    "section": "",
-    "text": "I am an Economics major with a Data Science minor at Brigham Young University-Idaho (expected April 2028), with a 4.00 GPA and a full-ride merit scholarship. I also serve as president of the Economics Society and work as a Senior Research Fellow, where I run randomized experiments that estimate causal effects on student performance.\nMy work centers on turning messy data into a clear answer: cleaning and joining datasets, choosing a defensible statistical model, and presenting the result so a non-technical reader can act on it.\nTools: Python, R, SQL, Power BI, Excel\nMethods: statistical modeling, hypothesis testing, machine learning, data visualization and storytelling"
-  },
-  {
-    "objectID": "index.html#what-is-on-this-site",
-    "href": "index.html#what-is-on-this-site",
-    "title": "Mary Palmer",
-    "section": "What is on this site",
-    "text": "What is on this site\n\n\n\nSection\nWhat you will find\n\n\n\n\nMachine Learning\nThree group case studies: a bank campaign classifier, a housing price model, and a bike rental forecast\n\n\nStatistics\nAn ANOVA consulting report, a multiple linear regression, a group econometrics paper, and a Python analysis program\n\n\nData Storytelling\nPower BI dashboards, a mutual fund recommendation for a retirement-focused client, and a SQL database project\n\n\nSpreadsheet Analytics\nA mortgage amortization model built in Excel\n\n\n\nYou can read my full resume or connect with me on LinkedIn."
-  },
-  {
-    "objectID": "Machine_Learning/GROUP_housing.html",
-    "href": "Machine_Learning/GROUP_housing.html",
-    "title": "Notebook: King County Housing Prices",
-    "section": "",
-    "text": "Code\n!pip install lets-plot\n\n\n\nCollecting lets-plot\n\n  Downloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (9.7 kB)\n\nCollecting pypng (from lets-plot)\n\n  Downloading pypng-0.20220715.0-py3-none-any.whl.metadata (13 kB)\n\nCollecting palettable (from lets-plot)\n\n  Downloading palettable-3.3.3-py2.py3-none-any.whl.metadata (3.3 kB)\n\nRequirement already satisfied: pillow in /usr/local/lib/python3.13/dist-packages (from lets-plot) (11.3.0)\n\nDownloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.9 MB)\n\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 29.9 MB/s eta 0:00:00\n\nDownloading palettable-3.3.3-py2.py3-none-any.whl (332 kB)\n\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 332.3/332.3 kB 11.6 MB/s eta 0:00:00\n\nDownloading pypng-0.20220715.0-py3-none-any.whl (58 kB)\n\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.1/58.1 kB 1.6 MB/s eta 0:00:00\n\nInstalling collected packages: pypng, palettable, lets-plot\n\nSuccessfully installed lets-plot-4.11.0 palettable-3.3.3 pypng-0.20220715.0\n\n\n\n\n\n\nCode\nfrom sklearn.cluster import KMeans\nfrom sklearn.model_selection import KFold\nimport numpy as np\nimport polars as pl\nfrom xgboost import XGBRegressor\nfrom sklearn.metrics import (\n    mean_absolute_error,\n    mean_absolute_percentage_error,\n    mean_squared_error,\n    r2_score,\n    root_mean_squared_error,\n)\n\n# mortgage_rate = pl.read_csv(\"mortgage_rates.csv\")\n# mortgage_rate = (\n#     mortgage_rate\n#     .rename({\"observation_date\": \"date\", \"MORTGAGE30US\": \"rate\"})\n#     .with_columns(pl.col(\"date\").str.to_date(\"%Y-%m-%d\"))\n#     .group_by(year=pl.col(\"date\").dt.year(), month=pl.col(\"date\").dt.month())\n#     .agg(pl.col(\"rate\").mean())\n# )\n\n# 1. Load data\nhousing = pl.read_csv(\n    \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing.csv\"\n)\n\nonehot_cols = [\n    \"waterfront\",\n    \"view\",\n    \"condition\",\n    \"grade_tier\",\n    \"geo_cluster\",\n]\n\n# Define downtown Seattle coordinates\ncenter_long, center_lat = -122.3321, 47.6062\n\ndef prep(df):\n    coords = df.select([\"lat\", \"long\"]).to_numpy()\n    kmeans = KMeans(n_clusters=30, random_state=42)\n    kmeans.fit(coords)\n\n    cluster_labels = kmeans.predict(coords)\n\n    return (\n        df.with_columns(\n            geo_cluster=pl.Series(cluster_labels).cast(pl.String),\n            year=pl.col(\"date\").str.slice(0, 4).cast(pl.Int32),\n            month=pl.col(\"date\").str.slice(4, 2).cast(pl.Int32),\n            # day=pl.col(\"date\").str.slice(6, 2).cast(pl.Int32),\n\n            # grade_tier=pl.when(pl.col(\"grade\").is_between(1, 3, closed=\"both\"))\n            # .then(pl.lit(\"low\"))\n            # .when(pl.col(\"grade\").is_between(4, 10, closed=\"both\"))\n            # .then(pl.lit(\"average_to_good\"))\n            # .otherwise(pl.lit(\"high\")),\n\n            house_age=pl.col(\"date\").str.slice(0, 4).cast(pl.Int32) - pl.col(\"yr_built\"),\n\n            yrs_since_renev=pl.col('date').str.slice(0, 4).cast(pl.Int32) - pl.col('yr_renovated'),\n\n            dist_to_center=(\n                (pl.col(\"lat\") - center_lat) ** 2\n                + (pl.col(\"long\") - center_long) ** 2\n            ).sqrt(),\n\n            #  basement_ratio = pl.col(\"sqft_basement\") / pl.col(\"sqft_living\")\n        )\n        # .drop(\"date\", \"id\", \"sqft_basement\")\n        .drop(\"date\", \"id\")\n        .to_dummies(columns=onehot_cols)\n        # .join(mortgage_rate, on=[\"year\", \"month\"], how=\"left\")\n    )\n\n# Prep the training housing data\nhousing = prep(housing)\n\nX = housing.drop([\"price\"])\ny = housing[\"price\"]\n\n# Convert Polars to NumPy arrays for K-Fold indexing\nX_np = X.to_numpy()\ny_np = y.to_numpy()\n\n# Set up 5-Fold Cross-Validation\n# (Remove random_state if you want it to shuffle differently every single time you run it)\nkf = KFold(n_splits=5, shuffle=True, random_state=42)\n\n# Lists to collect scores across folds\nrmse_scores = []\nmse_scores = []\nmae_scores = []\nmape_scores = []\nr2_scores = []\n\n# --- K-FOLD LOOP ---\nfor train_index, test_index in kf.split(X_np):\n    X_train, X_test = X_np[train_index], X_np[test_index]\n    y_train, y_test = y_np[train_index], y_np[test_index]\n\n    # Log-transform target for training\n    y_train_log = np.log1p(y_train)\n\n    model = XGBRegressor()\n    model.fit(X_train, y_train_log)\n\n    # Predict on log scale and convert back to actual dollars\n    pred_log = model.predict(X_test)\n    pred_actual = np.expm1(pred_log)\n\n    # Evaluate fold and store metrics\n    rmse_scores.append(root_mean_squared_error(y_test, pred_actual))\n    mse_scores.append(mean_squared_error(y_test, pred_actual))\n    mae_scores.append(mean_absolute_error(y_test, pred_actual))\n    mape_scores.append(mean_absolute_percentage_error(y_test, pred_actual))\n    r2_scores.append(r2_score(y_test, pred_actual))\n\n# --- PRINT AVERAGE RESULTS ---\nprint(housing.height)\nprint(\"--- Average Cross-Validation Results (5 Folds) ---\")\nprint(f\"Root Mean Squared Error: {np.mean(rmse_scores)}\")\nprint(f\"Mean Squared Error: {np.mean(mse_scores)}\")\nprint(f\"Mean Absolute Error: {np.mean(mae_scores)}\")\nprint(f\"Mean Absolute Percentage Error: {np.mean(mape_scores)}\")\nprint(f\"R2 Score: {np.mean(r2_scores)}\")\n\n\n\n# # Mini holdout testing (have to do log scale)\n# test = pl.read_csv(\n#     \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing_holdout_test_mini.csv\"\n# )\ntest = pl.read_csv(\n    \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing_holdout_test.csv\"\n)\n\ntest = prep(test)\n\n# dummy columns holdout missing\ntest = test.with_columns(\n    [\n        pl.lit(0).alias(col)\n        for col in X.columns\n        if col not in test.columns\n    ]\n)\n\ntest = test.select(X.columns)\n\n# Because the model was trained on log prices, we predict, expm1 to get real dollars, then int\npredictions = np.expm1(model.predict(test)).astype(int)\n\npredictions = pl.DataFrame(predictions, schema=[\"price\"])\n\npredictions.write_csv(\"team3-module3-predictions.csv\")\nprint(housing.columns)\n\n# This doesn't matter\n# n = len(y_test)   # n of test observations\n# p = X_test.shape[1]   # n of predictors\n# adj_r2 = 1 - (1 - r2_result) * (n - 1) / (n - p - 1)\n# print(f'Adjusted R2 Score: {adj_r2}')\n\n\n20000\n--- Average Cross-Validation Results (5 Folds) ---\nRoot Mean Squared Error: 116956.65830385499\nMean Squared Error: 13723868904.789074\nMean Absolute Error: 64596.032245703136\nMean Absolute Percentage Error: 0.12068684582897235\nR2 Score: 0.8979979375301769\n['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'waterfront_0', 'waterfront_1', 'view_0', 'view_1', 'view_2', 'view_3', 'view_4', 'condition_1', 'condition_2', 'condition_3', 'condition_4', 'condition_5', 'grade', 'sqft_above', 'sqft_basement', 'yr_built', 'yr_renovated', 'zipcode', 'lat', 'long', 'sqft_living15', 'sqft_lot15', 'price', 'geo_cluster_0', 'geo_cluster_1', 'geo_cluster_10', 'geo_cluster_11', 'geo_cluster_12', 'geo_cluster_13', 'geo_cluster_14', 'geo_cluster_15', 'geo_cluster_16', 'geo_cluster_17', 'geo_cluster_18', 'geo_cluster_19', 'geo_cluster_2', 'geo_cluster_20', 'geo_cluster_21', 'geo_cluster_22', 'geo_cluster_23', 'geo_cluster_24', 'geo_cluster_25', 'geo_cluster_26', 'geo_cluster_27', 'geo_cluster_28', 'geo_cluster_29', 'geo_cluster_3', 'geo_cluster_4', 'geo_cluster_5', 'geo_cluster_6', 'geo_cluster_7', 'geo_cluster_8', 'geo_cluster_9', 'year', 'month', 'house_age', 'yrs_since_renev', 'dist_to_center']\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport seaborn as sns\n\n# Set up a stacked vertical layout (2 rows, 1 column) to save horizontal space\nsns.set_theme(style='whitegrid', font='sans-serif')\nfig, axes = plt.subplots(\n    2, 1, figsize=(8, 6), dpi=200\n)  # Taller and narrower footprint\n\n# Scale raw prices to millions\nraw_prices_millions = housing['price'].to_numpy() / 1e6\n\n# 1. Raw Price Distribution (Top)\nsns.histplot(\n    raw_prices_millions,\n    kde=True,\n    ax=axes[0],\n    color='#2b5c8f',\n    bins=40,\n    alpha=0.6,\n)\naxes[0].set_title(\n    'Raw Prices', fontsize=11, fontweight='bold', pad=6\n)\naxes[0].set_xlabel('Actual Price ($Millions)', fontsize=10)\naxes[0].set_ylabel('Count', fontsize=10)\n\n# 2. Log-Transformed Price Distribution (Bottom)\nlog_prices = np.log1p(housing['price'].to_numpy())\nsns.histplot(\n    log_prices, kde=True, ax=axes[1], color='#e67e22', bins=40, alpha=0.6\n)\naxes[1].set_title(\n    'Log-Transformed Prices', fontsize=11, fontweight='bold', pad=6\n)\naxes[1].set_xlabel('Log Price', fontsize=10)\naxes[1].set_ylabel('Count', fontsize=10)\n\n# Clean up tick sizes and grid styling across both subplots\nfor ax in axes:\n  ax.tick_params(labelsize=9)\n  ax.grid(True, linestyle='--', alpha=0.5)\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nfrom lets_plot import *\n\ntree_importance = (\n    pl.DataFrame({\n        \"feature\": X.columns,\n        \"importance\": model.feature_importances_\n    })\n    .sort(\"importance\", descending=True)\n)\n\ntree_importance.head(10)\n\nggplot(\n    tree_importance.head(10).sort(\"importance\"),\n    aes(x=\"importance\", y=\"feature\")\n) + \\\n    geom_bar(stat=\"identity\") + \\\n    labs(\n        title=\"Housing Attributes by Model Importance\",\n        x=\"Importance\",\n        y=\"Feature\"\n    )\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nCode\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Lists to hold all actuals and predictions across all folds\nall_y_test = []\nall_preds = []\n\n# --- K-FOLD LOOP ---\nfor train_index, test_index in kf.split(X_np):\n    X_train, X_test = X_np[train_index], X_np[test_index]\n    y_train, y_test = y_np[train_index], y_np[test_index]\n\n    # Log-transform target for training\n    y_train_log = np.log1p(y_train)\n\n    model = XGBRegressor()\n    model.fit(X_train, y_train_log)\n\n    # Predict on log scale and convert back to actual dollars\n    pred_log = model.predict(X_test)\n    pred_actual = np.expm1(pred_log)\n\n    # Save them to our master lists\n    all_y_test.extend(y_test)\n    all_preds.extend(pred_actual)\n\n# --- PLOTTING CODE ---\n\n# --- PLOTTING CODE ---\n\n# 1. Combine all actuals and predictions into a pandas DataFrame and scale to millions\neval_df = pd.DataFrame(\n    {\n        'price': [y / 1e6 for y in all_y_test],\n        'predictions': [p / 1e6 for p in all_preds],\n    }\n)\n\n# 2. Calculate differences and error buckets\neval_df['difference'] = eval_df['price'] - eval_df['predictions']\neval_df['percent_difference'] = abs(\n    eval_df['difference'] / eval_df['price']\n)\neval_df['percent_bucket'] = [\n    'above 20%' if i &gt;= 0.2 else 'below 20%'\n    for i in eval_df['percent_difference']\n]\n\n# 3. Set up plot styling and limits (now using 0 to 4 instead of millions)\nsns.set(rc={'figure.figsize': (10, 8)})\ncolor_dict = {'below 20%': 'tab:blue', 'above 20%': 'tab:orange'}\nxlims = (0, 4)\nylims = (0, 4)\n\n# 4. Create the scatter plot\nax = sns.scatterplot(\n    data=eval_df,\n    x='price',\n    y='predictions',\n    hue='percent_bucket',\n    palette=color_dict,\n    alpha=0.5,  # Added transparency so overlapping points are visible\n)\n\n# 5. Plot the perfect prediction line (45-degree red line)\nax.plot(xlims, xlims, color='r')\nax.set_xlim(xlims)\nax.set_ylim(ylims)\n\n# 6. Update axis labels to indicate millions\nplt.xlabel('Actual Price ($Millions)')\nplt.ylabel('Predicted Price ($Millions)')\nplt.title('Actual vs. Predicted House Prices (All Folds Combined)')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Calculate the confidence percentages (within 5%, 10%, and 20%) using the collected K-Fold results\neval_df['abs_pct_diff'] = abs(eval_df['difference'] / eval_df['price'])\n\npercents = [5, 10, 20]\nfor pct in percents:\n    pct_val = pct / 100\n    within_pct = (eval_df['abs_pct_diff'] &lt;= pct_val).mean() * 100\n    print(f\"Percent of houses predicted within {pct}% of actual price: {within_pct:.2f}%\")\n\n\nPercent of houses predicted within 5% of actual price: 32.23%\nPercent of houses predicted within 10% of actual price: 56.80%\nPercent of houses predicted within 20% of actual price: 83.05%\n\n\n\n\nCode\nfrom lets_plot import *\n\nLetsPlot.setup_html()\n\n# Create a geographic scatter plot of prices using longitude and latitude\n(\n    ggplot(housing, aes(x='long', y='lat', color='price'))\n    + geom_point(alpha=0.5, size=1.5)\n    + scale_color_gradient(\n        low='blue',\n        high='red',\n        trans='log10',\n        breaks=[100000, 250000, 500000, 1000000, 2500000, 5000000],\n        labels=['$100K', '$250K', '$500K', '$1M', '$2.5M', '$5M']\n    )\n    + coord_fixed(ratio=1.3)  # Fixes the map distortion\n    + labs(\n        title='Housing Prices by Geographic Location',\n        x='Longitude',\n        y='Latitude',\n        color='Price',\n    )\n    + theme_minimal()\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Seattle's latitude for longitude scaling correction\ncenter_lat = 47.6062\n\n# Convert coordinates to approximate miles directly from the existing dataframe\nlat_diff_miles = (housing[\"lat\"].to_numpy() - center_lat) * 69.0\nlong_diff_miles = (housing[\"long\"].to_numpy() - -122.3321) * (\n    69.0 * np.cos(np.radians(center_lat))\n)\ndistance_miles = np.sqrt(lat_diff_miles**2 + long_diff_miles**2)\n\nprices_in_millions = housing[\"price\"].to_numpy() / 1_000_000\n\nplt.figure(figsize=(10, 6))\nplt.scatter(\n    distance_miles,\n    prices_in_millions,\n    alpha=0.3,\n    color=\"royalblue\",\n    edgecolors=\"none\",\n)\n\nplt.title(\n    \"Housing Price vs. Distance to Downtown Seattle\",\n    fontsize=14,\n    fontweight=\"bold\",\n)\nplt.xlabel(\"Distance to Downtown Seattle (Miles)\", fontsize=12)\nplt.ylabel(\"Housing Price ($ Millions)\", fontsize=12)\nplt.grid(True, linestyle=\"--\", alpha=0.5)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nholdout = pl.read_csv(\"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing_holdout_test.csv\")\nholdout.describe()\n\n\nimport polars as pl\n\ncols = [\"price\", \"rate\"]\n\ncols = [\n    \"bedrooms\", \"bathrooms\", \"floors\", \"sqft_living\",\n    \"sqft_lot\", \"price\", \"yrs_since_renev\", \"house_age\",\n]\n\nsummary = pl.DataFrame({\n    \"variable\": cols,\n    \"mean\": [housing[c].mean() for c in cols],\n    \"median\": [housing[c].median() for c in cols],\n    \"std\": [housing[c].std() for c in cols],\n}).with_columns(pl.col(\"mean\", \"median\", \"std\").round(2))\n\nsummary\n\n\n\nshape: (8, 4)\n\n\n\nvariable\nmean\nmedian\nstd\n\n\nstr\nf64\nf64\nf64\n\n\n\n\n\"bedrooms\"\n3.37\n3.0\n0.93\n\n\n\"bathrooms\"\n2.12\n2.25\n0.77\n\n\n\"floors\"\n1.5\n1.5\n0.54\n\n\n\"sqft_living\"\n2079.88\n1910.0\n919.43\n\n\n\"sqft_lot\"\n15015.33\n7620.0\n39701.35\n\n\n\"price\"\n539436.71\n450000.0\n366433.44\n\n\n\"yrs_since_renev\"\n1931.59\n2014.0\n397.88\n\n\n\"house_age\"\n43.22\n39.0\n29.38\n\n\n\n\n\n\n\n\n\ncatposter.jpg\n\n\n\n\n\nbelieve!.jpg\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Machine_Learning/project1.html",
-    "href": "Machine_Learning/project1.html",
+    "objectID": "Machine_Learning/bank-telemarketing.html",
+    "href": "Machine_Learning/bank-telemarketing.html",
     "title": "Bank Telemarketing Targeting",
     "section": "",
-    "text": "Team: Isaac Bean, Seth Ricks, Nathan McDowell, Mary Palmer",
+    "text": "Banco Federal de Finanças had just finished an ineffective telemarketing campaign. The bank asked us to show how machine learning could improve who gets called in future campaigns. We had three goals:\n\nidentify the factors most associated with a customer subscribing\nbuild a model that finds the customers most likely to respond\nshow that model-based targeting reaches subscribers at a much higher rate than calling people at random",
     "crumbs": [
       "Machine Learning",
       "Bank Telemarketing Targeting"
     ]
   },
   {
-    "objectID": "Machine_Learning/project1.html#problem",
-    "href": "Machine_Learning/project1.html#problem",
+    "objectID": "Machine_Learning/bank-telemarketing.html#problem",
+    "href": "Machine_Learning/bank-telemarketing.html#problem",
     "title": "Bank Telemarketing Targeting",
-    "section": "Problem",
-    "text": "Problem\nBanco Federal de Finanças had just finished an ineffective telemarketing campaign. The bank asked us to show how machine learning could improve who gets called in future campaigns. We had three goals:\n\nidentify the factors most associated with a customer subscribing\nbuild a model that finds the customers most likely to respond\nshow that model-based targeting reaches subscribers at a much higher rate than calling people at random",
+    "section": "",
+    "text": "Banco Federal de Finanças had just finished an ineffective telemarketing campaign. The bank asked us to show how machine learning could improve who gets called in future campaigns. We had three goals:\n\nidentify the factors most associated with a customer subscribing\nbuild a model that finds the customers most likely to respond\nshow that model-based targeting reaches subscribers at a much higher rate than calling people at random",
     "crumbs": [
       "Machine Learning",
       "Bank Telemarketing Targeting"
     ]
   },
   {
-    "objectID": "Machine_Learning/project1.html#approach",
-    "href": "Machine_Learning/project1.html#approach",
+    "objectID": "Machine_Learning/bank-telemarketing.html#approach",
+    "href": "Machine_Learning/bank-telemarketing.html#approach",
     "title": "Bank Telemarketing Targeting",
     "section": "Approach",
     "text": "Approach\nWe trained a supervised decision tree on about 37,000 records from the previous campaign, with 70% for training and 30% (about 11,100 customers) held out for testing. The features fall into three groups: customer demographics, contact and timing details (including economic indicators), and the outcome of earlier campaigns. The target was whether the customer subscribed.\n\nThe two strongest predictors were the bank’s quarterly number of employees (nr.employed) and the 3-month Euribor rate (euribor3m). Both describe the economy when the customer was contacted, so the state of the economy was the best predictor of whether a customer would say yes. The month of contact ranked fourth, which surprised us and which the model cannot explain on its own.",
@@ -392,8 +507,8 @@
     ]
   },
   {
-    "objectID": "Machine_Learning/project1.html#results",
-    "href": "Machine_Learning/project1.html#results",
+    "objectID": "Machine_Learning/bank-telemarketing.html#results",
+    "href": "Machine_Learning/bank-telemarketing.html#results",
     "title": "Bank Telemarketing Targeting",
     "section": "Results",
     "text": "Results\n\n\n\n\nMetric\nScore\n\n\n\n\nAccuracy\n80.3%\n\n\nPrecision\n32.3%\n\n\nRecall\n67.2%\n\n\nF1 score\n43.6%\n\n\n\nOnly about 11.4% of customers subscribed, so a model that always predicted “no” would score 88.7% accuracy and find nobody. We trained with balanced class weights on purpose, which lowers accuracy but finds subscribers. The model found 848 of the 1,262 subscribers in the test set (67.2%). About one in three customers it flagged actually subscribed, which is roughly 2.8 times the random rate of one subscriber in nine calls. The cost is 1,780 calls to customers who did not subscribe.",
@@ -403,8 +518,8 @@
     ]
   },
   {
-    "objectID": "Machine_Learning/project1.html#other-findings",
-    "href": "Machine_Learning/project1.html#other-findings",
+    "objectID": "Machine_Learning/bank-telemarketing.html#other-findings",
+    "href": "Machine_Learning/bank-telemarketing.html#other-findings",
     "title": "Bank Telemarketing Targeting",
     "section": "Other findings",
     "text": "Other findings\n\nPrior contact: the share of customers who said yes was about the same whether or not they had been contacted before, so earlier outreach did not appear to backfire.\nPrivacy: the data contains no names, birth dates, locations, government identifiers, contact details, or account specifics, so it is consistent with GDPR.\nLimits: the data is historical and the economic features are correlated with each other, so the model should be retrained as conditions change. Adjusting the classification threshold or tree depth would shift the balance between missed subscribers and wasted calls.\n\nView the full notebook",
@@ -414,30 +529,37 @@
     ]
   },
   {
-    "objectID": "Machine_Learning/project3.html",
-    "href": "Machine_Learning/project3.html",
+    "objectID": "Machine_Learning/GROUP_housing.html",
+    "href": "Machine_Learning/GROUP_housing.html",
+    "title": "Notebook: King County Housing Prices",
+    "section": "",
+    "text": "Code\n!pip install lets-plot\n\n\n\nCollecting lets-plot\n  Downloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (9.7 kB)\nCollecting pypng (from lets-plot)\n  Downloading pypng-0.20220715.0-py3-none-any.whl.metadata (13 kB)\nCollecting palettable (from lets-plot)\n  Downloading palettable-3.3.3-py2.py3-none-any.whl.metadata (3.3 kB)\nRequirement already satisfied: pillow in /usr/local/lib/python3.13/dist-packages (from lets-plot) (11.3.0)\nDownloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.9 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 29.9 MB/s eta 0:00:00\nDownloading palettable-3.3.3-py2.py3-none-any.whl (332 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 332.3/332.3 kB 11.6 MB/s eta 0:00:00\nDownloading pypng-0.20220715.0-py3-none-any.whl (58 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.1/58.1 kB 1.6 MB/s eta 0:00:00\nInstalling collected packages: pypng, palettable, lets-plot\nSuccessfully installed lets-plot-4.11.0 palettable-3.3.3 pypng-0.20220715.0\n\n\n\n\n\n\nCode\nfrom sklearn.cluster import KMeans\nfrom sklearn.model_selection import KFold\nimport numpy as np\nimport polars as pl\nfrom xgboost import XGBRegressor\nfrom sklearn.metrics import (\n    mean_absolute_error,\n    mean_absolute_percentage_error,\n    mean_squared_error,\n    r2_score,\n    root_mean_squared_error,\n)\n\n# mortgage_rate = pl.read_csv(\"mortgage_rates.csv\")\n# mortgage_rate = (\n#     mortgage_rate\n#     .rename({\"observation_date\": \"date\", \"MORTGAGE30US\": \"rate\"})\n#     .with_columns(pl.col(\"date\").str.to_date(\"%Y-%m-%d\"))\n#     .group_by(year=pl.col(\"date\").dt.year(), month=pl.col(\"date\").dt.month())\n#     .agg(pl.col(\"rate\").mean())\n# )\n\n# 1. Load data\nhousing = pl.read_csv(\n    \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing.csv\"\n)\n\nonehot_cols = [\n    \"waterfront\",\n    \"view\",\n    \"condition\",\n    \"grade_tier\",\n    \"geo_cluster\",\n]\n\n# Define downtown Seattle coordinates\ncenter_long, center_lat = -122.3321, 47.6062\n\ndef prep(df):\n    coords = df.select([\"lat\", \"long\"]).to_numpy()\n    kmeans = KMeans(n_clusters=30, random_state=42)\n    kmeans.fit(coords)\n\n    cluster_labels = kmeans.predict(coords)\n\n    return (\n        df.with_columns(\n            geo_cluster=pl.Series(cluster_labels).cast(pl.String),\n            year=pl.col(\"date\").str.slice(0, 4).cast(pl.Int32),\n            month=pl.col(\"date\").str.slice(4, 2).cast(pl.Int32),\n            # day=pl.col(\"date\").str.slice(6, 2).cast(pl.Int32),\n\n            # grade_tier=pl.when(pl.col(\"grade\").is_between(1, 3, closed=\"both\"))\n            # .then(pl.lit(\"low\"))\n            # .when(pl.col(\"grade\").is_between(4, 10, closed=\"both\"))\n            # .then(pl.lit(\"average_to_good\"))\n            # .otherwise(pl.lit(\"high\")),\n\n            house_age=pl.col(\"date\").str.slice(0, 4).cast(pl.Int32) - pl.col(\"yr_built\"),\n\n            yrs_since_renev=pl.col('date').str.slice(0, 4).cast(pl.Int32) - pl.col('yr_renovated'),\n\n            dist_to_center=(\n                (pl.col(\"lat\") - center_lat) ** 2\n                + (pl.col(\"long\") - center_long) ** 2\n            ).sqrt(),\n\n            #  basement_ratio = pl.col(\"sqft_basement\") / pl.col(\"sqft_living\")\n        )\n        # .drop(\"date\", \"id\", \"sqft_basement\")\n        .drop(\"date\", \"id\")\n        .to_dummies(columns=onehot_cols)\n        # .join(mortgage_rate, on=[\"year\", \"month\"], how=\"left\")\n    )\n\n# Prep the training housing data\nhousing = prep(housing)\n\nX = housing.drop([\"price\"])\ny = housing[\"price\"]\n\n# Convert Polars to NumPy arrays for K-Fold indexing\nX_np = X.to_numpy()\ny_np = y.to_numpy()\n\n# Set up 5-Fold Cross-Validation\n# (Remove random_state if you want it to shuffle differently every single time you run it)\nkf = KFold(n_splits=5, shuffle=True, random_state=42)\n\n# Lists to collect scores across folds\nrmse_scores = []\nmse_scores = []\nmae_scores = []\nmape_scores = []\nr2_scores = []\n\n# --- K-FOLD LOOP ---\nfor train_index, test_index in kf.split(X_np):\n    X_train, X_test = X_np[train_index], X_np[test_index]\n    y_train, y_test = y_np[train_index], y_np[test_index]\n\n    # Log-transform target for training\n    y_train_log = np.log1p(y_train)\n\n    model = XGBRegressor()\n    model.fit(X_train, y_train_log)\n\n    # Predict on log scale and convert back to actual dollars\n    pred_log = model.predict(X_test)\n    pred_actual = np.expm1(pred_log)\n\n    # Evaluate fold and store metrics\n    rmse_scores.append(root_mean_squared_error(y_test, pred_actual))\n    mse_scores.append(mean_squared_error(y_test, pred_actual))\n    mae_scores.append(mean_absolute_error(y_test, pred_actual))\n    mape_scores.append(mean_absolute_percentage_error(y_test, pred_actual))\n    r2_scores.append(r2_score(y_test, pred_actual))\n\n# --- PRINT AVERAGE RESULTS ---\nprint(housing.height)\nprint(\"--- Average Cross-Validation Results (5 Folds) ---\")\nprint(f\"Root Mean Squared Error: {np.mean(rmse_scores)}\")\nprint(f\"Mean Squared Error: {np.mean(mse_scores)}\")\nprint(f\"Mean Absolute Error: {np.mean(mae_scores)}\")\nprint(f\"Mean Absolute Percentage Error: {np.mean(mape_scores)}\")\nprint(f\"R2 Score: {np.mean(r2_scores)}\")\n\n\n\n# # Mini holdout testing (have to do log scale)\n# test = pl.read_csv(\n#     \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing_holdout_test_mini.csv\"\n# )\ntest = pl.read_csv(\n    \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing_holdout_test.csv\"\n)\n\ntest = prep(test)\n\n# dummy columns holdout missing\ntest = test.with_columns(\n    [\n        pl.lit(0).alias(col)\n        for col in X.columns\n        if col not in test.columns\n    ]\n)\n\ntest = test.select(X.columns)\n\n# Because the model was trained on log prices, we predict, expm1 to get real dollars, then int\npredictions = np.expm1(model.predict(test)).astype(int)\n\npredictions = pl.DataFrame(predictions, schema=[\"price\"])\n\npredictions.write_csv(\"team3-module3-predictions.csv\")\nprint(housing.columns)\n\n# This doesn't matter\n# n = len(y_test)   # n of test observations\n# p = X_test.shape[1]   # n of predictors\n# adj_r2 = 1 - (1 - r2_result) * (n - 1) / (n - p - 1)\n# print(f'Adjusted R2 Score: {adj_r2}')\n\n\n20000\n--- Average Cross-Validation Results (5 Folds) ---\nRoot Mean Squared Error: 116956.65830385499\nMean Squared Error: 13723868904.789074\nMean Absolute Error: 64596.032245703136\nMean Absolute Percentage Error: 0.12068684582897235\nR2 Score: 0.8979979375301769\n['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'waterfront_0', 'waterfront_1', 'view_0', 'view_1', 'view_2', 'view_3', 'view_4', 'condition_1', 'condition_2', 'condition_3', 'condition_4', 'condition_5', 'grade', 'sqft_above', 'sqft_basement', 'yr_built', 'yr_renovated', 'zipcode', 'lat', 'long', 'sqft_living15', 'sqft_lot15', 'price', 'geo_cluster_0', 'geo_cluster_1', 'geo_cluster_10', 'geo_cluster_11', 'geo_cluster_12', 'geo_cluster_13', 'geo_cluster_14', 'geo_cluster_15', 'geo_cluster_16', 'geo_cluster_17', 'geo_cluster_18', 'geo_cluster_19', 'geo_cluster_2', 'geo_cluster_20', 'geo_cluster_21', 'geo_cluster_22', 'geo_cluster_23', 'geo_cluster_24', 'geo_cluster_25', 'geo_cluster_26', 'geo_cluster_27', 'geo_cluster_28', 'geo_cluster_29', 'geo_cluster_3', 'geo_cluster_4', 'geo_cluster_5', 'geo_cluster_6', 'geo_cluster_7', 'geo_cluster_8', 'geo_cluster_9', 'year', 'month', 'house_age', 'yrs_since_renev', 'dist_to_center']\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport seaborn as sns\n\n# Set up a stacked vertical layout (2 rows, 1 column) to save horizontal space\nsns.set_theme(style='whitegrid', font='sans-serif')\nfig, axes = plt.subplots(\n    2, 1, figsize=(8, 6), dpi=200\n)  # Taller and narrower footprint\n\n# Scale raw prices to millions\nraw_prices_millions = housing['price'].to_numpy() / 1e6\n\n# 1. Raw Price Distribution (Top)\nsns.histplot(\n    raw_prices_millions,\n    kde=True,\n    ax=axes[0],\n    color='#2b5c8f',\n    bins=40,\n    alpha=0.6,\n)\naxes[0].set_title(\n    'Raw Prices', fontsize=11, fontweight='bold', pad=6\n)\naxes[0].set_xlabel('Actual Price ($Millions)', fontsize=10)\naxes[0].set_ylabel('Count', fontsize=10)\n\n# 2. Log-Transformed Price Distribution (Bottom)\nlog_prices = np.log1p(housing['price'].to_numpy())\nsns.histplot(\n    log_prices, kde=True, ax=axes[1], color='#e67e22', bins=40, alpha=0.6\n)\naxes[1].set_title(\n    'Log-Transformed Prices', fontsize=11, fontweight='bold', pad=6\n)\naxes[1].set_xlabel('Log Price', fontsize=10)\naxes[1].set_ylabel('Count', fontsize=10)\n\n# Clean up tick sizes and grid styling across both subplots\nfor ax in axes:\n  ax.tick_params(labelsize=9)\n  ax.grid(True, linestyle='--', alpha=0.5)\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nfrom lets_plot import *\n\ntree_importance = (\n    pl.DataFrame({\n        \"feature\": X.columns,\n        \"importance\": model.feature_importances_\n    })\n    .sort(\"importance\", descending=True)\n)\n\ntree_importance.head(10)\n\nggplot(\n    tree_importance.head(10).sort(\"importance\"),\n    aes(x=\"importance\", y=\"feature\")\n) + \\\n    geom_bar(stat=\"identity\") + \\\n    labs(\n        title=\"Housing Attributes by Model Importance\",\n        x=\"Importance\",\n        y=\"Feature\"\n    )\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nCode\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Lists to hold all actuals and predictions across all folds\nall_y_test = []\nall_preds = []\n\n# --- K-FOLD LOOP ---\nfor train_index, test_index in kf.split(X_np):\n    X_train, X_test = X_np[train_index], X_np[test_index]\n    y_train, y_test = y_np[train_index], y_np[test_index]\n\n    # Log-transform target for training\n    y_train_log = np.log1p(y_train)\n\n    model = XGBRegressor()\n    model.fit(X_train, y_train_log)\n\n    # Predict on log scale and convert back to actual dollars\n    pred_log = model.predict(X_test)\n    pred_actual = np.expm1(pred_log)\n\n    # Save them to our master lists\n    all_y_test.extend(y_test)\n    all_preds.extend(pred_actual)\n\n# --- PLOTTING CODE ---\n\n# --- PLOTTING CODE ---\n\n# 1. Combine all actuals and predictions into a pandas DataFrame and scale to millions\neval_df = pd.DataFrame(\n    {\n        'price': [y / 1e6 for y in all_y_test],\n        'predictions': [p / 1e6 for p in all_preds],\n    }\n)\n\n# 2. Calculate differences and error buckets\neval_df['difference'] = eval_df['price'] - eval_df['predictions']\neval_df['percent_difference'] = abs(\n    eval_df['difference'] / eval_df['price']\n)\neval_df['percent_bucket'] = [\n    'above 20%' if i &gt;= 0.2 else 'below 20%'\n    for i in eval_df['percent_difference']\n]\n\n# 3. Set up plot styling and limits (now using 0 to 4 instead of millions)\nsns.set(rc={'figure.figsize': (10, 8)})\ncolor_dict = {'below 20%': 'tab:blue', 'above 20%': 'tab:orange'}\nxlims = (0, 4)\nylims = (0, 4)\n\n# 4. Create the scatter plot\nax = sns.scatterplot(\n    data=eval_df,\n    x='price',\n    y='predictions',\n    hue='percent_bucket',\n    palette=color_dict,\n    alpha=0.5,  # Added transparency so overlapping points are visible\n)\n\n# 5. Plot the perfect prediction line (45-degree red line)\nax.plot(xlims, xlims, color='r')\nax.set_xlim(xlims)\nax.set_ylim(ylims)\n\n# 6. Update axis labels to indicate millions\nplt.xlabel('Actual Price ($Millions)')\nplt.ylabel('Predicted Price ($Millions)')\nplt.title('Actual vs. Predicted House Prices (All Folds Combined)')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Calculate the confidence percentages (within 5%, 10%, and 20%) using the collected K-Fold results\neval_df['abs_pct_diff'] = abs(eval_df['difference'] / eval_df['price'])\n\npercents = [5, 10, 20]\nfor pct in percents:\n    pct_val = pct / 100\n    within_pct = (eval_df['abs_pct_diff'] &lt;= pct_val).mean() * 100\n    print(f\"Percent of houses predicted within {pct}% of actual price: {within_pct:.2f}%\")\n\n\nPercent of houses predicted within 5% of actual price: 32.23%\nPercent of houses predicted within 10% of actual price: 56.80%\nPercent of houses predicted within 20% of actual price: 83.05%\n\n\n\n\nCode\nfrom lets_plot import *\n\nLetsPlot.setup_html()\n\n# Create a geographic scatter plot of prices using longitude and latitude\n(\n    ggplot(housing, aes(x='long', y='lat', color='price'))\n    + geom_point(alpha=0.5, size=1.5)\n    + scale_color_gradient(\n        low='blue',\n        high='red',\n        trans='log10',\n        breaks=[100000, 250000, 500000, 1000000, 2500000, 5000000],\n        labels=['$100K', '$250K', '$500K', '$1M', '$2.5M', '$5M']\n    )\n    + coord_fixed(ratio=1.3)  # Fixes the map distortion\n    + labs(\n        title='Housing Prices by Geographic Location',\n        x='Longitude',\n        y='Latitude',\n        color='Price',\n    )\n    + theme_minimal()\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Seattle's latitude for longitude scaling correction\ncenter_lat = 47.6062\n\n# Convert coordinates to approximate miles directly from the existing dataframe\nlat_diff_miles = (housing[\"lat\"].to_numpy() - center_lat) * 69.0\nlong_diff_miles = (housing[\"long\"].to_numpy() - -122.3321) * (\n    69.0 * np.cos(np.radians(center_lat))\n)\ndistance_miles = np.sqrt(lat_diff_miles**2 + long_diff_miles**2)\n\nprices_in_millions = housing[\"price\"].to_numpy() / 1_000_000\n\nplt.figure(figsize=(10, 6))\nplt.scatter(\n    distance_miles,\n    prices_in_millions,\n    alpha=0.3,\n    color=\"royalblue\",\n    edgecolors=\"none\",\n)\n\nplt.title(\n    \"Housing Price vs. Distance to Downtown Seattle\",\n    fontsize=14,\n    fontweight=\"bold\",\n)\nplt.xlabel(\"Distance to Downtown Seattle (Miles)\", fontsize=12)\nplt.ylabel(\"Housing Price ($ Millions)\", fontsize=12)\nplt.grid(True, linestyle=\"--\", alpha=0.5)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nholdout = pl.read_csv(\"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing_holdout_test.csv\")\nholdout.describe()\n\n\nimport polars as pl\n\ncols = [\"price\", \"rate\"]\n\ncols = [\n    \"bedrooms\", \"bathrooms\", \"floors\", \"sqft_living\",\n    \"sqft_lot\", \"price\", \"yrs_since_renev\", \"house_age\",\n]\n\nsummary = pl.DataFrame({\n    \"variable\": cols,\n    \"mean\": [housing[c].mean() for c in cols],\n    \"median\": [housing[c].median() for c in cols],\n    \"std\": [housing[c].std() for c in cols],\n}).with_columns(pl.col(\"mean\", \"median\", \"std\").round(2))\n\nsummary\n\n\n\nshape: (8, 4)\n\n\n\nvariable\nmean\nmedian\nstd\n\n\nstr\nf64\nf64\nf64\n\n\n\n\n\"bedrooms\"\n3.37\n3.0\n0.93\n\n\n\"bathrooms\"\n2.12\n2.25\n0.77\n\n\n\"floors\"\n1.5\n1.5\n0.54\n\n\n\"sqft_living\"\n2079.88\n1910.0\n919.43\n\n\n\"sqft_lot\"\n15015.33\n7620.0\n39701.35\n\n\n\"price\"\n539436.71\n450000.0\n366433.44\n\n\n\"yrs_since_renev\"\n1931.59\n2014.0\n397.88\n\n\n\"house_age\"\n43.22\n39.0\n29.38\n\n\n\n\n\n\n\n\n\ncatposter.jpg\n\n\n\n\n\nbelieve!.jpg\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Machine_Learning/bike-demand.html",
+    "href": "Machine_Learning/bike-demand.html",
     "title": "Bike Rental Demand",
     "section": "",
-    "text": "Team: Isaac Bean, Seth Ricks, Nathan McDowell, Mary Palmer",
+    "text": "WelcomeBike, a bike rental company in Washington, D.C., wanted to forecast how many riders to expect per hour and per day over the November and December holidays. We used hourly rental data from January 2011 to September 2023, including the date, hour, weather, and rider type.",
     "crumbs": [
       "Machine Learning",
       "Bike Rental Demand"
     ]
   },
   {
-    "objectID": "Machine_Learning/project3.html#problem",
-    "href": "Machine_Learning/project3.html#problem",
+    "objectID": "Machine_Learning/bike-demand.html#problem",
+    "href": "Machine_Learning/bike-demand.html#problem",
     "title": "Bike Rental Demand",
-    "section": "Problem",
-    "text": "Problem\nWelcomeBike, a bike rental company in Washington, D.C., wanted to forecast how many riders to expect per hour and per day over the November and December holidays. We used hourly rental data from January 2011 to September 2023, including the date, hour, weather, and rider type.",
+    "section": "",
+    "text": "WelcomeBike, a bike rental company in Washington, D.C., wanted to forecast how many riders to expect per hour and per day over the November and December holidays. We used hourly rental data from January 2011 to September 2023, including the date, hour, weather, and rider type.",
     "crumbs": [
       "Machine Learning",
       "Bike Rental Demand"
     ]
   },
   {
-    "objectID": "Machine_Learning/project3.html#cleaning-and-features",
-    "href": "Machine_Learning/project3.html#cleaning-and-features",
+    "objectID": "Machine_Learning/bike-demand.html#cleaning-and-features",
+    "href": "Machine_Learning/bike-demand.html#cleaning-and-features",
     "title": "Bike Rental Demand",
     "section": "Cleaning and features",
     "text": "Cleaning and features\n\nSplit the date into day, month, and year, and combined casual and registered riders into one total.\nAdded days from Thanksgiving and days from Christmas, which raised R² on a small holdout by about 0.10.\nAdded a COVID flag for March 2020 through December 2021.\nScaled features with min-max scaling so variables like windspeed (0 to 70) and rider counts (0 to 1,000+) start on equal footing. Z-score scaling gave almost the same result.\n\nA mistake that taught us something: our first model scored nearly 100% because we forgot to remove the casual and registered columns after adding them together, so the model had simply learned to add. We caught it because the result was too good, removed the columns, and rebuilt.",
@@ -447,8 +569,8 @@
     ]
   },
   {
-    "objectID": "Machine_Learning/project3.html#model",
-    "href": "Machine_Learning/project3.html#model",
+    "objectID": "Machine_Learning/bike-demand.html#model",
+    "href": "Machine_Learning/bike-demand.html#model",
     "title": "Bike Rental Demand",
     "section": "Model",
     "text": "Model\nA neural network with two hidden layers using ReLU activations: 150 nodes with 40% dropout, then 32 nodes with 20% dropout. Dropout guards against overfitting. We trained on mean squared error with a batch size of 80, a learning rate of 0.0008, and early stopping with patience of 7. Training stopped at 48 of a possible 100 epochs once the validation error stopped improving, and we kept the weights from the best epoch.\n\nWe also tried training on November and December alone, on the theory that holidays behave differently, but there was not enough data to make an accurate model.",
@@ -458,8 +580,8 @@
     ]
   },
   {
-    "objectID": "Machine_Learning/project3.html#results",
-    "href": "Machine_Learning/project3.html#results",
+    "objectID": "Machine_Learning/bike-demand.html#results",
+    "href": "Machine_Learning/bike-demand.html#results",
     "title": "Bike Rental Demand",
     "section": "Results",
     "text": "Results\n\n\n\nMetric\nScore\n\n\n\n\nR²\n0.951\n\n\nRMSE\n75.2 riders\n\n\nMAE\n46.7 riders\n\n\n\nThe model explains about 95% of the variation in riders at a given hour, with a typical miss of about 47 riders.",
@@ -469,14 +591,32 @@
     ]
   },
   {
-    "objectID": "Machine_Learning/project3.html#recommendations",
-    "href": "Machine_Learning/project3.html#recommendations",
+    "objectID": "Machine_Learning/bike-demand.html#recommendations",
+    "href": "Machine_Learning/bike-demand.html#recommendations",
     "title": "Bike Rental Demand",
     "section": "Recommendations",
     "text": "Recommendations\n\nPlan for rush hours. Weekday demand peaks at 8 am and 5 pm, while weekends are a smooth midday curve, so renting the same number of bikes at the same hours on weekends would lose revenue.\nExpect growth over years, not months. Demand dips every year in November and December, but the long-run trend in D.C. is rising.\nSupply fewer bikes around holidays. Thanksgiving week should run slightly below other November weeks, and Christmas week should look like a series of weekends with far fewer riders.\n\nView the full notebook",
     "crumbs": [
       "Machine Learning",
       "Bike Rental Demand"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/group_bank.html",
+    "href": "Machine_Learning/group_bank.html",
+    "title": "Notebook: Bank Telemarketing Targeting",
+    "section": "",
+    "text": "Code\n!pip install lets_plot\n\n\n\nCollecting lets_plot\n  Downloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (9.7 kB)\nCollecting pypng (from lets_plot)\n  Downloading pypng-0.20220715.0-py3-none-any.whl.metadata (13 kB)\nCollecting palettable (from lets_plot)\n  Downloading palettable-3.3.3-py2.py3-none-any.whl.metadata (3.3 kB)\nRequirement already satisfied: pillow in /usr/local/lib/python3.13/dist-packages (from lets_plot) (11.3.0)\nDownloading lets_plot-4.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.9 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 37.9 MB/s eta 0:00:00\nDownloading palettable-3.3.3-py2.py3-none-any.whl (332 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 332.3/332.3 kB 16.1 MB/s eta 0:00:00\nDownloading pypng-0.20220715.0-py3-none-any.whl (58 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.1/58.1 kB 3.1 MB/s eta 0:00:00\nInstalling collected packages: pypng, palettable, lets_plot\nSuccessfully installed lets_plot-4.11.0 palettable-3.3.3 pypng-0.20220715.0\n\n\n\n\n\n\nCode\nimport polars as pl\n\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import (\n    accuracy_score,\n    precision_score,\n    recall_score,\n    f1_score,\n    classification_report,\n    confusion_matrix,\n    ConfusionMatrixDisplay\n)\n\n### Training\n\ncampaign = pl.read_csv(\n    'https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bank.csv',\n    schema_overrides={'nr.employed': pl.Float64},\n)\n\nfeatures = [\n    'age', 'job', 'marital', 'education', 'default', 'housing',\n    'loan', 'contact', 'month', 'day_of_week', 'campaign', 'pdays',\n    'previous', 'poutcome', 'emp.var.rate', 'cons.price.idx',\n    'cons.conf.idx', 'euribor3m', 'nr.employed', 'prev_contact'\n]\n\n# Columns we want to one-hot encode (added 'prev_contact' here)\nonehot_cols = [\n    'job', 'education', 'default', 'housing', 'loan',\n    'marital', 'poutcome', 'day_of_week', 'prev_contact'\n]\n\nmonth_map = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,\n             'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12}\n\ndef prep(df):\n    return (\n        df.with_columns(\n            (pl.col('contact') == 'cellular').cast(pl.Int8),\n            pl.col('month').replace_strict(month_map),\n            # Create prev_contact: 'no' if pdays == 999, otherwise 'yes'\n            pl.when(pl.col('pdays') == 999)\n              .then(pl.lit('no'))\n              .otherwise(pl.lit('yes'))\n              .alias('prev_contact')\n        )\n        .select(features)\n        .to_dummies(columns=onehot_cols)\n    )\n\n# Encode our features and target as needed\nX = prep(campaign)\ny = campaign['y'].str.to_lowercase().is_in(['yes', 'true', '1']).to_numpy()\n\n# Split our data into training and test data, with 30% reserved for testing\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y,\n    test_size=0.30,\n    random_state=42,   # makes the shuffle repeatable\n    stratify=y        # keeps the yes rate about the same in train and test\n)\n\n\n\n\n\nCode\n# Build the decision tree\n# (random_state here is separate: it fixes how the tree breaks ties)\nclf = DecisionTreeClassifier(max_depth=5, class_weight='balanced', random_state=42)\n\n# Train it\nclf.fit(X_train, y_train)\n\n# Test it\npred = clf.predict(X_test)\n# print(\"accuracy:\", round(accuracy_score(y_test, pred), 3))\n# print(\"F1:\", round(f1_score(y_test, pred), 3))\n\nprint(classification_report(y_test, pred))\n\n\n              precision    recall  f1-score   support\n\n       False       0.95      0.82      0.88      9859\n        True       0.32      0.67      0.44      1262\n\n    accuracy                           0.80     11121\n   macro avg       0.64      0.75      0.66     11121\nweighted avg       0.88      0.80      0.83     11121\n\n\n\n\n\nCode\nConfusionMatrixDisplay.from_estimator(\n    clf,\n    X_test,\n    y_test,\n    display_labels=[\"no\", \"yes\"],\n    cmap=\"Blues\"\n)\n\n\n\n\n\n\n\n\n\n\n\nCode\nfrom lets_plot import *\n\ntree_importance = (\n    pl.DataFrame({\n        \"feature\": X_train.columns,\n        \"importance\": clf.feature_importances_\n    })\n    .sort(\"importance\", descending=True)\n)\n\ntree_importance.head(10)\n\nggplot(\n    tree_importance.head(10).sort(\"importance\"),\n    aes(x=\"importance\", y=\"feature\")\n) + \\\n    geom_bar(stat=\"identity\") + \\\n    labs(\n        title=\"Decision Tree Feature Importance\",\n        x=\"Importance\",\n        y=\"Feature\"\n    )\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nCode\n###  Testing (mini-holdout)\n\n# Test document\n# test = pl.read_csv(\n#     \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bank_holdout_test_mini.csv\",\n#     schema_overrides={'nr.employed': pl.Float64},\n# )\n\ntest = pl.read_csv(\n    \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bank_holdout_test.csv\",\n    schema_overrides={'nr.employed': pl.Float64},\n)\n\n# Transform the test data using the exact same prep as the training data\ntest = prep(test)\n\n# Add any dummy columns the holdout is missing (e.g. default_yes), filled with 0\ntest = test.with_columns(\n    [\n        pl.lit(0).alias(col)\n        for col in X.columns\n        if col not in test.columns\n    ]\n)\n\n# only use columns that we had in the training data, in the same order\ntest = test.select(X.columns)\n\npredictions = clf.predict(test).astype(int)\n\n# Convert the predictions to a dataframe and label the column 'predictions'\npredictions = pl.DataFrame(predictions, schema=['predictions'])\n\npredictions.write_csv(\"team3-module2-predictions.csv\")\n\npredictions[\"predictions\"].value_counts()\n\n\n\nshape: (2, 2)\n\n\n\npredictions\ncount\n\n\ni64\nu32\n\n\n\n\n0\n3165\n\n\n1\n954\n\n\n\n\n\n\n\n\nCode\nplot_df = campaign.select(['campaign', 'previous']).with_columns(\n    pl.Series('y', y)\n)\n\nplot_df.head()\n\nfrom lets_plot import *\nLetsPlot.setup_html()\n\nplot_pl = (\n    plot_df\n    .filter(pl.col('campaign') &lt;= 15)\n    .with_columns(pl.col('y').replace_strict({False: 'no', True: 'yes'}))\n)\n\n(\n    ggplot(plot_pl, aes(x='campaign', fill='y'))\n    + geom_histogram(aes(y='..density..'), binwidth=1)\n    + facet_wrap('y', nrow = 1)\n    + labs(title='campaign by signup', y='share within group')\n    + theme_classic()\n    + ggsize(900, 400)\n)\n\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\n\n\n\n\nCode\n(\n    campaign\n    .with_columns(pl.Series('y', y))\n    .group_by('marital', \"day_of_week\")\n    .agg(\n        pl.col('y').mean().alias('yes_rate'),\n        pl.len().alias('n'),\n    )\n    .sort(\"yes_rate\", descending = True)\n)\n\nday_order = ['mon', 'tue', 'wed', 'thu', 'fri']\n\n(\n    X_test\n    .with_columns(\n        pl.Series('y', y_test),\n        pl.Series('pred', pred),\n        pl.col('nr.employed').qcut(3, labels=['low', 'mid', 'high'], allow_duplicates=True).alias('employ'),\n    )\n    .group_by('employ')\n    .agg(\n        pl.len().alias('n'),\n        pl.col('y').mean().alias('yes_rate'),\n        (pl.col('pred') == pl.col('y')).mean().alias('accuracy'),\n        ((pl.col('pred') & pl.col('y')).sum() / pl.col('y').sum()).alias('recall'),\n    )\n    .sort('employ')\n)\n\n\n\nshape: (2, 5)\n\n\n\nemploy\nn\nyes_rate\naccuracy\nrecall\n\n\ncat\nu32\nf64\nf64\nf64\n\n\n\n\n\"low\"\n5798\n0.167127\n0.671093\n0.862745\n\n\n\"mid\"\n5323\n0.055044\n0.946083\n0.040956\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "statistics.html",
+    "href": "statistics.html",
+    "title": "Statistics",
+    "section": "",
+    "text": "Applied statistical work in R and Python, from a consulting ANOVA to a group econometrics paper.\n\nHoliday Cocoa Promotions (ANOVA): A consulting report for a food company on whether promotions need to differ by region.\nWeather Regression: A multiple linear regression comparing April 2023 temperatures in Phoenix and Renton.\nPrice of Promotion (Econometrics): A group paper on how promotions relate to retail prices, using store-level panel data.\nPython: Confidence vs. Retail Sales: A command-line program that measures how consumer confidence moves with retail sales.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Statistics",
+      "Overview"
     ]
   },
   {
@@ -529,300 +669,193 @@
     "text": "🌟 Above and Beyond 🌟\nAfter reviewing your findings, the watchdog group would like some additional questions answered:\n\nHow are things affected if you include the “made for TV movies” that have been assigned TV ratings in your analysis, but still exclude unrated movies?\nThey would also like to see a separate report that includes only TV shows.\nFor an upcoming community meeting, the group would like to present a simple chart showing “For Kids” and “For Adults” categories. The easiest way to accomplish this would be to create a new column in your data frame that maps each rating to the appropriate “For Kids” or “For Adults” label, then create a new visualization based on that column.\n\n\nadult_ratings = [\"PG-13\", \"R\", \"NC-17\"]\nnpaa_movies = npaa_movies.with_columns(pl.col(\"rating\").is_in(adult_ratings).alias(\"is_adult\"))\n\nggplot(npaa_movies, aes(x = \"is_adult\")) + geom_bar() + labs(x = \"Adult movie?\")"
   },
   {
-    "objectID": "Spreadsheet/project1.html",
-    "href": "Spreadsheet/project1.html",
-    "title": "Mortgage Amortization",
+    "objectID": "Storytelling/mutual-fund-risk.html",
+    "href": "Storytelling/mutual-fund-risk.html",
+    "title": "Mutual Fund Risk Portfolio",
     "section": "",
-    "text": "I built an Excel model that takes a home price, down payment, interest rate, and loan term, and returns the monthly payment, the full amortization schedule, and the minimum salary a buyer would need to qualify.",
+    "text": "I analyzed a dataset of about 10,000 mutual funds and ETFs to find strong investment options for a middle-income family planning for retirement. Using Power BI (and Tableau), AI-supported research, and financial risk measures, I compared funds across five risk levels, with standard deviation as the main measure of risk.",
     "crumbs": [
-      "Spreadsheet Analytics",
-      "Mortgage Amortization"
+      "Data Storytelling",
+      "Mutual Fund Risk Portfolio"
     ]
   },
   {
-    "objectID": "Spreadsheet/project1.html#overview",
-    "href": "Spreadsheet/project1.html#overview",
-    "title": "Mortgage Amortization",
+    "objectID": "Storytelling/mutual-fund-risk.html#overview",
+    "href": "Storytelling/mutual-fund-risk.html#overview",
+    "title": "Mutual Fund Risk Portfolio",
     "section": "",
-    "text": "I built an Excel model that takes a home price, down payment, interest rate, and loan term, and returns the monthly payment, the full amortization schedule, and the minimum salary a buyer would need to qualify.",
+    "text": "I analyzed a dataset of about 10,000 mutual funds and ETFs to find strong investment options for a middle-income family planning for retirement. Using Power BI (and Tableau), AI-supported research, and financial risk measures, I compared funds across five risk levels, with standard deviation as the main measure of risk.",
     "crumbs": [
-      "Spreadsheet Analytics",
-      "Mortgage Amortization"
+      "Data Storytelling",
+      "Mutual Fund Risk Portfolio"
     ]
   },
   {
-    "objectID": "Spreadsheet/project1.html#inputs-and-outputs",
-    "href": "Spreadsheet/project1.html#inputs-and-outputs",
-    "title": "Mortgage Amortization",
-    "section": "Inputs and outputs",
-    "text": "Inputs and outputs\n\n\n\nInput\nValue\n\n\n\n\nHome price\n$500,000\n\n\nDown payment (20%)\n$100,000\n\n\nLoan amount\n$400,000\n\n\nInterest rate\n7.00%\n\n\nTerm\n30 years (360 payments)\n\n\nMaximum payment-to-salary ratio\n40%\n\n\n\n\n\n\nOutput\nValue\n\n\n\n\nMonthly payment\n$2,661.21\n\n\nTotal of all payments\n$958,035.59\n\n\nTotal interest paid\n$558,035.59\n\n\nMinimum monthly salary to qualify\n$6,653.02\n\n\nMinimum annual salary to qualify\n$79,836.30\n\n\n\nThe payment does not include insurance or property taxes.",
+    "objectID": "Storytelling/mutual-fund-risk.html#the-final-presentation",
+    "href": "Storytelling/mutual-fund-risk.html#the-final-presentation",
+    "title": "Mutual Fund Risk Portfolio",
+    "section": "The final presentation",
+    "text": "The final presentation\nFor the final presentation I:\n\nexplained the current market context\norganized funds by risk category\nchose one recommended fund or ETF within each category\nbuilt data-driven visuals to support each recommendation\n\nI also focused on making the analysis understandable for a non-expert audience, with clear storytelling, client-centered explanations, and a professional presentation design.",
     "crumbs": [
-      "Spreadsheet Analytics",
-      "Mortgage Amortization"
+      "Data Storytelling",
+      "Mutual Fund Risk Portfolio"
     ]
   },
   {
-    "objectID": "Spreadsheet/project1.html#what-the-schedule-shows",
-    "href": "Spreadsheet/project1.html#what-the-schedule-shows",
-    "title": "Mortgage Amortization",
-    "section": "What the schedule shows",
-    "text": "What the schedule shows\nThe schedule splits every payment into interest and principal and tracks the remaining balance.\n\n\n\nPayment\nInterest\nPrincipal\nBalance\n\n\n\n\n1\n$2,333.33\n$327.88\n$399,672.12\n\n\n180 (year 15)\n$1,732.52\n$928.69\n$296,075.46\n\n\n360 (final)\n$15.43\n$2,645.78\n$0.00\n\n\n\nBecause interest is charged on the remaining balance, the first payment sends only about 12% toward principal, and after 15 years the borrower still owes about 74% of the loan.\nDownload the Excel workbook from Google Drive",
+    "objectID": "Storytelling/mutual-fund-risk.html#materials",
+    "href": "Storytelling/mutual-fund-risk.html#materials",
+    "title": "Mutual Fund Risk Portfolio",
+    "section": "Materials",
+    "text": "Materials\n\nRecorded presentation (video) on Google Drive\nPower BI project folder on Google Drive",
     "crumbs": [
-      "Spreadsheet Analytics",
-      "Mortgage Amortization"
+      "Data Storytelling",
+      "Mutual Fund Risk Portfolio"
     ]
   },
   {
-    "objectID": "Statistics/project1.html",
-    "href": "Statistics/project1.html",
-    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "objectID": "Storytelling/survey-analysis.html",
+    "href": "Storytelling/survey-analysis.html",
+    "title": "Survey Analysis: Religious Perceptions",
     "section": "",
-    "text": "Teton Pantry Co. sells a 12 oz. Holiday Cocoa through five retailers in four regions. Regional managers disagreed about whether promotions should be deeper in some regions than others. Do promotion depth and region change weekly revenue, and does the effect of a promotion depend on the region?",
+    "text": "I extracted, cleaned, and analyzed survey data on demographic patterns in religious perceptions, using Power BI.",
+    "crumbs": [
+      "Data Storytelling",
+      "Survey Analysis: Religious Perceptions"
+    ]
+  },
+  {
+    "objectID": "Storytelling/survey-analysis.html#overview",
+    "href": "Storytelling/survey-analysis.html#overview",
+    "title": "Survey Analysis: Religious Perceptions",
+    "section": "",
+    "text": "I extracted, cleaned, and analyzed survey data on demographic patterns in religious perceptions, using Power BI.",
+    "crumbs": [
+      "Data Storytelling",
+      "Survey Analysis: Religious Perceptions"
+    ]
+  },
+  {
+    "objectID": "Storytelling/survey-analysis.html#communicating-the-results",
+    "href": "Storytelling/survey-analysis.html#communicating-the-results",
+    "title": "Survey Analysis: Religious Perceptions",
+    "section": "Communicating the results",
+    "text": "Communicating the results\nI shared the survey insights in a way that non-technical audiences could follow, so the findings could support a data-driven discussion.",
+    "crumbs": [
+      "Data Storytelling",
+      "Survey Analysis: Religious Perceptions"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mary Palmer",
+    "section": "",
+    "text": "I am an Economics major with a Data Science minor at Brigham Young University-Idaho (expected April 2028), with a 4.00 GPA and a full-ride merit scholarship. I also serve as president of the Economics Society and work as a Senior Research Fellow, where I run randomized experiments that estimate causal effects on student performance.\nMy work centers on turning messy data into a clear answer: cleaning and joining datasets, choosing a defensible statistical model, and presenting the result so a non-technical reader can act on it.\nTools: Python, R, SQL, Power BI, Excel\nMethods: statistical modeling, hypothesis testing, machine learning, data visualization and storytelling"
+  },
+  {
+    "objectID": "index.html#what-is-on-this-site",
+    "href": "index.html#what-is-on-this-site",
+    "title": "Mary Palmer",
+    "section": "What is on this site",
+    "text": "What is on this site\n\n\n\nSection\nWhat you will find\n\n\n\n\nMachine Learning\nThree group case studies: a bank campaign classifier, a housing price model, and a bike rental forecast\n\n\nStatistics\nAn ANOVA consulting report, a multiple linear regression, a group econometrics paper, and a Python analysis program\n\n\nData Storytelling\nPower BI dashboards, a mutual fund recommendation for a retirement-focused client, and a SQL database project\n\n\nSpreadsheet Analytics\nA mortgage amortization model built in Excel\n\n\n\nYou can read my full resume or connect with me on LinkedIn."
+  },
+  {
+    "objectID": "Statistics/confidence-vs-sales.html",
+    "href": "Statistics/confidence-vs-sales.html",
+    "title": "Python: Confidence vs. Retail Sales",
+    "section": "",
+    "text": "A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.\nData: a monthly consumer confidence index and monthly retail sales, with sources from FRED.",
     "crumbs": [
       "Statistics",
-      "Holiday Cocoa Promotions (ANOVA)"
+      "Python: Confidence vs. Retail Sales"
     ]
   },
   {
-    "objectID": "Statistics/project1.html#question",
-    "href": "Statistics/project1.html#question",
-    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "objectID": "Statistics/confidence-vs-sales.html#overview",
+    "href": "Statistics/confidence-vs-sales.html#overview",
+    "title": "Python: Confidence vs. Retail Sales",
     "section": "",
-    "text": "Teton Pantry Co. sells a 12 oz. Holiday Cocoa through five retailers in four regions. Regional managers disagreed about whether promotions should be deeper in some regions than others. Do promotion depth and region change weekly revenue, and does the effect of a promotion depend on the region?",
+    "text": "A command-line program that asks whether consumer confidence and retail spending move together. The user enters two dates between January 1992 and March 2025, and the program reports how both measures changed over that period.\nData: a monthly consumer confidence index and monthly retail sales, with sources from FRED.",
     "crumbs": [
       "Statistics",
-      "Holiday Cocoa Promotions (ANOVA)"
+      "Python: Confidence vs. Retail Sales"
     ]
   },
   {
-    "objectID": "Statistics/project1.html#about-this-project",
-    "href": "Statistics/project1.html#about-this-project",
-    "title": "Holiday Cocoa Promotions (ANOVA)",
-    "section": "About this project",
-    "text": "About this project\nThis was a role-play consulting exercise for MATH 325. The client emails, the sales data (2022 to 2024), and the cover image were generated with ChatGPT 5.1. My replies to the client and the full analysis are my own. ChatGPT was also used to help debug code, customize the graphs, and choose the statistical test.",
+    "objectID": "Statistics/confidence-vs-sales.html#what-the-program-does",
+    "href": "Statistics/confidence-vs-sales.html#what-the-program-does",
+    "title": "Python: Confidence vs. Retail Sales",
+    "section": "What the program does",
+    "text": "What the program does\n\nReads the two CSV files into dictionaries keyed by date and merges them into one compound dictionary.\nValidates the user’s input: the dates must parse as “Month, Year”, differ from each other, fall in order, and exist in the data.\nBuilds the date range and calculates each series’ percent change between the two dates.\nCalculates the mean, standard deviation, and the Pearson correlation coefficient with NumPy.\nTranslates the correlation into a plain-English conclusion, from “almost no correlation” to “very strong correlation.”\nPrints a formatted summary table with tabulate.\n\ndef write_conclusion(correl_coef):\n    abs_correl_coef = abs(correl_coef)\n    if abs_correl_coef &lt;= 0.16:\n        conclusion = \"There is almost no correlation between retail sales and CCI in the given time period.\"\n    elif abs_correl_coef &lt;= 0.29:\n        conclusion = \"There is a very weak correlation between retail sales and CCI in the given time period.\"\n    # ... thresholds continue up to \"very strong\" above 0.89",
     "crumbs": [
       "Statistics",
-      "Holiday Cocoa Promotions (ANOVA)"
+      "Python: Confidence vs. Retail Sales"
     ]
   },
   {
-    "objectID": "Statistics/project1.html#approach",
-    "href": "Statistics/project1.html#approach",
-    "title": "Holiday Cocoa Promotions (ANOVA)",
-    "section": "Approach",
-    "text": "Approach\nI built the report in R (car, tidyverse, pander).\n\nCalculated revenue per retailer-week as units sold times actual price.\nGrouped promotion depth into three levels: none (0%), small (10 to 25%), and medium (25 to 35%).\nFit a two-way ANOVA with interaction on log revenue: log(revenue) ~ promo + region + promo:region. The log transform stabilizes the variance of the revenue data.",
+    "objectID": "Statistics/confidence-vs-sales.html#skills-practiced",
+    "href": "Statistics/confidence-vs-sales.html#skills-practiced",
+    "title": "Python: Confidence vs. Retail Sales",
+    "section": "Skills practiced",
+    "text": "Skills practiced\nWriting small, single-purpose functions with docstrings, reading files with the csv module, working with datetime, handling bad input, and testing the program with a companion test_ script.\nOpen the full analysis report on Google Drive",
     "crumbs": [
       "Statistics",
-      "Holiday Cocoa Promotions (ANOVA)"
+      "Python: Confidence vs. Retail Sales"
     ]
   },
   {
-    "objectID": "Statistics/project1.html#results",
-    "href": "Statistics/project1.html#results",
-    "title": "Holiday Cocoa Promotions (ANOVA)",
+    "objectID": "Statistics/weather-regression.html",
+    "href": "Statistics/weather-regression.html",
+    "title": "Weather Regression",
+    "section": "",
+    "text": "My family has lived in both Arizona and Washington, so I pulled daily weather data (NOAA’s Global Surface Summary of the Day, through the GSODR package) for April 2023 from Phoenix Goodyear Airport and Renton Municipal Airport. How well does the daily minimum temperature predict the daily maximum, and does that relationship differ between the two cities?",
+    "crumbs": [
+      "Statistics",
+      "Weather Regression"
+    ]
+  },
+  {
+    "objectID": "Statistics/weather-regression.html#question",
+    "href": "Statistics/weather-regression.html#question",
+    "title": "Weather Regression",
+    "section": "",
+    "text": "My family has lived in both Arizona and Washington, so I pulled daily weather data (NOAA’s Global Surface Summary of the Day, through the GSODR package) for April 2023 from Phoenix Goodyear Airport and Renton Municipal Airport. How well does the daily minimum temperature predict the daily maximum, and does that relationship differ between the two cities?",
+    "crumbs": [
+      "Statistics",
+      "Weather Regression"
+    ]
+  },
+  {
+    "objectID": "Statistics/weather-regression.html#model",
+    "href": "Statistics/weather-regression.html#model",
+    "title": "Weather Regression",
+    "section": "Model",
+    "text": "Model\n\\[\n\\hat{Y}_i = \\beta_0 + \\beta_1 X_{i1} + \\beta_2 X_{i2} + \\beta_3 X_{i1} X_{i2}\n\\]\nwhere \\(Y\\) is the daily maximum temperature, \\(X_1\\) is the daily minimum temperature, and \\(X_2\\) is an indicator for Renton (Phoenix is the baseline). The \\(\\beta_2\\) term lets the lines start at different heights, and the \\(\\beta_3\\) interaction lets them have different slopes.\nweather_lm_full &lt;- lm(MAX ~ MIN + AIRPORT + MIN:AIRPORT, data = weather)",
+    "crumbs": [
+      "Statistics",
+      "Weather Regression"
+    ]
+  },
+  {
+    "objectID": "Statistics/weather-regression.html#results",
+    "href": "Statistics/weather-regression.html#results",
+    "title": "Weather Regression",
     "section": "Results",
-    "text": "Results\n\n\n\nTerm\nDf\nF value\np-value\n\n\n\n\nPromotion depth\n2\n55.73\n1.4e-24\n\n\nRegion\n3\n0.19\n0.905\n\n\nPromotion x Region\n6\n0.92\n0.480\n\n\nResiduals\n3,732\n\n\n\n\n\nPromotion depth is significant. Region and the promotion-by-region interaction are not, at α = 0.05.\n\n\n\nPromotion level\nMean weekly revenue per retailer\n\n\n\n\nNone\n$799.80\n\n\nSmall (10 to 25%)\n$941.90\n\n\nMedium (25 to 35%)\n$1,109\n\n\n\n\nThe lines for the three promotion levels keep the same order in every region, which matches the non-significant interaction. The Mountain region’s medium-promo average ($1,176) is the highest point, but the test shows it is within normal variation.\n\nThe residual plots show roughly even spread across fitted values and a Q-Q plot close to a straight line, so the ANOVA assumptions are reasonable on the log scale.",
+    "text": "Results\nThe model fit 60 daily observations and explained about 92% of the variation in the daily maximum (adjusted \\(R^2\\) = 0.920).\n\n\n\nTerm\nEstimate\np-value\n\n\n\n\nIntercept (Phoenix)\n17.5\n&lt; 0.0001\n\n\nMinimum temperature (Phoenix slope)\n0.914\n&lt; 0.0001\n\n\nRenton shift in intercept\n-9.919\n&lt; 0.0001\n\n\nRenton shift in slope\n0.436\n0.043\n\n\n\n\nIn Phoenix, each 1°C rise in the minimum goes with about a 0.91°C rise in the maximum.\nIn Renton, the line starts about 9.9°C lower, and the slope is steeper at about 1.35°C per 1°C.\n\nI checked all five regression assumptions (linearity, normal errors, constant variance, fixed X, and independent errors) with residual plots and judged the model appropriate. The result matches what the climates would suggest: Phoenix is hotter than Renton in April, and the minimum temperature carries more of the day’s range in Renton.\nFull report on Google Drive",
     "crumbs": [
       "Statistics",
-      "Holiday Cocoa Promotions (ANOVA)"
+      "Weather Regression"
     ]
   },
   {
-    "objectID": "Statistics/project1.html#recommendation",
-    "href": "Statistics/project1.html#recommendation",
-    "title": "Holiday Cocoa Promotions (ANOVA)",
-    "section": "Recommendation",
-    "text": "Recommendation\n\nPromotions work: a small promotion added about $142 in average weekly revenue over no promotion, and a medium promotion added about $167 more than a small one.\nApply the medium promotion depth (25 to 35%) consistently across all regions. There is no evidence that any region needs a different strategy.",
-    "crumbs": [
-      "Statistics",
-      "Holiday Cocoa Promotions (ANOVA)"
-    ]
-  },
-  {
-    "objectID": "Statistics/project1.html#tools",
-    "href": "Statistics/project1.html#tools",
-    "title": "Holiday Cocoa Promotions (ANOVA)",
-    "section": "Tools",
-    "text": "Tools\nR, ANOVA, car, tidyverse, pander, ggplot2.\nRead the full report on Google Drive",
-    "crumbs": [
-      "Statistics",
-      "Holiday Cocoa Promotions (ANOVA)"
-    ]
-  },
-  {
-    "objectID": "Statistics/project3.html",
-    "href": "Statistics/project3.html",
-    "title": "Price of Promotion (Econometrics)",
+    "objectID": "ml.html",
+    "href": "ml.html",
+    "title": "Machine Learning",
     "section": "",
-    "text": "Measuring the Price of Promotion: A Store-Level Analysis of Consumer Expenditure\nErral Asper, Kathryn Haroldsen, Taylor Landini, Mary Palmer, and Harrison Thomas (April 2026)",
+    "text": "Three group case studies from CSE 450, each built in Python for a different kind of prediction problem.\n\nBank Telemarketing Targeting: A decision tree that finds the customers most likely to respond to a bank campaign.\nKing County Housing Prices: An XGBoost model that predicts home prices with an R² of 0.898.\nBike Rental Demand: A neural network that forecasts holiday bike rentals with an R² of 0.951.\n\n\n\n\n Back to top",
     "crumbs": [
-      "Statistics",
-      "Price of Promotion (Econometrics)"
-    ]
-  },
-  {
-    "objectID": "Statistics/project3.html#question",
-    "href": "Statistics/project3.html#question",
-    "title": "Price of Promotion (Econometrics)",
-    "section": "Question",
-    "text": "Question\nDoes promotional advertising push the prices consumers pay up or down? Economic theory points both ways: price-focused promotions can intensify competition, while brand-building advertising can reduce price sensitivity and support higher prices.",
-    "crumbs": [
-      "Statistics",
-      "Price of Promotion (Econometrics)"
-    ]
-  },
-  {
-    "objectID": "Statistics/project3.html#data",
-    "href": "Statistics/project3.html#data",
-    "title": "Price of Promotion (Econometrics)",
-    "section": "Data",
-    "text": "Data\nWe used the Dominick’s Finer Foods scanner database, compiled by the University of Chicago Booth School of Business from about 100 grocery stores from 1989 to 1994, and focused on the frozen dinner category.\n\nUnbalanced panel of 19,306 store-item units over weeks 1 to 255, for 1,645,316 observations\nRemoved observations flagged as unreliable, prices of $0, and prices above $6 (over 99% of the data fell below that cutoff)\nPromotions coded as Bonus Buy, Coupon, or Simple Price Reduction, compared with weeks with no recorded promotion",
-    "crumbs": [
-      "Statistics",
-      "Price of Promotion (Econometrics)"
-    ]
-  },
-  {
-    "objectID": "Statistics/project3.html#method",
-    "href": "Statistics/project3.html#method",
-    "title": "Price of Promotion (Econometrics)",
-    "section": "Method",
-    "text": "Method\nFixed effects regression with store-item fixed effects, so that each product in each store is compared only against itself across weeks. Model 1 regresses price on the three promotion types. Model 2 adds the retailer’s profit margin.",
-    "crumbs": [
-      "Statistics",
-      "Price of Promotion (Econometrics)"
-    ]
-  },
-  {
-    "objectID": "Statistics/project3.html#findings",
-    "href": "Statistics/project3.html#findings",
-    "title": "Price of Promotion (Econometrics)",
-    "section": "Findings",
-    "text": "Findings\nRelative to non-promotion weeks, average prices were lower by:\n\n\n\nPromotion type\nAverage price difference\n\n\n\n\nBonus Buy\n$0.11\n\n\nSimple Price Reduction\n$0.46\n\n\nCoupon\n$0.95\n\n\n\n\nCoupons were the deepest discount and also produced the highest median sales volume.\nAdding profit (Model 2) shrank the promotion coefficients to near zero. Because profit depends directly on price, we treated it as endogenous and based our conclusions on Model 1.\nA Breusch-Pagan test (BP = 830.21, p &lt; 0.01) found heteroskedasticity, so we used robust standard errors. Variance inflation factors near 1.0 showed no multicollinearity.",
-    "crumbs": [
-      "Statistics",
-      "Price of Promotion (Econometrics)"
-    ]
-  },
-  {
-    "objectID": "Statistics/project3.html#limitations",
-    "href": "Statistics/project3.html#limitations",
-    "title": "Price of Promotion (Econometrics)",
-    "section": "Limitations",
-    "text": "Limitations\nThe data are observational, cover one retailer and one time period, and record promotions imperfectly, so the results should not be read as causal or applied directly to modern online retail.\nRead the full paper (PDF) on Google Drive",
-    "crumbs": [
-      "Statistics",
-      "Price of Promotion (Econometrics)"
-    ]
-  },
-  {
-    "objectID": "statistics.html",
-    "href": "statistics.html",
-    "title": "Statistics",
-    "section": "",
-    "text": "Applied statistical work in R and Python, from a consulting ANOVA to a group econometrics paper.\n\nHoliday Cocoa Promotions (ANOVA): A consulting report for a food company on whether promotions need to differ by region.\nWeather Regression: A multiple linear regression comparing April 2023 temperatures in Phoenix and Renton.\nPrice of Promotion (Econometrics): A group paper on how promotions relate to retail prices, using store-level panel data.\nPython: Confidence vs. Retail Sales: A command-line program that measures how consumer confidence moves with retail sales.\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Statistics",
+      "Machine Learning",
       "Overview"
-    ]
-  },
-  {
-    "objectID": "Storytelling/project2.html",
-    "href": "Storytelling/project2.html",
-    "title": "Finance Dashboard",
-    "section": "",
-    "text": "This is my final Power BI project, built around a finance question.",
-    "crumbs": [
-      "Data Storytelling",
-      "Finance Dashboard"
-    ]
-  },
-  {
-    "objectID": "Storytelling/project2.html#overview",
-    "href": "Storytelling/project2.html#overview",
-    "title": "Finance Dashboard",
-    "section": "",
-    "text": "This is my final Power BI project, built around a finance question.",
-    "crumbs": [
-      "Data Storytelling",
-      "Finance Dashboard"
-    ]
-  },
-  {
-    "objectID": "Storytelling/project2.html#files",
-    "href": "Storytelling/project2.html#files",
-    "title": "Finance Dashboard",
-    "section": "Files",
-    "text": "Files\n\nPower BI file (.pbix) on Google Drive",
-    "crumbs": [
-      "Data Storytelling",
-      "Finance Dashboard"
-    ]
-  },
-  {
-    "objectID": "Storytelling/project4.html",
-    "href": "Storytelling/project4.html",
-    "title": "SQL: Music Library Database",
-    "section": "",
-    "text": "A relational database that tracks a music library: pieces, the books they are in, composers, genres, difficulty by part, shelf locations, and performance history. I designed the schema, loaded the data, then wrote the scripts that modify and query it.",
-    "crumbs": [
-      "Data Storytelling",
-      "SQL: Music Library Database"
-    ]
-  },
-  {
-    "objectID": "Storytelling/project4.html#overview",
-    "href": "Storytelling/project4.html#overview",
-    "title": "SQL: Music Library Database",
-    "section": "",
-    "text": "A relational database that tracks a music library: pieces, the books they are in, composers, genres, difficulty by part, shelf locations, and performance history. I designed the schema, loaded the data, then wrote the scripts that modify and query it.",
-    "crumbs": [
-      "Data Storytelling",
-      "SQL: Music Library Database"
-    ]
-  },
-  {
-    "objectID": "Storytelling/project4.html#scripts",
-    "href": "Storytelling/project4.html#scripts",
-    "title": "SQL: Music Library Database",
-    "section": "Scripts",
-    "text": "Scripts\n\nbuild_db_4.sql creates the tables.\nfill_db_4.sql loads the data.\nfinal_1.sql cleans up and extends the database, then demonstrates queries and views.",
-    "crumbs": [
-      "Data Storytelling",
-      "SQL: Music Library Database"
-    ]
-  },
-  {
-    "objectID": "Storytelling/project4.html#data-integrity-and-changes",
-    "href": "Storytelling/project4.html#data-integrity-and-changes",
-    "title": "SQL: Music Library Database",
-    "section": "Data integrity and changes",
-    "text": "Data integrity and changes\n\nConverted the composer birth and death year columns to dates.\nAdded a CHECK constraint so a piece’s minimum performers can never exceed its maximum.\nRenamed a table for consistency, dropped an unneeded column, and added a “Single Piece/No Book” entry.\nWrapped inserts and updates in transactions, including adding a new piece and linking it to a book.",
-    "crumbs": [
-      "Data Storytelling",
-      "SQL: Music Library Database"
-    ]
-  },
-  {
-    "objectID": "Storytelling/project4.html#advanced-queries",
-    "href": "Storytelling/project4.html#advanced-queries",
-    "title": "SQL: Music Library Database",
-    "section": "Advanced queries",
-    "text": "Advanced queries\n\nEvery piece, book, and composer on a given shelf, using a five-table join.\nThe average difficulty of each piece across all of its parts, using AVG and GROUP BY.\nThe number of pieces in each book, ranked from most to fewest:\n\nSELECT bhp.book_id AS \"Book ID\", b.book_title AS \"Book Title\", COUNT(*) AS \"Num. of Pieces\"\nFROM book_has_piece AS bhp\n  JOIN book AS b ON bhp.book_id = b.book_id\nGROUP BY 1\nORDER BY 3 DESC;",
-    "crumbs": [
-      "Data Storytelling",
-      "SQL: Music Library Database"
-    ]
-  },
-  {
-    "objectID": "Storytelling/project4.html#views",
-    "href": "Storytelling/project4.html#views",
-    "title": "SQL: Music Library Database",
-    "section": "Views",
-    "text": "Views\n\nfull_lib_overview shows each piece with its book, composer, genre, and whether it is in the performance repertoire.\nperf_hist_overview lists each performance with its event, date, award, and the pieces played, using GROUP_CONCAT.\n\nDownload the SQL scripts from Google Drive",
-    "crumbs": [
-      "Data Storytelling",
-      "SQL: Music Library Database"
     ]
   }
 ]

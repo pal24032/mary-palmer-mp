@@ -1,0 +1,12 @@
+---
+title: "Survey Analysis: Religious Perceptions"
+subtitle: "Power BI | Fall 2025 class project"
+---
+
+## Overview
+
+I extracted, cleaned, and analyzed survey data on demographic patterns in religious perceptions, using Power BI.
+
+## Communicating the results
+
+I shared the survey insights in a way that non-technical audiences could follow, so the findings could support a data-driven discussion.

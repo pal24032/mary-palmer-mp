@@ -5,4 +5,4 @@ toc: false
 
 Financial modeling in Excel.
 
-- [Mortgage Amortization](Spreadsheet/project1.qmd): A loan calculator and a full 360-payment amortization schedule.
+- [Mortgage Amortization](Spreadsheet/mortgage-amortization.qmd): A loan calculator and a full 360-payment amortization schedule.

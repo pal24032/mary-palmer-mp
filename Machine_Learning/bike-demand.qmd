@@ -3,8 +3,6 @@ title: "Bike Rental Demand"
 subtitle: "Python | Neural network regression | CSE 450 Module 4 group project"
 ---
 
-**Team:** Isaac Bean, Seth Ricks, Nathan McDowell, Mary Palmer
-
 ## Problem
 
 WelcomeBike, a bike rental company in Washington, D.C., wanted to forecast how many riders to expect per hour and per day over the November and December holidays. We used hourly rental data from January 2011 to September 2023, including the date, hour, weather, and rider type.
