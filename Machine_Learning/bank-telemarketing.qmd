@@ -38,4 +38,4 @@ Only about 11.4% of customers subscribed, so a model that always predicted "no" 
 - **Privacy:** the data contains no names, birth dates, locations, government identifiers, contact details, or account specifics, so it is consistent with GDPR.
 - **Limits:** the data is historical and the economic features are correlated with each other, so the model should be retrained as conditions change. Adjusting the classification threshold or tree depth would shift the balance between missed subscribers and wasted calls.
 
-[View the full notebook](group_bank.ipynb)
+[View the full notebook](bank-telemarketing-notebook.ipynb)

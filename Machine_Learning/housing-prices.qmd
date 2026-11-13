@@ -50,4 +50,4 @@ Grade was by far the strongest feature (importance 0.37), followed by latitude, 
 
 We also declined a request to lower estimates in low-income areas to protect insurance customers. That would have required confidential personal data and would have compromised the model's integrity. The model already reflects neighborhood conditions through features like the living area of the 15 nearest homes.
 
-[View the full notebook](GROUP_housing.ipynb)
+[View the full notebook](housing-prices-notebook.ipynb)

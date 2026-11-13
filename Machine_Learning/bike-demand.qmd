@@ -46,4 +46,4 @@ The model explains about 95% of the variation in riders at a given hour, with a 
 - **Expect growth over years, not months.** Demand dips every year in November and December, but the long-run trend in D.C. is rising.
 - **Supply fewer bikes around holidays.** Thanksgiving week should run slightly below other November weeks, and Christmas week should look like a series of weekends with far fewer riders.
 
-[View the full notebook](mod4_bikes_GROUP_v02.ipynb)
+[View the full notebook](bike-demand-notebook.ipynb)
