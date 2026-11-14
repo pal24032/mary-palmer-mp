@@ -355,7 +355,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Notebook: Bank Telemarketing Targeting</h1>
-<p class="subtitle lead">CSE 450 Module 2 | Group project</p>
+<p class="subtitle lead">Group project</p>
 </div>
 
 
@@ -705,7 +705,7 @@ weighted avg       0.88      0.80      0.83     11121
 <span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the predictions to a dataframe and label the column 'predictions'</span></span>
 <span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>predictions <span class="op">=</span> pl.DataFrame(predictions, schema<span class="op">=</span>[<span class="st">'predictions'</span>])</span>
 <span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>predictions.write_csv(<span class="st">"team3-module2-predictions.csv"</span>)</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>predictions.write_csv(<span class="st">"bank-telemarketing-predictions.csv"</span>)</span>
 <span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>predictions[<span class="st">"predictions"</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>

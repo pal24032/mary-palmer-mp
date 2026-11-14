@@ -1,6 +1,6 @@
 ---
 title: "Bike Rental Demand"
-subtitle: "Python | Neural network regression | CSE 450 Module 4 group project"
+subtitle: "Python | Neural network regression | Group project"
 ---
 
 ## Problem

@@ -355,7 +355,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Notebook: Bike Rental Demand</h1>
-<p class="subtitle lead">CSE 450 Module 4 | Group project</p>
+<p class="subtitle lead">Group project</p>
 </div>
 
 
@@ -813,7 +813,7 @@ Average error: 48.1 riders
 <span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>predictions_holdout <span class="op">=</span> np.maximum(np.<span class="bu">round</span>(model.predict(X_test).flatten()), <span class="dv">0</span>)</span>
 <span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>predictions_df <span class="op">=</span> pl.DataFrame({<span class="st">"predictions"</span>: predictions_holdout})</span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>predictions_df.write_csv(<span class="st">"team3-module4-predictions.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>predictions_df.write_csv(<span class="st">"bike-demand-predictions.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <div class="ansi-escaped-output">
@@ -1128,7 +1128,7 @@ R2:   0.948
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>test_raw <span class="op">=</span> pl.read_csv(</span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bikes_december.csv"</span></span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>preds <span class="op">=</span> pl.read_csv(<span class="st">"team3-module4-predictions.csv"</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>preds <span class="op">=</span> pl.read_csv(<span class="st">"bike-demand-predictions.csv"</span>)</span>
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>holdout_plot <span class="op">=</span> (</span>
 <span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    test_raw</span>
@@ -1147,81 +1147,51 @@ R2:   0.948
 <pre><code>1465 1464</code></pre>
 </div>
 </div>
-<div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:211}}" data-outputid="33000cd2-6b55-4d60-e486-0611a6db115e">
+<div id="cell-13" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>daily_mean <span class="op">=</span> pl.concat([hist_day, pred_day]).sort(<span class="st">"date"</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>(ggplot(daily_mean, aes(x<span class="op">=</span><span class="st">"date"</span>, y<span class="op">=</span><span class="st">"mean_riders"</span>, color<span class="op">=</span><span class="st">"source"</span>))</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> geom_line(size<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> geom_point(size<span class="op">=</span><span class="fl">1.5</span>)</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> scale_color_manual(values<span class="op">=</span>{<span class="st">"Historical"</span>: <span class="st">"steelblue"</span>, <span class="st">"Predicted"</span>: <span class="st">"darkorange"</span>})</span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> scale_x_datetime(<span class="bu">format</span><span class="op">=</span><span class="st">"%b %Y"</span>)</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> labs(title<span class="op">=</span><span class="st">"Mean Riders per Hour by Day, 2023"</span>,</span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">""</span>, y<span class="op">=</span><span class="st">"Mean riders per hour"</span>, color<span class="op">=</span><span class="st">""</span>)</span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> theme_classic()</span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> ggsize(<span class="dv">700</span>, <span class="dv">350</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_1197/3268580100.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>daily_mean <span class="ansi-blue-fg">=</span> pl<span class="ansi-blue-fg">.</span>concat<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span>hist_day<span class="ansi-blue-fg">,</span> pred_day<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>sort<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"date"</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">      2</span> 
-<span class="ansi-green-fg ansi-bold">      3</span> (ggplot(daily_mean, aes(x="date", y="mean_riders", color="source"))
-<span class="ansi-green-fg ansi-bold">      4</span>  <span class="ansi-blue-fg">+</span> geom_line<span class="ansi-blue-fg">(</span>size<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">      5</span>  <span class="ansi-blue-fg">+</span> geom_point<span class="ansi-blue-fg">(</span>size<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1.5</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name 'hist_day' is not defined</pre>
-</div>
-</div>
-</div>
-<div id="cell-14" class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_how(df):</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df.with_columns(</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>        ((pl.col(<span class="st">"time"</span>).dt.weekday().cast(pl.Int32) <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">24</span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>         <span class="op">+</span> pl.col(<span class="st">"time"</span>).dt.hour().cast(pl.Int32)).alias(<span class="st">"hour_of_week"</span>)</span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>thx_start, thx_end <span class="op">=</span> datetime(<span class="dv">2023</span>, <span class="dv">11</span>, <span class="dv">20</span>), datetime(<span class="dv">2023</span>, <span class="dv">11</span>, <span class="dv">27</span>)</span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>xmas_start, xmas_end <span class="op">=</span> datetime(<span class="dv">2023</span>, <span class="dv">12</span>, <span class="dv">22</span>), datetime(<span class="dv">2023</span>, <span class="dv">12</span>, <span class="dv">29</span>)</span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> add_how(holdout_plot)</span>
-<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>is_thx <span class="op">=</span> (pl.col(<span class="st">"time"</span>) <span class="op">&gt;=</span> thx_start) <span class="op">&amp;</span> (pl.col(<span class="st">"time"</span>) <span class="op">&lt;</span> thx_end)</span>
-<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>is_xmas <span class="op">=</span> (pl.col(<span class="st">"time"</span>) <span class="op">&gt;=</span> xmas_start) <span class="op">&amp;</span> (pl.col(<span class="st">"time"</span>) <span class="op">&lt;</span> xmas_end)</span>
-<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>normal <span class="op">=</span> (</span>
-<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>    base.<span class="bu">filter</span>(<span class="op">~</span>is_thx <span class="op">&amp;</span> <span class="op">~</span>is_xmas)</span>
-<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>        .group_by(<span class="st">"hour_of_week"</span>)</span>
-<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>        .agg(pl.col(<span class="st">"pred"</span>).mean())</span>
-<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>        .with_columns(pl.lit(<span class="st">"Avg of other Nov/Dec weeks"</span>).alias(<span class="st">"week"</span>))</span>
-<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>        .select(<span class="st">"hour_of_week"</span>, <span class="st">"pred"</span>, <span class="st">"week"</span>)</span>
-<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>thx <span class="op">=</span> (base.<span class="bu">filter</span>(is_thx)</span>
-<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>       .with_columns(pl.lit(<span class="st">"Thanksgiving week"</span>).alias(<span class="st">"week"</span>))</span>
-<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a>       .select(<span class="st">"hour_of_week"</span>, <span class="st">"pred"</span>, <span class="st">"week"</span>))</span>
-<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a>xmas <span class="op">=</span> (base.<span class="bu">filter</span>(is_xmas)</span>
-<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a>        .with_columns(pl.lit(<span class="st">"Christmas week"</span>).alias(<span class="st">"week"</span>))</span>
-<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a>        .select(<span class="st">"hour_of_week"</span>, <span class="st">"pred"</span>, <span class="st">"week"</span>))</span>
-<span id="cb16-32"><a href="#cb16-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-33"><a href="#cb16-33" aria-hidden="true" tabindex="-1"></a>compare <span class="op">=</span> pl.concat([normal, thx, xmas]).sort(<span class="st">"hour_of_week"</span>)</span>
-<span id="cb16-34"><a href="#cb16-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-35"><a href="#cb16-35" aria-hidden="true" tabindex="-1"></a>(ggplot(compare, aes(x<span class="op">=</span><span class="st">"hour_of_week"</span>, y<span class="op">=</span><span class="st">"pred"</span>, color<span class="op">=</span><span class="st">"week"</span>))</span>
-<span id="cb16-36"><a href="#cb16-36" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> geom_line(size<span class="op">=</span><span class="fl">0.9</span>)</span>
-<span id="cb16-37"><a href="#cb16-37" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> scale_x_continuous(breaks<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">24</span>, <span class="dv">48</span>, <span class="dv">72</span>, <span class="dv">96</span>, <span class="dv">120</span>, <span class="dv">144</span>],</span>
-<span id="cb16-38"><a href="#cb16-38" aria-hidden="true" tabindex="-1"></a>                      labels<span class="op">=</span>[<span class="st">"Mon"</span>, <span class="st">"Tue"</span>, <span class="st">"Wed"</span>, <span class="st">"Thu"</span>, <span class="st">"Fri"</span>, <span class="st">"Sat"</span>, <span class="st">"Sun"</span>])</span>
-<span id="cb16-39"><a href="#cb16-39" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> labs(title<span class="op">=</span><span class="st">"Predicted Riders Per Day: Holiday Weeks vs Average Week"</span>,</span>
-<span id="cb16-40"><a href="#cb16-40" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">""</span>, y<span class="op">=</span><span class="st">"Predicted riders"</span>, color<span class="op">=</span><span class="st">""</span>)</span>
-<span id="cb16-41"><a href="#cb16-41" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> theme_classic()</span>
-<span id="cb16-42"><a href="#cb16-42" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> ggsize(<span class="dv">1000</span>, <span class="dv">400</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_how(df):</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df.with_columns(</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>        ((pl.col(<span class="st">"time"</span>).dt.weekday().cast(pl.Int32) <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">24</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>         <span class="op">+</span> pl.col(<span class="st">"time"</span>).dt.hour().cast(pl.Int32)).alias(<span class="st">"hour_of_week"</span>)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>thx_start, thx_end <span class="op">=</span> datetime(<span class="dv">2023</span>, <span class="dv">11</span>, <span class="dv">20</span>), datetime(<span class="dv">2023</span>, <span class="dv">11</span>, <span class="dv">27</span>)</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>xmas_start, xmas_end <span class="op">=</span> datetime(<span class="dv">2023</span>, <span class="dv">12</span>, <span class="dv">22</span>), datetime(<span class="dv">2023</span>, <span class="dv">12</span>, <span class="dv">29</span>)</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> add_how(holdout_plot)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>is_thx <span class="op">=</span> (pl.col(<span class="st">"time"</span>) <span class="op">&gt;=</span> thx_start) <span class="op">&amp;</span> (pl.col(<span class="st">"time"</span>) <span class="op">&lt;</span> thx_end)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>is_xmas <span class="op">=</span> (pl.col(<span class="st">"time"</span>) <span class="op">&gt;=</span> xmas_start) <span class="op">&amp;</span> (pl.col(<span class="st">"time"</span>) <span class="op">&lt;</span> xmas_end)</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>normal <span class="op">=</span> (</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>    base.<span class="bu">filter</span>(<span class="op">~</span>is_thx <span class="op">&amp;</span> <span class="op">~</span>is_xmas)</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>        .group_by(<span class="st">"hour_of_week"</span>)</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>        .agg(pl.col(<span class="st">"pred"</span>).mean())</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>        .with_columns(pl.lit(<span class="st">"Avg of other Nov/Dec weeks"</span>).alias(<span class="st">"week"</span>))</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>        .select(<span class="st">"hour_of_week"</span>, <span class="st">"pred"</span>, <span class="st">"week"</span>)</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>thx <span class="op">=</span> (base.<span class="bu">filter</span>(is_thx)</span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>       .with_columns(pl.lit(<span class="st">"Thanksgiving week"</span>).alias(<span class="st">"week"</span>))</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>       .select(<span class="st">"hour_of_week"</span>, <span class="st">"pred"</span>, <span class="st">"week"</span>))</span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>xmas <span class="op">=</span> (base.<span class="bu">filter</span>(is_xmas)</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>        .with_columns(pl.lit(<span class="st">"Christmas week"</span>).alias(<span class="st">"week"</span>))</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>        .select(<span class="st">"hour_of_week"</span>, <span class="st">"pred"</span>, <span class="st">"week"</span>))</span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>compare <span class="op">=</span> pl.concat([normal, thx, xmas]).sort(<span class="st">"hour_of_week"</span>)</span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>(ggplot(compare, aes(x<span class="op">=</span><span class="st">"hour_of_week"</span>, y<span class="op">=</span><span class="st">"pred"</span>, color<span class="op">=</span><span class="st">"week"</span>))</span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> geom_line(size<span class="op">=</span><span class="fl">0.9</span>)</span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> scale_x_continuous(breaks<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">24</span>, <span class="dv">48</span>, <span class="dv">72</span>, <span class="dv">96</span>, <span class="dv">120</span>, <span class="dv">144</span>],</span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>                      labels<span class="op">=</span>[<span class="st">"Mon"</span>, <span class="st">"Tue"</span>, <span class="st">"Wed"</span>, <span class="st">"Thu"</span>, <span class="st">"Fri"</span>, <span class="st">"Sat"</span>, <span class="st">"Sun"</span>])</span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> labs(title<span class="op">=</span><span class="st">"Predicted Riders Per Day: Holiday Weeks vs Average Week"</span>,</span>
+<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span><span class="st">""</span>, y<span class="op">=</span><span class="st">"Predicted riders"</span>, color<span class="op">=</span><span class="st">""</span>)</span>
+<span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> theme_classic()</span>
+<span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a> <span class="op">+</span> ggsize(<span class="dv">1000</span>, <span class="dv">400</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 

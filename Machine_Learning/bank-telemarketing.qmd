@@ -1,6 +1,6 @@
 ---
 title: "Bank Telemarketing Targeting"
-subtitle: "Python | Decision tree classifier | CSE 450 Module 2 group project"
+subtitle: "Python | Decision tree classifier | Group project"
 ---
 
 ## Problem

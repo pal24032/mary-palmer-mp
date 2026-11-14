@@ -1,6 +1,6 @@
 ---
 title: "King County Housing Prices"
-subtitle: "Python | XGBoost regression | CSE 450 Module 3 group project"
+subtitle: "Python | XGBoost regression | Group project"
 ---
 
 ## Problem
