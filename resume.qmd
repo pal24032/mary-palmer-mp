@@ -51,7 +51,7 @@ June 2026 to September 2026
 **Rural King: Zone Pricing and Competitor Analysis** (Consulting Project), Fall 2026 to present
 
 - Developing zone-pricing recommendations by clustering stores on demographics, competitor density, and climate, flagging under- and over-indexed markets
-- Isolated a reported -18.5% price gap to -12.0% on exact-match products after finding two of seven retailers drove most of it
+- Isolated a reported -18.5% price gap to -12.0% on exact-match products after finding two retailers drove most of it
 - Built an interactive price-gap dashboard (HTML/CSS/JS, no framework) visualizing Rural King’s competitive pricing position across 23 departments and 2,310 SKUs against 9 competitor retailers, with outlier-flagging logic to separate data noise from real pricing gaps
 - Designed a four-signal scoring model to classify 164 stores into pricing-action tiers (raise/hold/sharpen) and flagged a threshold-design flaw before it was presented to stakeholders
 
