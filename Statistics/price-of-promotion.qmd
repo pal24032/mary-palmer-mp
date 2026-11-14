@@ -3,8 +3,7 @@ title: "Price of Promotion (Econometrics)"
 subtitle: "R | Group research paper using store-level panel data"
 ---
 
-**Measuring the Price of Promotion: A Store-Level Analysis of Consumer Expenditure**  
-Erral Asper, Kathryn Haroldsen, Taylor Landini, Mary Palmer, and Harrison Thomas (April 2026)
+**Measuring the Price of Promotion: A Store-Level Analysis of Consumer Expenditure** (April 2026)
 
 ## Question
 

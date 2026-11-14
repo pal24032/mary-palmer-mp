@@ -136,7 +136,7 @@
     "href": "Statistics/price-of-promotion.html",
     "title": "Price of Promotion (Econometrics)",
     "section": "",
-    "text": "Measuring the Price of Promotion: A Store-Level Analysis of Consumer Expenditure\nErral Asper, Kathryn Haroldsen, Taylor Landini, Mary Palmer, and Harrison Thomas (April 2026)",
+    "text": "Measuring the Price of Promotion: A Store-Level Analysis of Consumer Expenditure (April 2026)",
     "crumbs": [
       "Statistics",
       "Price of Promotion (Econometrics)"
@@ -324,6 +324,17 @@
     "title": "Finance Dashboard",
     "section": "",
     "text": "This is my final Power BI project, built around a finance question.",
+    "crumbs": [
+      "Data Storytelling",
+      "Finance Dashboard"
+    ]
+  },
+  {
+    "objectID": "Storytelling/finance-dashboard.html#video-presentation",
+    "href": "Storytelling/finance-dashboard.html#video-presentation",
+    "title": "Finance Dashboard",
+    "section": "Video presentation",
+    "text": "Video presentation\n\n\nWatch the recorded presentation on Google Drive",
     "crumbs": [
       "Data Storytelling",
       "Finance Dashboard"
@@ -717,7 +728,7 @@
     "href": "Storytelling/survey-analysis.html",
     "title": "Survey Analysis: Religious Perceptions",
     "section": "",
-    "text": "I extracted, cleaned, and analyzed survey data on demographic patterns in religious perceptions, using Power BI.",
+    "text": "I extracted, cleaned, and analyzed survey data on demographic patterns in religious perceptions, then built a set of Power BI views that turn the raw responses into a story a non-technical audience can follow. Each chart has a headline that states its finding, so the point is clear before anyone reads an axis.",
     "crumbs": [
       "Data Storytelling",
       "Survey Analysis: Religious Perceptions"
@@ -728,18 +739,29 @@
     "href": "Storytelling/survey-analysis.html#overview",
     "title": "Survey Analysis: Religious Perceptions",
     "section": "",
-    "text": "I extracted, cleaned, and analyzed survey data on demographic patterns in religious perceptions, using Power BI.",
+    "text": "I extracted, cleaned, and analyzed survey data on demographic patterns in religious perceptions, then built a set of Power BI views that turn the raw responses into a story a non-technical audience can follow. Each chart has a headline that states its finding, so the point is clear before anyone reads an axis.",
     "crumbs": [
       "Data Storytelling",
       "Survey Analysis: Religious Perceptions"
     ]
   },
   {
-    "objectID": "Storytelling/survey-analysis.html#communicating-the-results",
-    "href": "Storytelling/survey-analysis.html#communicating-the-results",
+    "objectID": "Storytelling/survey-analysis.html#the-story-in-six-views",
+    "href": "Storytelling/survey-analysis.html#the-story-in-six-views",
     "title": "Survey Analysis: Religious Perceptions",
-    "section": "Communicating the results",
-    "text": "Communicating the results\nI shared the survey insights in a way that non-technical audiences could follow, so the findings could support a data-driven discussion.",
+    "section": "The story in six views",
+    "text": "The story in six views\n\nDaily public prayer is most common among Muslims\n\nWhen asked how often they prayed with public motions, 64% of Muslims reported doing so every day. I highlighted that one bar and grayed out the rest so the comparison reads at a glance.\n\n\nWe assume others are less comfortable discussing religion than we are\n\nRespondents rated their own comfort being asked about their religion, unprompted, and how comfortable they think others would be. The biggest gaps are at the top of the scale: far more people say they are very or extremely comfortable themselves than expect others to be.\n\n\nYounger generation less likely to attend church\n\nThe chart shows counts of respondents. Because the 18 to 44 group is larger in this sample (430 people versus 234), the share who never attend is the fairer comparison: about 44% of the younger group versus about 35% of the older group.\n\n\nThose who pray publicly do so comfortably\n\n\n\n\n\n\nRoman Catholic, female\n\n\n\n\n\n\n\nProtestant, female\n\n\n\n\n\nThe dashboard has religion and gender filters, so a viewer can compare groups themselves. Here are two views side by side: among Roman Catholic women, about 18% say they do not pray publicly, while among Protestant women it is about half. In both groups, the people who do pray publicly mostly say they are comfortable doing it.",
+    "crumbs": [
+      "Data Storytelling",
+      "Survey Analysis: Religious Perceptions"
+    ]
+  },
+  {
+    "objectID": "Storytelling/survey-analysis.html#so-what",
+    "href": "Storytelling/survey-analysis.html#so-what",
+    "title": "Survey Analysis: Religious Perceptions",
+    "section": "So what?",
+    "text": "So what?\n\nThe last slide connects the charts into takeaways for the audience:\n\nWe are much more comfortable letting others bring up religion than starting the conversation, and people are more comfortable openly practicing religion than discussing it unprompted.\nIf you are nervous to bring up religion, consider talking about it with an older woman. In the survey they are more likely to attend church services regularly and less likely to be atheist.\nMost people are fine hearing about your religion or talking about theirs, especially if you initiate the conversation.",
     "crumbs": [
       "Data Storytelling",
       "Survey Analysis: Religious Perceptions"

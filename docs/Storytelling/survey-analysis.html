@@ -366,7 +366,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#communicating-the-results" id="toc-communicating-the-results" class="nav-link" data-scroll-target="#communicating-the-results">Communicating the results</a></li>
+  <li><a href="#the-story-in-six-views" id="toc-the-story-in-six-views" class="nav-link" data-scroll-target="#the-story-in-six-views">The story in six views</a>
+  <ul class="collapse">
+  <li><a href="#daily-public-prayer-is-most-common-among-muslims" id="toc-daily-public-prayer-is-most-common-among-muslims" class="nav-link" data-scroll-target="#daily-public-prayer-is-most-common-among-muslims">Daily public prayer is most common among Muslims</a></li>
+  <li><a href="#we-assume-others-are-less-comfortable-discussing-religion-than-we-are" id="toc-we-assume-others-are-less-comfortable-discussing-religion-than-we-are" class="nav-link" data-scroll-target="#we-assume-others-are-less-comfortable-discussing-religion-than-we-are">We assume others are less comfortable discussing religion than we are</a></li>
+  <li><a href="#younger-generation-less-likely-to-attend-church" id="toc-younger-generation-less-likely-to-attend-church" class="nav-link" data-scroll-target="#younger-generation-less-likely-to-attend-church">Younger generation less likely to attend church</a></li>
+  <li><a href="#those-who-pray-publicly-do-so-comfortably" id="toc-those-who-pray-publicly-do-so-comfortably" class="nav-link" data-scroll-target="#those-who-pray-publicly-do-so-comfortably">Those who pray publicly do so comfortably</a></li>
+  </ul></li>
+  <li><a href="#so-what" id="toc-so-what" class="nav-link" data-scroll-target="#so-what">So what?</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://pal24032.github.io/mary-palmer-mp/issues/new" class="toc-action"><i class="bi bi-git"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -396,11 +403,59 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>I extracted, cleaned, and analyzed survey data on demographic patterns in religious perceptions, using Power BI.</p>
+<p>I extracted, cleaned, and analyzed survey data on demographic patterns in religious perceptions, then built a set of Power BI views that turn the raw responses into a story a non-technical audience can follow. Each chart has a headline that states its finding, so the point is clear before anyone reads an axis.</p>
 </section>
-<section id="communicating-the-results" class="level2">
-<h2 class="anchored" data-anchor-id="communicating-the-results">Communicating the results</h2>
-<p>I shared the survey insights in a way that non-technical audiences could follow, so the findings could support a data-driven discussion.</p>
+<section id="the-story-in-six-views" class="level2">
+<h2 class="anchored" data-anchor-id="the-story-in-six-views">The story in six views</h2>
+<section id="daily-public-prayer-is-most-common-among-muslims" class="level3">
+<h3 class="anchored" data-anchor-id="daily-public-prayer-is-most-common-among-muslims">Daily public prayer is most common among Muslims</h3>
+<p><img src="../Images/survey/public-prayer-by-religion.png" class="img-fluid" alt="Bar chart of the share of each religion that prays with public motions every day. Muslims are highest at about 64 percent, followed by Orthodox Christians at about 28 percent, then Roman Catholics, Hindus, and Latter-day Saints at about 17 percent, Protestants at about 9 percent, and Agnostics near 1 percent."></p>
+<p>When asked how often they prayed with public motions, 64% of Muslims reported doing so every day. I highlighted that one bar and grayed out the rest so the comparison reads at a glance.</p>
+</section>
+<section id="we-assume-others-are-less-comfortable-discussing-religion-than-we-are" class="level3">
+<h3 class="anchored" data-anchor-id="we-assume-others-are-less-comfortable-discussing-religion-than-we-are">We assume others are less comfortable discussing religion than we are</h3>
+<p><img src="../Images/survey/comfort-gap.png" class="img-fluid" alt="Paired bars comparing respondents' own comfort being asked about their religion with their perception of others' comfort. Own comfort is far higher in the very and extremely comfortable groups."></p>
+<p>Respondents rated their own comfort being asked about their religion, unprompted, and how comfortable they think others would be. The biggest gaps are at the top of the scale: far more people say they are very or extremely comfortable themselves than expect others to be.</p>
+</section>
+<section id="younger-generation-less-likely-to-attend-church" class="level3">
+<h3 class="anchored" data-anchor-id="younger-generation-less-likely-to-attend-church">Younger generation less likely to attend church</h3>
+<p><img src="../Images/survey/church-attendance-by-age.png" class="img-fluid" alt="Bars comparing church attendance for ages 18 to 44 and ages 45 and up. Never: 190 versus 81. Less than weekly: 135 versus 98. Weekly or more: 105 versus 55."></p>
+<p>The chart shows counts of respondents. Because the 18 to 44 group is larger in this sample (430 people versus 234), the share who never attend is the fairer comparison: about 44% of the younger group versus about 35% of the older group.</p>
+</section>
+<section id="those-who-pray-publicly-do-so-comfortably" class="level3">
+<h3 class="anchored" data-anchor-id="those-who-pray-publicly-do-so-comfortably">Those who pray publicly do so comfortably</h3>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Images/survey/catholic-women-prayer.png" class="img-fluid figure-img" alt="Comfort praying in public with visible motions among Roman Catholic women. About 18 percent say they do not do this; the rest are mostly somewhat, very, or extremely comfortable."></p>
+<figcaption>Roman Catholic, female</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Images/survey/protestant-women-prayer.png" class="img-fluid figure-img" alt="Comfort praying in public with visible motions among Protestant women. About half say they do not do this; those who do are somewhat, very, or extremely comfortable."></p>
+<figcaption>Protestant, female</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>The dashboard has religion and gender filters, so a viewer can compare groups themselves. Here are two views side by side: among Roman Catholic women, about 18% say they do not pray publicly, while among Protestant women it is about half. In both groups, the people who do pray publicly mostly say they are comfortable doing it.</p>
+</section>
+</section>
+<section id="so-what" class="level2">
+<h2 class="anchored" data-anchor-id="so-what">So what?</h2>
+<p><img src="../Images/survey/so-what.png" class="img-fluid" alt="Summary text: people are more comfortable letting others bring up religion than starting the conversation, and more comfortable practicing religion openly than discussing it unprompted. If you are nervous to bring up religion, consider talking with an older woman. Most people are fine hearing about your religion or talking about theirs, especially if you initiate."></p>
+<p>The last slide connects the charts into takeaways for the audience:</p>
+<ul>
+<li>We are much more comfortable letting others bring up religion than starting the conversation, and people are more comfortable openly practicing religion than discussing it unprompted.</li>
+<li>If you are nervous to bring up religion, consider talking about it with an older woman. In the survey they are more likely to attend church services regularly and less likely to be atheist.</li>
+<li>Most people are fine hearing about your religion or talking about theirs, especially if you initiate the conversation.</li>
+</ul>
 
 
 </section>

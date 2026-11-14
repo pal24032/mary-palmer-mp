@@ -36,7 +36,7 @@ BYU-Idaho, Rexburg, ID
 January 2026 to present
 
 - Ran randomized experiments with 300+ participants, using fixed effects and clustered standard errors, leading the teacher to drop an unnecessary teaching practice
-- Built 14 AI video tutorials now part of an official university course to support student learning
+- Built [14 AI video tutorials](https://www.youtube.com/@BYUILearningLab) now part of an official university course to support student learning
 - Managed a team of research associates and oversaw survey deployment and treatment assignment
 
 **Data Science Intern**  
@@ -60,12 +60,12 @@ June 2026 to September 2026
 - Collaborated with a 10-person BYU-Idaho economics team to analyze Equibase Co. data using economic reasoning and a fixed-effects logistic regression
 - Built Power BI-style dashboards in R to identify performance trends, presented as a product pitch
 
-**Retail Promotion Pricing and Demand Analysis** (R / RStudio, AI-simulated data), Fall 2025
+**[Retail Promotion Pricing and Demand Analysis](Statistics/cocoa-anova.qmd)** (R / RStudio, AI-simulated data), Fall 2025
 
 - Used two-way ANOVA and interaction testing on 3 years of AI-simulated weekly retail data to estimate the revenue impact of promotion depth
 - Identified 25-35% promotion depth as a consistent revenue driver for a seasonal grocery product
 
-**Other projects:** Mutual Fund Analysis (Power BI), Religious Perceptions Survey (Power BI)
+**Other projects:** [Mutual Fund Analysis](Storytelling/mutual-fund-risk.qmd) (Power BI), [Religious Perceptions Survey](Storytelling/survey-analysis.qmd) (Power BI)
 
 ## Leadership and Volunteer
 
